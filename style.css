@@ -3,7 +3,26 @@
   margin: 2cm
 }
 
+body {
+  height: auto;
+  width: auto;
+  margin: 0;
+  font-family: 'Proza Libre', sans-serif;
+}
+
 header {
   background-color: black;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Scope One', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a.header-link {
   color: white;
 }
