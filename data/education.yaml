@@ -1,0 +1,10 @@
+education:
+  graduate:
+    organization: 'University of Tennessee at Chattanooga'
+    degree: 'Master of Computer Science'
+    dates: []
+    summary: 'Pursued employment opportunities and did not remain to complete degree.'
+  undergraduate:
+    organization: 'University of Tennessee at Knoxville'
+    degree: 'Bachelor of Arts in Geography'
+    dates: []

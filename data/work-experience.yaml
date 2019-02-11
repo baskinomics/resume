@@ -1,0 +1,66 @@
+employment_history:
+  1:
+    title: 'Software Developer'
+    organization: 'BNL Consulting, LLC.'
+    dates: [2014-04, 2018-08]
+    summary:
+      - "Enterprise Java development using the Spring framework (monoliths and microservices)."
+      - "Technical lead for internal R&D project that containerized client-facing Spring application that utilized Terraform and Ansible; evaluated and implemented solutions with both Nomad and Kubernetes; subsequent deployment to AWS and OpenStack environments optimized to the client’s requirements"
+      - "Designed and implemented substantial feature expansion for a client’s existing Spring Boot microservice that required adding an AWS SES component, new AWS Lambda function, additional Redis topics and business logic for pub/sub, and Terraform configurations for said components."
+      - "Wrote blog post that detailed how to implement an API gateway and associated microservice utilizing AWS API Gateway, AWS Lambda, and Terraform."
+      - "UI/UX development using vanilla JS, d3.js, and AngularJS."
+  2:
+    title: 'Open Data Specialist'
+    organization: 'Chattanooga Public Library'
+    dates: [2014-02, 2014-04]
+    summary:
+      - "TODO"
+  3:
+    title: 'Consultant'
+    organization: 'Self-Employed'
+    dates: [2014-01, 2014-02]
+    summary:
+      - "Redesigned the front-end of client's website and implemented a backend WordPress stack that met their requirements for the site's update."
+  4:
+    title: 'Graduate Research Assistant'
+    organization: 'University of Tennessee at Chattanooga'
+    dates: [2013-05, 2013-10]
+    summary:
+      - "Developed and implemented a distributed web application, Civitas, within the context of the Thrive 2055 initiative."
+      - "Additionally, developed an Android application for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga."
+  5:
+    title: 'GIS Consultant'
+    organization: 'Self-Employed'
+    dates: [2012-02, 2012-05]
+    summary:
+      - "Provided consulting services to SecondSite, LLC and the SimCenter Enterprise for Disaster Mitigation Plume/Evacuation Scenario Modeling as part of the U.S. Ignite Initiative (http://us-ignite.org/)."
+  6:
+    title: 'Graduate Teaching Assistant'
+    organization: 'University of Tennessee at Chattanooga'
+    dates: [2012-01, 2012-05]
+    summary:
+      - "Graded papers, assisted in labs, proctored exams, and on occasion stood in for my professor during class lectures."
+  7:
+    title: 'Graduate Research Assistant '
+    organization: 'University of Tennessee at Chattanooga'
+    dates: [2012-01, 2012-05]
+    summary:
+      - "Conducted self-directed research on mobile indoor navigation systems using WiFi signal strength, Gaussian processes, cloud computing, the Android framework, and the R language."
+  8:
+    title: 'Intern'
+    organization: 'Tennessee Valley Authority'
+    dates: []
+    summary:
+      - "TODO"
+  9:
+    title: 'Math Tutor'
+    organization: 'UTK'
+    dates: []
+    summary:
+      - "TODO"
+  10:
+    title: 'Owner and Founder'
+    organization: 'LoserLabeled.com'
+    dates: []
+    summary:
+      - "TODO"
