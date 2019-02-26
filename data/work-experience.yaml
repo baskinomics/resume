@@ -9,6 +9,7 @@ employment_history:
       - "Designed and implemented substantial feature expansion for a client’s existing Spring Boot microservice that required adding an AWS SES component, new AWS Lambda function, additional Redis topics and business logic for pub/sub, and Terraform configurations for said components."
       - "Wrote blog post that detailed how to implement an API gateway and associated microservice utilizing AWS API Gateway, AWS Lambda, and Terraform."
       - "UI/UX development using vanilla JS, d3.js, and AngularJS."
+
   2:
     title: 'Open Data Specialist'
     organization: 'Chattanooga Public Library'

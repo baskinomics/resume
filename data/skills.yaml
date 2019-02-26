@@ -1,7 +1,9 @@
 skills:
   languages: ['Java', 'Python', 'Go', 'JavaScript', 'SQL', 'R', 'Julia', 'Rust, 'C', 'C++', 'Apache Flex', 'ActionScript', 'Bash']
+  databases: ['Oracle', 'MySQL', 'PostgreSQL', 'SQL', 'PL/SQL', 'PL/pgSQL', 'MongoDB']
   spring: ['Spring Framework', 'Spring Boot', 'Spring Security', 'Spring MVC', 'Spring Data']
-  java: ['Hibernate', 'Maven', 'Gradle', 'Lombak', 'Immutables', 'Streams and Functional Interfaces', 'Modules']
+  java: ['JUnit', 'JPA', 'Hibernate', 'Maven', 'Gradle', 'Lombak', 'Immutables', 'Streams and Functional Interfaces', 'Modules']
   devops: ["CI/CD", 'Docker', 'Jenkins', 'Ansible', 'SaltStack', 'Packer', 'Terraform', 'Consul', 'Nomad']
   aws: ['EC2', 'S3', 'EBS', 'IAM', 'Lambda', 'API Gateway', 'ELB', 'Route 53', 'VPC', 'DynamoDB', 'RDS', 'AWS CLI']
   certs: ['AWS Certified Developer - Associate', 'Adobe Certified Expert Flex 4.5', 'HIPPA Security Certification']
+  misc: ['LaTeX']

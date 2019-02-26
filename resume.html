@@ -1,139 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Resume &#8208; Sean Baskin</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Proza+Libre|Scope+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume &#8208; Sean Baskin</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre|Scope+One|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+  <main>
+    <div class="header-container">
       <h1>Sean Michael Baskin</h1>
-      <i class="fab fa-linkedin"></i> <a class="header-link" href="https://www.linkedin.com/in/sean-baskin/" target="_blank">linkedin.com/in/sean-baskin/</a> &#124;
-      <i class="fab fa-github"></i> <a class="header-link" href="https://github.com/baskinomics" target="_blank">github.com/baskinomics</a> &#124;
-      <i class="fab fa-stack-exchange"></i> <a class="header-link" href="https://stackexchange.com/users/944752/baskinomics" target="_blank">stackexchange.com/users/944752/baskinomics</a><br/>
       <address>
-        <i class="fas fa-envelope-open"></i> <a class="header-link" href="mailto:seanbaskin@gmail.com">seanbaskin@gmail.com</a><br/>
-        <i class="fas fa-phone"></i> <a class="header-link" href="tel:1-423-580-9185">(423) 580-9185</a><br/>
+        <span class="header-item"><i class="fas fa-envelope-open"></i> <a class="header-link" href="mailto:seanbaskin@gmail.com">seanbaskin@gmail.com</a></span>
+        <span class="header-item"><i class="fas fa-phone"></i> <a class="header-link" href="tel:1-423-580-9185">(423) 580-9185</a></span>
       </address>
-      <p id="summary">
-        I develop enterprise Java and Spring web applications and am passionate about the work I engage in. That passion has driven varied interests that I have incorporated into my professional portfolio ranging from the core Amazon Web Services product offerings, the Docker platform, and a healthy dose of DevOps tools and practices. Goal-oriented with a focus on the entire software development cycle. Oh, I also like maps and mathematics.
-      </p>
-    </header>
-    <main>
-      <section>
-        <h2><i class="fas fa-code"></i> Skills</h2>
-        <!-- TODO: Group related skills by color -->
-        <div class="pill-group">
-          <!-- Languages -->
-          <span class="pill">Java</span>
-          <span class="pill">Go</span>
-          <span class="pill">Python</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">SQL</span>
-          <span class="pill">NoSQL</span><!-- Is this really a language? -->
-          <span class="pill">Apache Flex</span>
-          <span class="pill">ActionScript</span>
-          <span class="pill">R</span>
-          <span class="pill">Bash</span>
-          <!-- <span class="pill">Redis</span> TODO: Where does this belong? -->
-          <!-- Java, Spring, Frameworks -->
-          <span class="pill">Spring</span>
-          <span class="pill">Spring Boot</span>
+      <div class="header-content-media">
+        <span class="header-item"><i class="fab fa-linkedin"></i> <a class="header-link" href="https://www.linkedin.com/in/sean-baskin/" target="_blank">linkedin.com/in/sean-baskin/</a></span>
+        <span class="header-item"><i class="fab fa-github"></i> <a class="header-link" href="https://github.com/baskinomics" target="_blank">github.com/baskinomics</a></span>
+        <span class="header-item"><i class="fab fa-stack-exchange"></i> <a class="header-link" href="https://stackexchange.com/users/944752/baskinomics" target="_blank">stackexchange.com/users/944752/baskinomics</a></span>
+      </div>
+      <!-- Add hyperlink to full CV -->
+    </div>
+    <div class="content-container">
+      <div class="left-container-content">
+        <section class="summary">
+          <h2>Summary</h2>
+          <p id="summary">
+            I develop enterprise Java and Spring web applications and am passionate about the work I engage in. That passion has driven varied interests that I have incorporated into my professional portfolio ranging from the core Amazon Web
+            Services product offerings, the Docker platform, and a healthy dose of DevOps tools and practices. Goal-oriented with a focus on the entire software development cycle. Oh, I also like maps and mathematics.
+          </p>
+        </section>
+        <section>
+          <h2>Professional Experience</h2>
+          <div class="work-history-item">
+            <div class="title-dates-item">
+              <span class="wh-title">Software Developer</span>
+              <span class="wh-dates">Apr 2014 - Aug 2018</span>
+            </div>
+            <div class="wh-organization">BNL Consulting, LLC.</div>
+            <div class="wh-summary-item">
+              <ul>
+                <li>Designed, developed, or contributed to seven (7) client projects.</li>
+                <li>Designed and implemented automation of various processes for client’s existing application workflow resulting in a geometric increase in customer capacity for their commerical service offering.</li>
+                <li>Technical lead for internal research project that containerized existing client application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms.</li>
+                <li>Core developer for two (2)  year client project that entailed refactoring existing application from .NET to Java, implementing RESTful web services, improving ETL and analytics processes, expansive search functionality, and data modeling.</li>
+                <li>Contributed to frontend development of client applications utilizing Javascript, AngularJS, d3.js, and associated tools and ecosystem.</li>
+                <li>Authored blog posts <a href="">Cloud-First Microservices: AWS API Gateway and Lambda in Action</a> and <a href="">Visualizing Clusters with ArcGIS for Flex</a>.</li>
+                <li>Co-lead the evangelization, adoption, and training of DevOps tools and practices within our organization and modifications to existing business model and service offerings within that context.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <div class="work-history-item">
+            <div class="title-dates-item">
+              <span class="wh-title">BA of Geography</span>
+              <span class="wh-dates">Aug 2007 - May 2011</span>
+            </div>
+            <div class="wh-organization">University of Tennessee <br/> at Knoxville</div>
+          </div>
+        </section>
+      </div>
+      <div class="right-container-content">
+        <section class="skills">
+          <h2>Skills</h2>
           <!--
-          <span class="pill">Spring Security</span>
-          <span class="pill">Spring MVC</span>
-          <span class="pill">Spring Data</span>
+          <div class="skills-container">
+            <span class="skill-category"></span>
+            <span class="skill-items"></span>
+          </div>
           -->
-          <span class="pill">Hibernate</span>
-          <span class="pill">Gradle</span>
-          <span class="pill">Maven</span>
-          <span class="pill">Lombak</span>
-          <span class="pill">Immutables</span>
-          <!-- DevOps -->
-          <span class="pill">CI &#47; CD</span>
-          <span class="pill">Docker</span>
-          <span class="pill">Jenkins</span>
-          <span class="pill">Ansible</span>
-          <span class="pill">SaltStack</span>
-          <span class="pill">Packer</span>
-          <span class="pill">Terraform</span>
-          <span class="pill">Consul</span>
-          <span class="pill">Nomad</span>
-          <!-- <span class="pill">Kubernetes</span> -->
-          <!-- AWS -->
-          <span class="pill">EC2</span> <!-- autoscaling? -->
-          <span class="pill">S3</span>
-          <span class="pill">EBS</span>
-          <span class="pill">IAM</span>
-          <span class="pill">Lambda</span>
-          <span class="pill">API Gateway</span>
-          <span class="pill">ELB</span>
-          <span class="pill">Route 53</span>
-          <span class="pill">VPC</span>
-          <span class="pill">DynamoDB</span>
-          <span class="pill">RDS</span>
-          <span class="pill">AWS CLI</span>
-        </div>
-      </section>
-      <section>
-        <h2><i class="fas fa-book"></i> Certifications and Training</h2>
-        <ul>
-          <li>AWS Certified Developer - Associate</li>
-          <li>Adobe Certified Expert Flex 4.5</li>
-          <li>HIPPA Security Certification</li>
-        </ul>
-      </section>
-      <section>
-        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-      </section>
-    </main>
+          <div class="skills-container">
+            <h3>Java Technologies</h3>
+            <span class="skill-items">JDK 6+, IoC, AOP, JPA, Hibernate, JUnit, Maven, Gradle, Lombak, Immutables, Quartz</span>
+          </div>
+          <div class="skills-container">
+            <h3>Spring</h3>
+            <span class="skill-items">Spring Framework, Spring Boot, Spring Security, Spring Web MVC, Spring Data, Spring Batch</span>
+          </div>
+          <div class="skills-container">
+            <h3>Databases</h3>
+            <span class="skill-items">Oracle + PL/SQL, PostgreSQL + PL/pgSQL, MySQL, Redis, MongoDB, DynamoDB</span>
+          </div>
+          <div class="skills-container">
+            <h3>Amazon Web Services</h3>
+            <span class="skill-items">Lambda, API Gateway, VPC, EC2, S3, EBS, IAM, ELB, Route 53, RDS, DynamoDB, AWS CLI</span>
+          </div>
+          <div class="skills-container">
+            <h3>DevOps</h3>
+            <span class="skill-items">CI/CD, Jenkins, Docker, Ansible, SaltStack, Packer, Terraform, Consul, Nomad</span>
+          </div>
+          <div class="skills-container">
+            <h3>Frontend</h3>
+            <span class="skill-items">JavaScript, NodeJS, AngularJS 1.0+, Yeoman, Bower, LESS</span>
+          </div>
+        </section>
+        <section>
+          <h2>Certifications and Training</h2>
+          <ul>
+            <li>AWS Certified Developer - Associate</li>
+            <li>Adobe Certified Expert Flex 4.5</li>
+            <li>HIPPA Security Certification</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
 
-
-
-<!--
-Professional Experience
-Software Developer                                                                                                                   Apr 2014 - Aug 2018
-BNL Consulting, LLC.
-
-Enterprise Java development using the Spring framework (monoliths and microservices)
-Technical lead for internal R&D project that containerized client-facing Spring application that utilized Terraform and Ansible; evaluated and implemented solutions with both Nomad and Kubernetes; subsequent deployment to AWS and OpenStack environments optimized to the client’s requirements
-Designed and implemented substantial feature expansion for a client’s existing Spring Boot microservice that required adding an AWS SES component, new AWS Lambda function, additional Redis topics and business logic for pub/sub, and Terraform configurations for said components.
-Wrote blog post that detailed how to implement an API gateway and associated microservice utilizing AWS API Gateway, AWS Lambda, and Terraform
-UI/UX development using vanilla JS, d3.js, and AngularJS
-Open Data Specialist                                                                                                                 Feb 2014 - Apr 2014
-Chattanooga Public Library
-
-Consultant                                                                                                                                     Jan 2014 - Feb 2014
-Self-Employed
-
-Redesigned the front-end of client's website and implemented a backend WordPress stack that met their requirements for the site's update.
-
-Graduate Research Assistant                                                                                                May 2013 - Oct 2013
-University of Tennessee at Chattanooga
-
-Developed and implemented a distributed web application, Civitas, within the context of the Thrive 2055 initiative. Additionally, developed an Android application for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga.
-
-GIS Consultant                                                                                                                             Feb 2012 - May 2012
-Self-Employed
-
-Provided consulting services to SecondSite, LLC and the SimCenter Enterprise for Disaster Mitigation Plume/Evacuation Scenario Modeling as part of the U.S. Ignite Initiative (http://us-ignite.org/).
-
-Graduate Teaching Assistant                                                                                                 Jan 2012 - May 2012
-University of Tennessee at Chattanooga
-
-Graded papers, assisted in labs, proctored exams, and on occasion stood in for my professor during class lectures.
-
-Graduate Research Assistant                                                                                                 Jan 2012 - May 2012
-University of Tennessee at Chattanooga
-
-Conducted self-directed research on mobile indoor navigation systems using WiFi signal strength, Gaussian processes, cloud computing, the Android framework, and the R language.
-Education
-Master of Computer Science, University of Tennessee at Chattanooga*
-Pursued employment opportunities and did not remain to complete degree.
-
-Bachelor of Arts in Geography, University of Tennessee at Knoxville
--->
-  </body>
 </html>
