@@ -1,2 +1,1 @@
-# resume
-My professional resume composed using HTML5.
+Creates a PDF representing my professional resume using React.
