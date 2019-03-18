@@ -1,23 +1,29 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import { Font, Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
     backgroundColor: '#FFFFFF'
+  },
+  headerText: {
+    fontSize: 14,
+    textAlign: 'center',
+    fontFamily: 'Fira Code'
   }
 });
+
+// Font registration
+Font.register(`${__dirname}/fonts/fira-code/FiraCode-Regular.ttf`, {
+  family: 'Fira Code'
+})
 
 // Create Document Component
 const Resume = () => (
   <Document title="Sean Baskin - Resume">
     <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Sean Baskin</Text>
       </View>
     </Page>
   </Document>
