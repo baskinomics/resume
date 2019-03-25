@@ -26,31 +26,28 @@ const styles = StyleSheet.create({
   }
 });
 
-const social = {
-  linkedin: {
+const metaLinks = [
+  {
     text: "LinkedIn",
     href: "https://www.linkedin.com/in/sean-baskin/"
   },
-  github: {
+  {
     text: "GitHub",
     href: "https://github.com/baskinomics"
   },
-  stackExchange: {
+  {
     text: "StackExchange",
     href: "https://stackexchange.com/users/944752/baskinomics"
-  }
-};
-
-const contact = {
-  email: {
+  },
+  {
     text: "seanbaskin@gmail.com",
     href: "tel:1-423-580-9185"
   },
-  telephone: {
+  {
     text: "(423) 580-9185",
     href: "tel:1-423-580-9185"
   }
-};
+];
 
 const Name = () => (
   <View style={styles.nameContainer}>
@@ -59,13 +56,13 @@ const Name = () => (
   </View>
 );
 
-const Meta = ({ social, contact }) => (
+const Meta = ({ metaLinks }) => (
   <View style={styles.metaContainer}>
-    <Link src={social.linkedin.href}>{social.linkedin.text}</Link>
-    <Link src={social.github.href}>{social.github.text}</Link>
-    <Link src={social.stackExchange.href}>{social.stackExchange.text}</Link>
-    <Link src={contact.email.href}>{contact.email.text}</Link>
-    <Link src={contact.telephone.href}>{contact.telephone.text}</Link>
+    {
+      metaLinks.map((link, i) => (
+        <Link key={i} src={link.href}>{ link.text }</Link>
+      ))
+    }
   </View>
 );
 
@@ -73,7 +70,7 @@ const Meta = ({ social, contact }) => (
 const Header = () => (
   <View style={styles.headerContainer}>
     <Name />
-    <Meta social={social} contact={contact} />
+    <Meta metaLinks={metaLinks} />
   </View>
 );
 
