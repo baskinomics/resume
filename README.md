@@ -9,3 +9,6 @@ root directory:
 yarn install
 yarn pdf
 ```
+
+## Component Overview
+Placeholder for content regarding the eventual components implemented and exposed.
