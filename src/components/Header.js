@@ -27,14 +27,29 @@ const styles = StyleSheet.create({
 });
 
 const social = {
-  linkedin: "https://www.linkedin.com/in/sean-baskin/",
-  github: "https://github.com/baskinomics",
-  stackExchange: "https://stackexchange.com/users/944752/baskinomics"
+  linkedin: {
+    text: "LinkedIn",
+    href: "https://www.linkedin.com/in/sean-baskin/"
+  },
+  github: {
+    text: "GitHub",
+    href: "https://github.com/baskinomics"
+  },
+  stackExchange: {
+    text: "StackExchange",
+    href: "https://stackexchange.com/users/944752/baskinomics"
+  }
 };
 
 const contact = {
-  email: "seanbaskin@gmail.com",
-  telephone: "(423) 580-9185"
+  email: {
+    text: "seanbaskin@gmail.com",
+    href: "tel:1-423-580-9185"
+  },
+  telephone: {
+    text: "(423) 580-9185",
+    href: "tel:1-423-580-9185"
+  }
 };
 
 const Name = () => (
@@ -46,11 +61,11 @@ const Name = () => (
 
 const Meta = ({ social, contact }) => (
   <View style={styles.metaContainer}>
-    <Link src={social.linkedin}>LinkedIn</Link>
-    <Link src={social.github}>GitHub</Link>
-    <Link src={social.stackExchange}>StackExchange</Link>
-    <Text>{contact.email}</Text>
-    <Text>{contact.telephone}</Text>
+    <Link src={social.linkedin.href}>{social.linkedin.text}</Link>
+    <Link src={social.github.href}>{social.github.text}</Link>
+    <Link src={social.stackExchange.href}>{social.stackExchange.text}</Link>
+    <Link src={contact.email.href}>{contact.email.text}</Link>
+    <Link src={contact.telephone.href}>{contact.telephone.text}</Link>
   </View>
 );
 
