@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
-    padding: '5px',
+    padding: '10px',
+    marginBottom: '10px',
     color: 'white',
     backgroundColor: 'black'
   },
@@ -15,7 +16,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '70%',
-    paddingLeft: '5px',
     fontSize: 36,
     fontWeight: 'bold'
   },
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '30%',
-    paddingLeft: '65px',
+    paddingLeft: '60px',
     justifyContent: 'space-around',
     fontSize: '9pt'
   }

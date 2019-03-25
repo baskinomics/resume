@@ -1,6 +1,7 @@
 import React from 'react';
 import { Document, Page, View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 import Header from './Header.js';
+import Summary from './Summary.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -20,9 +21,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    padding: '5px'
+    padding: '10px'
   },
-  leftColumn: {  },
+  leftColumn: {
+    width: '50%'
+  },
   rightColumn: {  },
   footer: {
     padding: '5px',
@@ -38,7 +41,7 @@ const Resume = () => (
         <Header />
         <View style={styles.contentContainer}>
           <View style={styles.leftColumn}>
-            <Text>Left Column</Text>
+            <Summary />
           </View>
           <View style={styles.rightColumn}>
             <Text>Right Column</Text>
