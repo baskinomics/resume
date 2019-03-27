@@ -5,11 +5,13 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
   summaryContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginBottom: '10px'
   },
-  headerTwo: {
+  header: {
     fontSize: 18,
-    marginBottom: '5px'
+    marginBottom: '10px',
+    fontFamily: 'Open Sans Condensed Bold'
   }
 });
 
@@ -22,8 +24,8 @@ entire software development cycle. Oh, I also like maps and mathematics.";
 
 // Create Document Component
 const Summary = () => (
-  <View>
-    <Text style={styles.headerTwo}>Summary</Text>
+  <View style={styles.summaryContainer}>
+    <Text style={styles.header}>Summary</Text>
     <Text>{summaryText}</Text>
   </View>
 );

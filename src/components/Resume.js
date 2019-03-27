@@ -2,15 +2,15 @@ import React from 'react';
 import { Document, Page, View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 import Header from './Header.js';
 import Summary from './Summary.js';
+import Experience from './Experience.js';
 
 // Create styles
 const styles = StyleSheet.create({
   page: {
     margin: '0px',
-    fontFamily: 'Fira Code',
-    fontSize: '10pt',
-    backgroundColor: '#FFFFFF',
-    //width: '100%'
+    fontFamily: 'Open Sans Condensed',
+    fontSize: '11pt',
+    backgroundColor: '#FFFFFF'
   },
   container: {
     display: 'flex',
@@ -42,12 +42,13 @@ const Resume = () => (
         <View style={styles.contentContainer}>
           <View style={styles.leftColumn}>
             <Summary />
+            <Experience />
           </View>
           <View style={styles.rightColumn}>
             <Text>Right Column</Text>
           </View>
         </View>
-        <Text style={styles.footer}>Made with &#128420; using React</Text>
+        <Text style={styles.footer}>Made with 🖤 using React</Text>
       </View>
     </Page>
   </Document>

@@ -9,23 +9,25 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: '10px',
     marginBottom: '10px',
+    fontFamily: 'Open Sans Condensed Bold',
     color: 'white',
-    backgroundColor: 'black'
+    backgroundColor: 'grey'
   },
   nameContainer: {
     display: 'flex',
     flexDirection: 'column',
     width: '70%',
-    fontSize: 36,
-    fontWeight: 'bold'
+    fontSize: '24pt',
+    fontFamily: 'Proza Libre'
   },
   metaContainer: {
     display: 'flex',
     flexDirection: 'column',
     width: '30%',
-    paddingLeft: '60px',
+    paddingLeft: '80px',
     justifyContent: 'space-around',
-    fontSize: '9pt'
+    fontSize: '9pt',
+    fontFamily: 'Open Sans Condensed Bold'
   }
 });
 
@@ -48,7 +50,7 @@ const metaLinks = [
   {
     id: 3,
     text: "seanbaskin@gmail.com",
-    href: "tel:1-423-580-9185"
+    href: "mailto:seanbaskin@gmail.com"
   },
   {
     id: 4,
