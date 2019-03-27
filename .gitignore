@@ -3,4 +3,5 @@ node_modules/
 
 # TODO - Build outputs
 # Determine method for alternate output destination
-src/*.pdf
+dist/
+*.pdf
