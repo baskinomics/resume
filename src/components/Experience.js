@@ -43,8 +43,25 @@ const styles = StyleSheet.create({
     paddingTop: '5px',
     paddingLeft: '5px',
     paddingRight: '5px'
+  },
+  descriptionItemContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
+  bullet: {
+    //marginTop: '2px',
+    marginRight: '5px',
+    fontFamily: 'Open Sans Condensed Bold'
   }
 });
+
+const DescriptionItem = ({ descriptionText }) => (
+  <View style={styles.descriptionItemContainer}>
+    <Text style={styles.bullet}>·</Text>
+    <Text>{descriptionText}</Text>
+  </View>
+);
 
 const ExperienceEntry = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
@@ -58,7 +75,7 @@ const ExperienceEntry = ({ title, organization, dates, summary }) => {
       <View style={styles.listContainer}>
         {
           summary.map(e => (
-            <Text key={e.id}>· { e.text }</Text>
+            <DescriptionItem key={e.id} descriptionText={e.text} />
           ))
         }
       </View>
