@@ -4,6 +4,7 @@ import Header from './Header.js';
 import Summary from './Summary.js';
 import Experience from './Experience.js';
 import Skills from './Skills.js';
+import Certifications from './Certifications.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -22,7 +23,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    padding: '10px'
+    padding: '10px',
+    height: '100%'
   },
   column: {
     width: '50%',
@@ -30,7 +32,8 @@ const styles = StyleSheet.create({
   },
   footer: {
     padding: '5px',
-    textAlign: 'center'
+    textAlign: 'center',
+    alignSelf: 'flex-end'
   }
 });
 
@@ -47,6 +50,7 @@ const Resume = () => (
           </View>
           <View style={styles.column}>
             <Skills />
+            <Certifications />
           </View>
         </View>
         <Text style={styles.footer}>Made with 🖤 using React</Text>
