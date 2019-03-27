@@ -114,14 +114,18 @@ const styles = StyleSheet.create({
     marginBottom: '10px',
     fontFamily: 'Open Sans Condensed Bold'
   },
+  skillEntryContainer: {
+    marginBottom: '10px'
+  },
   skillEntryHeader: {
+    marginBottom: '2px',
     fontSize: 14,
     fontFamily: 'Open Sans Condensed Bold'
   }
 });
 
 const SkillsEntry = ({ skill, items }) => (
-  <View>
+  <View style={styles.skillEntryContainer}>
     <Text style={styles.skillEntryHeader}>{skill}</Text>
     <Text>{items.toString()}</Text>
   </View>

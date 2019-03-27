@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     padding: '10px'
   },
   column: {
-    width: '50%'
+    width: '50%',
+    padding: '10px'
   },
   footer: {
     padding: '5px',
