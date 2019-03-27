@@ -55,7 +55,7 @@ const Resume = () => (
             <Certifications />
           </View>
         </View>
-        <Text style={styles.footer}>Made with 🖤 using React</Text>
+        <Text style={styles.footer}>Made with React</Text>
       </View>
     </Page>
   </Document>

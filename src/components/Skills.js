@@ -1,6 +1,28 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
+const styles = StyleSheet.create({
+  skillsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginBottom: '10px'
+  },
+  header: {
+    fontSize: 18,
+    marginBottom: '10px',
+    fontFamily: 'Open Sans Condensed Bold'
+  },
+  skillEntryContainer: {
+    marginBottom: '10px',
+    minHeight: '50px'
+  },
+  skillEntryHeader: {
+    marginBottom: '2px',
+    fontSize: 14,
+    fontFamily: 'Open Sans Condensed Bold'
+  }
+});
+
 const skills = [
   {
     id: 0,
@@ -102,27 +124,6 @@ const skills = [
     ]
   }
 ];
-
-const styles = StyleSheet.create({
-  skillsContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: '10px'
-  },
-  header: {
-    fontSize: 18,
-    marginBottom: '10px',
-    fontFamily: 'Open Sans Condensed Bold'
-  },
-  skillEntryContainer: {
-    marginBottom: '10px'
-  },
-  skillEntryHeader: {
-    marginBottom: '2px',
-    fontSize: 14,
-    fontFamily: 'Open Sans Condensed Bold'
-  }
-});
 
 const SkillsEntry = ({ skill, items }) => (
   <View style={styles.skillEntryContainer}>

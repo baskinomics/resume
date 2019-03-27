@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   headerContainer: {
     display: 'flex',
     flexDirection: 'row',
+    height: '100px',
     width: '100%',
     padding: '10px',
     marginBottom: '10px',
