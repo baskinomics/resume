@@ -1,10 +1,25 @@
 import React from 'react';
-import ReactPDF, { Font } from '@react-pdf/renderer';
+import ReactPDF, {
+  Font
+} from '@react-pdf/renderer';
 import Resume from './components/Resume.js';
+import fs from 'fs';
 
 // Register fonts
 Font.register(`${__dirname}/fonts/FiraCode-Regular.woff`, {
   family: 'Fira Code',
 });
 
-ReactPDF.render(<Resume />, `${__dirname}/resume.pdf`);
+// For now handle build output artfactss.
+// TODO Properly handle this with webpack
+const dist = './dist'
+
+try {
+  if (!fs.existsSync(dist)) {
+    fs.mkdirSync(dist)
+  }
+} catch (err) {
+  console.error(err)
+}
+
+ReactPDF.render( < Resume / > , `./dist/resume.pdf`);
