@@ -51,7 +51,8 @@ const skills = [
       "MySQL",
       "Redis",
       "MongoDB",
-      "DynamoDB"
+      "DynamoDB",
+      "Solr"
     ]
   },
   {
