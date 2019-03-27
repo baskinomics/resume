@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
 const SkillsEntry = ({ skill, items }) => (
   <View style={styles.skillEntryContainer}>
     <Text style={styles.skillEntryHeader}>{skill}</Text>
-    <Text>{items.toString()}</Text>
+    <Text>{items.join(', ')}</Text>
   </View>
 );
 
