@@ -16,7 +16,8 @@ const experience = [
       {id: 2, text: "Technical lead for internal research project that containerized existing client application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms."},
       {id: 3, text: "Core developer for two (2)  year client project that entailed refactoring existing application from .NET to Java, implementing RESTful web services, improving ETL and analytics processes, expansive search functionality, and data modeling."},
       {id: 4, text: "Contributed to frontend development of client applications utilizing Javascript, AngularJS, d3.js, and associated tools and ecosystem."},
-      {id: 5, text: "Authored blog posts <a href=\"\">Cloud-First Microservices: AWS API Gateway and Lambda in Action</a> and <a href=\"\">Visualizing Clusters with ArcGIS for Flex</a>."}
+      // Work around for parsing and including links - see ExperienceEntry implmentation
+      // {id: 5, text: "Authored blog posts Cloud-First Microservices: AWS API Gateway and Lambda in Action</a> and <a href=\"\">Visualizing Clusters with ArcGIS for Flex</a>."}
     ]
   }
 ];
@@ -78,6 +79,16 @@ const ExperienceEntry = ({ title, organization, dates, summary }) => {
             <DescriptionItem key={e.id} descriptionText={e.text} />
           ))
         }
+        <View style={styles.descriptionItemContainer}>
+          <Text style={styles.bullet}>·</Text>
+          <View>
+            <Text>Authored blog posts&nbsp;
+            <Link src="http://bnlconsulting.com/blog/cloud-first/">Cloud-First Microservices: AWS API Gateway and Lambda in Action</Link>
+            &nbsp;and&nbsp;
+            <Link src="http://bnlconsulting.com/blog/visualizing-clusters-with-arcgis-for-flex/">Visualizing Clusters with ArcGIS for Flex</Link>
+            .</Text>
+          </View>
+        </View>
       </View>
     </View>
   );
