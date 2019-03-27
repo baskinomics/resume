@@ -32,7 +32,7 @@ const education = [
     degree: "Credit Hours towards \nM.S. in Computer Science",
     dates: {
       begin: "May 2011",
-      end: "December 2013"
+      end: "Dec 2013"
     },
     institution: "University of Tennessee at Chattanooga"
   },
