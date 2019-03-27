@@ -6,10 +6,6 @@ import Resume from './components/Resume.js';
 import fs from 'fs';
 
 // Register fonts
-Font.register(`${__dirname}/fonts/ProzaLibre-Regular.ttf`, {
-  family: 'Proza Libre',
-});
-
 Font.register(`${__dirname}/fonts/OpenSansCondensed-Light.ttf`, {
   family: 'Open Sans Condensed',
 });
