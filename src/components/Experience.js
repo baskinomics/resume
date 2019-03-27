@@ -25,7 +25,8 @@ const experience = [
 const styles = StyleSheet.create({
   expEntryContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginBottom: '10px'
   },
   titleDateContainer: {
     display: 'flex',
