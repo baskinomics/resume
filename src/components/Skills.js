@@ -4,6 +4,20 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 const skills = [
   {
     id: 0,
+    skill: "JavaScript & Web Technologies",
+    items: [
+      "ES2015",
+      "NodeJS",
+      "Babel",
+      "Yarn",
+      "Webpack",
+      "ReactJS",
+      "CSS Preprocessors",
+      "Transpilers"
+    ]
+  },
+  {
+    id: 1,
     skill: "Java",
     items: [
       "JDK 11",
@@ -18,7 +32,7 @@ const skills = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     skill: "Spring",
     items: [
       "Spring Framework",
@@ -30,7 +44,7 @@ const skills = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     skill: "Databases & Datastores",
     items: [
       "Oracle \+ PL/SQL",
@@ -42,7 +56,7 @@ const skills = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     skill: "Amazon Web Services",
     items: [
       "Lambda",
@@ -60,7 +74,7 @@ const skills = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     skill: "DevOps",
     items: [
       "Jenkins",
@@ -70,20 +84,6 @@ const skills = [
       "Terraform",
       "Consul",
       "Nomad"
-    ]
-  },
-  {
-    id: 5,
-    skill: "JavaScript & Web Technologies",
-    items: [
-      "ES2015",
-      "NodeJS",
-      "Babel",
-      "Yarn",
-      "Webpack",
-      "ReactJS",
-      "CSS Preprocessors",
-      "Transpilers"
     ]
   },
   {
@@ -100,7 +100,7 @@ const skills = [
       "Secrets Management",
       "Assymptotic Analysis"
     ]
-  },
+  }
 ];
 
 const styles = StyleSheet.create({
