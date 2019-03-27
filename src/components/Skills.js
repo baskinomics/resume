@@ -12,8 +12,7 @@ const skills = [
       "Yarn",
       "Webpack",
       "ReactJS",
-      "CSS Preprocessors",
-      "Transpilers"
+      "CSS Preprocessors"
     ]
   },
   {
