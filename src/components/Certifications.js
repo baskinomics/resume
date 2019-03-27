@@ -11,13 +11,17 @@ const styles = StyleSheet.create({
     marginBottom: '10px',
     fontFamily: 'Open Sans Condensed Bold'
   },
+  listContainer: {
+    paddingTop: '5px',
+    paddingLeft: '5px',
+    paddingRight: '5px'
+  },
   certItemContainer: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start'
   },
   bullet: {
-    //marginTop: '2px',
     marginRight: '5px',
     fontFamily: 'Open Sans Condensed Bold'
   }
