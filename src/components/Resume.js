@@ -24,10 +24,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     padding: '10px'
   },
-  leftColumn: {
-    width: '50%'
-  },
-  rightColumn: {
+  column: {
     width: '50%'
   },
   footer: {
@@ -43,11 +40,11 @@ const Resume = () => (
       <View style={styles.container}>
         <Header />
         <View style={styles.contentContainer}>
-          <View style={styles.leftColumn}>
+          <View style={styles.column}>
             <Summary />
             <Experience />
           </View>
-          <View style={styles.rightColumn}>
+          <View style={styles.column}>
             <Skills />
           </View>
         </View>
