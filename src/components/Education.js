@@ -34,7 +34,7 @@ const education = [
       begin: "May 2011",
       end: "December 2013"
     },
-    institution: "University of Tennessee at Knoxville"
+    institution: "University of Tennessee at Chattanooga"
   },
   {
     id: 1,
