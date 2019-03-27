@@ -3,6 +3,7 @@ import { Document, Page, View, Text, Link, StyleSheet } from '@react-pdf/rendere
 import Header from './Header.js';
 import Summary from './Summary.js';
 import Experience from './Experience.js';
+import Education from './Education.js';
 import Skills from './Skills.js';
 import Certifications from './Certifications.js';
 
@@ -47,6 +48,7 @@ const Resume = () => (
           <View style={styles.column}>
             <Summary />
             <Experience />
+            <Education />
           </View>
           <View style={styles.column}>
             <Skills />
