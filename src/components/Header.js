@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     width: '70%',
     fontSize: '24pt',
-    fontFamily: 'Proza Libre'
+    fontFamily: 'Open Sans Condensed Bold'
   },
   metaContainer: {
     display: 'flex',

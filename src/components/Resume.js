@@ -3,6 +3,7 @@ import { Document, Page, View, Text, Link, StyleSheet } from '@react-pdf/rendere
 import Header from './Header.js';
 import Summary from './Summary.js';
 import Experience from './Experience.js';
+import Skills from './Skills.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -26,7 +27,9 @@ const styles = StyleSheet.create({
   leftColumn: {
     width: '50%'
   },
-  rightColumn: {  },
+  rightColumn: {
+    width: '50%'
+  },
   footer: {
     padding: '5px',
     textAlign: 'center'
@@ -45,7 +48,7 @@ const Resume = () => (
             <Experience />
           </View>
           <View style={styles.rightColumn}>
-            <Text>Right Column</Text>
+            <Skills />
           </View>
         </View>
         <Text style={styles.footer}>Made with 🖤 using React</Text>
