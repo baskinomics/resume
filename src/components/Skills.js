@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   skillEntryContainer: {
     marginBottom: '10px',
-    minHeight: '50px'
+    //minHeight: '50px'
   },
   skillEntryHeader: {
     marginBottom: '2px',
