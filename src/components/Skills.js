@@ -78,7 +78,7 @@ const skills = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     skill: "Amazon Web Services",
     items: [
       "Lambda",
@@ -96,7 +96,7 @@ const skills = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     skill: "DevOps",
     items: [
       "Jenkins",
