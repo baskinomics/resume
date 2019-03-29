@@ -10,7 +10,7 @@ yarn install
 yarn pdf
 ```
 
-This will produce a PDF document which is output to `./dist/resume.pdf`, i.e.
+This will produce a PDF document which is output to _./dist/resume.pdf_, i.e.
 
 ![Example PDF output](./public/resume.png)
 
