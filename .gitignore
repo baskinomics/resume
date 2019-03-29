@@ -5,3 +5,6 @@ node_modules/
 # Determine method for alternate output destination
 dist/
 *.pdf
+
+# Yarn
+yarn-error.log
