@@ -18,7 +18,9 @@ const styles = StyleSheet.create({
   },
   container: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    // alignItems: 'center',
+    justifyContent: 'center'
   },
   contentContainer: {
     display: 'flex',
@@ -27,8 +29,6 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     padding: '10px',
     //height: '95%',
-    // alignItems: 'center',
-    // justifyContent: 'center'
   },
   column: {
     width: '50%',
