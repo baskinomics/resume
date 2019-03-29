@@ -6,6 +6,7 @@ import Experience from './Experience.js';
 import Education from './Education.js';
 import Skills from './Skills.js';
 import Certifications from './Certifications.js';
+import Footer from './Footer.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -25,7 +26,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexWrap: 'wrap',
     padding: '10px',
-    height: '100%'
+    //height: '95%',
+    // alignItems: 'center',
+    // justifyContent: 'center'
   },
   column: {
     width: '50%',
@@ -41,7 +44,7 @@ const styles = StyleSheet.create({
 // Create Document Component
 const Resume = () => (
   <Document title="Sean Baskin - Resume">
-    <Page size="A4" style={styles.page}>
+    <Page size="A4" style={styles.page} ruler={false}>
       <View style={styles.container}>
         <Header />
         <View style={styles.contentContainer}>
@@ -55,7 +58,7 @@ const Resume = () => (
             <Certifications />
           </View>
         </View>
-        <Text style={styles.footer}>Made with React</Text>
+        <Footer />
       </View>
     </Page>
   </Document>
