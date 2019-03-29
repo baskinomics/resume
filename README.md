@@ -12,7 +12,7 @@ yarn pdf
 
 This will produce a PDF document which is output to `./dist/resume.pdf`, i.e.
 
-![Example PDF output](./resume.png)
+![Example PDF output](./public/resume.png)
 
 ## Component Overview
 Placeholder for content regarding the eventual components implemented and exposed.
