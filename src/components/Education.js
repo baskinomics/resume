@@ -31,19 +31,40 @@ const education = [
     id: 0,
     degree: "Credit Hours towards \nM.S. in Computer Science",
     dates: {
-      begin: "May 2011",
+      begin: "Aug 2011",
       end: "Dec 2013"
     },
-    institution: "University of Tennessee at Chattanooga"
+    institution: "University of Tennessee at Chattanooga",
+    summary: [
+      "Graduate Teaching Assistant for two (2) semesters",
+      "Graduate Research Assistant for two (2) semesters",
+
+    ]
   },
   {
     id: 1,
+    degree: "Post-Baccalaureate in Computer Science",
+    dates: {
+      begin: "July 2011",
+      end: "May 2012"
+    },
+    institution: "University of Tennessee at Chattanooga",
+    summary: []
+  },
+  {
+    id: 2,
     degree: "Bachelor of Arts in Geography",
     dates: {
       begin: "Aug 2007",
       end: "May 2011"
     },
-    institution: "University of Tennessee at Knoxville"
+    institution: "University of Tennessee at Knoxville",
+    summary: [
+      "Award winner at the 2011 Exhibition of Undergraduate Research and Create Achievement (EURéCA)",
+      "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston",
+      "Presented at the East Tennessee Regional GIS Conference",
+      "Tutor at the UTK Math Tutorial Center"
+    ]
   }
 ];
 
