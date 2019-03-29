@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     width: '70%',
     fontSize: '24pt',
-    fontFamily: 'Open Sans Condensed Bold'
+    fontFamily: 'Open Sans Condensed Bold',
+    justifyContent: 'center'
   },
   metaContainer: {
     display: 'flex',
