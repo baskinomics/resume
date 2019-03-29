@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
   footerContainer: {
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 
 const Footer = () => (
   <View style={styles.footContainer}>
-    <Text style={styles.footerText}>This resume was crafted by hand using React&nbsp;&nbsp; ;)</Text>
+    <Text style={styles.footerText}>This <Link src="https://github.com/baskinomics/resume">resume</Link> was crafted by hand using React&nbsp;&nbsp; ;)</Text>
   </View>
 );
 
