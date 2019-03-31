@@ -1,5 +1,29 @@
-import React from "react";
-import ReactPDF from '@react-pdf/renderer';
-import Resume from "./Resume.js";
+import React from 'react';
+import ReactPDF, {
+  Font
+} from '@react-pdf/renderer';
+import Resume from './components/Resume.js';
+import fs from 'fs';
 
-ReactPDF.render(<Resume />, `${__dirname}/resume.pdf`);
+// Register fonts
+Font.register(`${__dirname}/fonts/OpenSansCondensed-Light.ttf`, {
+  family: 'Open Sans Condensed',
+});
+
+Font.register(`${__dirname}/fonts/OpenSansCondensed-Bold.ttf`, {
+  family: 'Open Sans Condensed Bold',
+});
+
+// For now handle build output artfactss.
+// TODO Properly handle this with webpack
+const dist = './dist'
+
+try {
+  if (!fs.existsSync(dist)) {
+    fs.mkdirSync(dist)
+  }
+} catch (err) {
+  console.error(err)
+}
+
+ReactPDF.render(<Resume />, `./dist/resume.pdf`);

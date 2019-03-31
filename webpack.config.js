@@ -1,9 +1,11 @@
 const path = require("path");
 const webpack = require("webpack");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
-  mode: "development",
+  entry: {
+    app: "./src/index.js"
+  },
   module: {
     rules: [
       {
@@ -14,15 +16,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
-    filename: "bundle.js"
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
@@ -30,5 +33,10 @@ module.exports = {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new CleanWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  resolve: { extensions: ["*", ".js", ".jsx"] },
+  devtool: 'inline-source-map'
 };
