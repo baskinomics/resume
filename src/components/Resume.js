@@ -11,23 +11,28 @@ import Footer from './Footer.js';
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    margin: '0px',
+    // margin: '0px',
     fontFamily: 'Open Sans Condensed',
-    fontSize: '11pt',
-    backgroundColor: '#FFFFFF'
+    fontSize: '10pt',
+    backgroundColor: '#FFFFFF',
+    //width: "8.27in"
   },
   container: {
     display: 'flex',
     flexDirection: 'column',
     // alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    width: '100%'
   },
   contentContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
     flexWrap: 'wrap',
-    padding: '10px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
+    width: '100%'
+    //paddingBottom: '10px',
     //height: '95%',
   },
   column: {
@@ -43,8 +48,15 @@ const styles = StyleSheet.create({
 
 // Create Document Component
 const Resume = () => (
-  <Document title="Sean Baskin - Resume">
-    <Page size="A4" style={styles.page} ruler={false}>
+  <Document
+    title="Sean Baskin - Resume"
+    author="Sean Baskin"
+    subject="Resume"
+    keywords=""
+    creator="Sean Baskin"
+    producer="Sean Baskin"
+    >
+    <Page size="LETTER" style={styles.page} ruler={false} wrap={false}>
       <View style={styles.container}>
         <Header />
         <View style={styles.contentContainer}>
@@ -56,9 +68,9 @@ const Resume = () => (
           <View style={styles.column}>
             <Skills />
             <Certifications />
+            <Footer />
           </View>
         </View>
-        <Footer />
       </View>
     </Page>
   </Document>

@@ -20,6 +20,21 @@ const styles = StyleSheet.create({
   },
   degree: {
     fontFamily: 'Open Sans Condensed Bold'
+  },
+  listContainer: {
+    paddingTop: '5px',
+    paddingLeft: '5px',
+    paddingRight: '5px'
+  },
+  descriptionItemContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start'
+  },
+  bullet: {
+    //marginTop: '2px',
+    marginRight: '5px',
+    fontFamily: 'Open Sans Condensed Bold'
   }
 });
 
@@ -36,9 +51,8 @@ const education = [
     },
     institution: "University of Tennessee at Chattanooga",
     summary: [
-      "Graduate Teaching Assistant for two (2) semesters",
-      "Graduate Research Assistant for two (2) semesters",
-
+      {id: 0, text: "Graduate Teaching Assistant for two (2) semesters"},
+      {id: 1, text: "Graduate Research Assistant for two (2) semesters"}
     ]
   },
   {
@@ -60,15 +74,22 @@ const education = [
     },
     institution: "University of Tennessee at Knoxville",
     summary: [
-      "Award winner at the 2011 Exhibition of Undergraduate Research and Create Achievement (EURéCA)",
-      "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston",
-      "Presented at the East Tennessee Regional GIS Conference",
-      "Tutor at the UTK Math Tutorial Center"
+      {id: 0, text: "Award recipient at the Exhibition of Undergraduate Research and Create Achievement (EURéCA)."},
+      {id: 1, text: "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston."},
+      // {id: 2, text: "Presented at the East Tennessee Regional GIS Conference."},
+      {id: 3, text: "Tutor at the UTK Math Tutorial Center."}
     ]
   }
 ];
 
-const EducationEntry = ({ degree, institution, dates }) => {
+const DescriptionItem = ({ descriptionText }) => (
+  <View style={styles.descriptionItemContainer}>
+    <Text style={styles.bullet}>·</Text>
+    <Text>{descriptionText}</Text>
+  </View>
+);
+
+const EducationEntry = ({ degree, dates, institution, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
     <View style={styles.eduEntryContainer}>
@@ -77,6 +98,13 @@ const EducationEntry = ({ degree, institution, dates }) => {
         <Text>{displayDate}</Text>
       </View>
       <Text>{institution}</Text>
+      <View style={styles.listContainer}>
+        {
+          summary.map(e => (
+            <DescriptionItem key={e.id} descriptionText={e.text} />
+          ))
+        }
+      </View>
     </View>
   )
 };
@@ -85,12 +113,13 @@ const Education = () => (
   <View>
     <Text style={styles.header}>Education</Text>
     {
-      education.map(({ id, degree, institution, dates }) => (
+      education.map(({ id, degree, institution, dates, summary }) => (
         <EducationEntry
           key={id}
           degree={degree}
           institution={institution}
           dates={dates}
+          summary={summary}
         />
       ))
     }
