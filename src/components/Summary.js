@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 
 const summaryItems = [
   "I develop enterprise Java and Spring web applications and am passionate about the work I engage in.",
-  "That passion has driven varied interests that I have incorporated into my professional portfolio ranging from the core Amazon Web Services, the Docker platform, and a healthy dose of DevOps tools and practices.",
+  "That passion has driven varied interests that I have incorporated into my professional portfolio ranging from the core Amazon Web Services and a healthy dose of DevOps tools and practices.",
   "Goal-oriented with a focus on the entire software development cycle.",
   "I live in Linux and I also like maps, mathematics, and other programming languages!"
 ];

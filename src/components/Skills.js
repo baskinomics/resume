@@ -74,7 +74,7 @@ const skills = [
       "Redis",
       "MongoDB",
       "DynamoDB",
-      "Solr"
+      "Lucene/Solr"
     ]
   },
   {
