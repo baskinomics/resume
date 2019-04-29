@@ -112,7 +112,8 @@ const skills = [
     id: 6,
     skill: "Computer Science & Software Engineering",
     items: [
-      "Assymptotic Analysis",
+      "Algorithms and Datastructures",
+      "Asymptotic Analysis",
       "Parallelism and Concurrency",
       "12-Factor Applications",
       "Enterprise Integration Patterns (EIP)",
