@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: '8pt',
-    textAlign: 'right',
-    paddingTop: '125px',
+    textAlign: 'center',
+    // paddingTop: '125px',
     // alignSelf: 'flex-end'
   }
 });

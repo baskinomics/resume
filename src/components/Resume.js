@@ -68,9 +68,9 @@ const Resume = () => (
           <View style={styles.column}>
             <Skills />
             <Certifications />
-            <Footer />
           </View>
         </View>
+        <Footer />
       </View>
     </Page>
   </Document>
