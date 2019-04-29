@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: '100px',
     width: '100%',
-    padding: '10px',
+    padding: '20px',
     marginBottom: '10px',
     fontFamily: 'Open Sans Condensed Bold',
     color: 'white',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '30%',
-    paddingLeft: '80px',
+    paddingLeft: '85px',
     justifyContent: 'space-around',
     fontSize: '9pt',
     fontFamily: 'Open Sans Condensed Bold'
