@@ -112,15 +112,17 @@ const skills = [
     id: 6,
     skill: "Computer Science & Software Engineering",
     items: [
+      "Assymptotic Analysis",
+      "Parallelism and Concurrency",
+      "12-Factor Applications",
+      "Enterprise Integration Patterns (EIP)",
       "Inversion of Control (IoC)",
       "Aspect-Oriented Programming (AOP)",
       "Object-Relational Mapping (ORM)",
       "Continuous Integration \/ Continuous Deployment \(CI\/CD\)",
       "Configuration Management",
       "Container Orchestration",
-      "Service Discovery",
-      "Secrets Management",
-      "Assymptotic Analysis"
+      "Service Discovery"
     ]
   }
 ];
