@@ -38,9 +38,6 @@ const styles = StyleSheet.create({
   }
 });
 
-// TODO Add description items
-// [RA, TA]
-// [EUREKA, Math Tutorial Center, Directed Study]
 const education = [
   {
     id: 0,
@@ -75,7 +72,7 @@ const education = [
     institution: "University of Tennessee at Knoxville",
     summary: [
       {id: 0, text: "Award recipient at the Exhibition of Undergraduate Research and Create Achievement (EURéCA)."},
-      {id: 1, text: "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston."},
+      // {id: 1, text: "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston."},
       // {id: 2, text: "Presented at the East Tennessee Regional GIS Conference."},
       {id: 3, text: "Tutor at the UTK Math Tutorial Center."}
     ]
