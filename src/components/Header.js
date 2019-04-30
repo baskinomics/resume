@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: '100px',
     width: '100%',
-    padding: '20px',
+    paddingLeft: '20px',
+    paddingRight: '20px',
     marginBottom: '10px',
     fontFamily: 'Open Sans Condensed Bold',
     color: 'white',
@@ -25,9 +26,12 @@ const styles = StyleSheet.create({
   metaContainer: {
     display: 'flex',
     flexDirection: 'column',
+    height: '100%',
     width: '30%',
     paddingLeft: '85px',
-    justifyContent: 'space-around',
+    paddingTop: '10px',
+    paddingBottom: '10px',
+    justifyContent: 'space-between',
     fontSize: '9pt',
     fontFamily: 'Open Sans Condensed Bold'
   }
