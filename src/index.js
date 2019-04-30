@@ -26,4 +26,4 @@ try {
   console.error(err)
 }
 
-ReactPDF.render(<Resume />, `./dist/resume.pdf`);
+ReactPDF.render(<Resume />, `./dist/Sean-Baskin-Resume.pdf`);
