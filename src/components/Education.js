@@ -58,8 +58,8 @@ const education = [
     },
     institution: "University of Tennessee at Chattanooga",
     summary: [
-      {id: 0, text: "Graduate Teaching Assistant for two (2) semesters"},
-      {id: 1, text: "Graduate Research Assistant for two (2) semesters"}
+      {id: 0, text: "Graduate Teaching Assistant for two (2) semesters."},
+      {id: 1, text: "Graduate Research Assistant for two (2) semesters."}
     ]
   },
   {
