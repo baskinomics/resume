@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "pdf": "babel-node ./src/index.js",
-    "image": "convert -verbose -density 300 dist/resume.pdf -quality 100 -sharpen 0x1.0 ./public/resume.png"
+    "image": "convert -verbose -density 300 dist/Sean-Baskin-Resume.pdf -quality 100 -sharpen 0x1.0 ./public/resume.png"
   },
   "dependencies": {
     "@babel/cli": "^7.2.3",
