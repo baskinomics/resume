@@ -1,18 +1,29 @@
 import React from 'react';
-import ReactPDF, {
-  Font
-} from '@react-pdf/renderer';
+import ReactPDF, { Font } from '@react-pdf/renderer';
 import Resume from './components/Resume.js';
 import fs from 'fs';
 
 // Register fonts
-Font.register(`${__dirname}/fonts/OpenSansCondensed-Light.ttf`, {
-  family: 'Open Sans Condensed',
+Font.register({
+  family: "Open Sans Condensed",
+  src: `${__dirname}/fonts/OpenSansCondensed-Light.ttf`
 });
 
-Font.register(`${__dirname}/fonts/OpenSansCondensed-Bold.ttf`, {
-  family: 'Open Sans Condensed Bold',
+Font.register({
+  family: "Open Sans Condensed Bold",
+  src: `${__dirname}/fonts/OpenSansCondensed-Bold.ttf`
 });
+
+// Encountering errors with this approach.
+// Font.register({
+//   family: "Open Sans Condensed",
+//   fonts: [
+//     { src: `${__dirname}/fonts/OpenSansCondensed-Light.ttf` },
+//     { src: `${__dirname}/fonts/OpenSansCondensed-Bold.ttf`, fontStyle: 'bold' }
+//   ]
+// });
+
+
 
 // For now handle build output artfactss.
 // TODO Properly handle this with webpack
