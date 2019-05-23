@@ -41,12 +41,13 @@ const skills = [
     id: 1,
     skill: "Java",
     items: [
-      "JDK 11",
+      "JDK 12",
       "Java Persistence API (JPA)",
       "Hibernate",
       "JUnit",
       "Maven",
       "Gradle",
+      "Micronaut",
       "Lombak",
       "Immutables",
       "Quartz"
