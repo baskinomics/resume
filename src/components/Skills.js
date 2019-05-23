@@ -117,6 +117,7 @@ const skills = [
       "Asymptotic Analysis",
       "Parallelism and Concurrency",
       "12-Factor Applications",
+      "Domain-Driven Design",
       "Enterprise Integration Patterns (EIP)",
       "Inversion of Control (IoC)",
       "Aspect-Oriented Programming (AOP)",
