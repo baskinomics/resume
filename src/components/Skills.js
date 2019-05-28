@@ -34,7 +34,8 @@ const skills = [
       "Yarn",
       "Webpack",
       "ReactJS",
-      "CSS Preprocessors"
+      "CSS Preprocessors",
+      "JavaScript Transpilers"
     ]
   },
   {
@@ -110,11 +111,9 @@ const skills = [
   },
   {
     id: 6,
-    skill: "Computer Science & Software Engineering",
+    skill: "Software Engineering",
     items: [
-      "Algorithms and Datastructures",
-      "Asymptotic Analysis",
-      "Parallelism and Concurrency",
+      "Test-Driven Development (TDD)",
       "12-Factor Applications",
       "Enterprise Integration Patterns (EIP)",
       "Inversion of Control (IoC)",
@@ -124,6 +123,15 @@ const skills = [
       "Configuration Management",
       "Container Orchestration",
       "Service Discovery"
+    ]
+  },
+  {
+    id: 7,
+    skill: "Computer Science",
+    items: [
+      "Algorithms and Datastructures",
+      "Asymptotic Analysis",
+      "Parallelism and Concurrency"
     ]
   }
 ];
