@@ -28,8 +28,8 @@ const skills = [
     id: 0,
     skill: "JavaScript & Web Technologies",
     items: [
-      "ES2015",
       "NodeJS",
+      "ES2015",
       "Babel",
       "Yarn",
       "Webpack",
