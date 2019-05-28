@@ -42,12 +42,13 @@ const skills = [
     id: 1,
     skill: "Java",
     items: [
-      "JDK 11",
+      "JDK 12",
       "Java Persistence API (JPA)",
       "Hibernate",
       "JUnit",
       "Maven",
       "Gradle",
+      "Micronaut",
       "Lombak",
       "Immutables",
       "Quartz"
@@ -115,6 +116,7 @@ const skills = [
     items: [
       "Test-Driven Development (TDD)",
       "12-Factor Applications",
+      "Domain-Driven Design",
       "Enterprise Integration Patterns (EIP)",
       "Inversion of Control (IoC)",
       "Aspect-Oriented Programming (AOP)",
