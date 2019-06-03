@@ -2,10 +2,18 @@ import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
-  skillsContainer: {
+  container: {
     display: 'flex',
     flexDirection: 'column',
     marginBottom: '10px'
+  },
+  comboContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  skillsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
   },
   header: {
     fontSize: 18,
@@ -26,11 +34,12 @@ const styles = StyleSheet.create({
 const skills = [
   {
     id: 0,
-    skill: "JavaScript & Web Technologies",
+    skill: "Web Technologies",
     items: [
-      "NodeJS",
       "ES2015",
       "Babel",
+      "JavaScript",
+      "NodeJS",
       "Yarn",
       "Webpack",
       "ReactJS",
@@ -146,17 +155,22 @@ const SkillsEntry = ({ skill, items }) => (
 );
 
 const Skills = () => (
-  <View style={styles.skillsContainer}>
+  <View style={styles.container}>
     <Text style={styles.header}>Skills</Text>
-    {
-      skills.map(e => (
-        <SkillsEntry
-          key={e.id}
-          skill={e.skill}
-          items={e.items}
-        />
-      ))
-    }
+    <View style={styles.comboContainer}>
+      <Text>Frontend</Text>
+      <View style={styles.skillEntryContainer}>
+      {
+        skills.map(e => (
+          <SkillsEntry
+            key={e.id}
+            skill={e.skill}
+            items={e.items}
+          />
+        ))
+      }
+      </View>
+    </View>
   </View>
 );
 
