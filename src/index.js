@@ -14,6 +14,11 @@ Font.register({
   src: `${__dirname}/fonts/OpenSansCondensed-Bold.ttf`
 });
 
+Font.register({
+  family: "Hasklug",
+  src: `${__dirname}/fonts/hasklug-nerd-font-complete.ttf`
+});
+
 // Encountering errors with this approach.
 // Font.register({
 //   family: "Open Sans Condensed",
