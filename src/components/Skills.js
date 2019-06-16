@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   skillEntryHeader: {
     marginBottom: '2px',
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: 'Open Sans Condensed Bold'
   }
 });
@@ -151,6 +151,7 @@ const skills = [
       "Linear Algebra",
       "Discrete Mathematics",
       "Numeric Analysis", // Expand on this? Leave as is?
+      "Statistics"
 
     ]
   }
