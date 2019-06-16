@@ -133,7 +133,25 @@ const skills = [
     items: [
       "Algorithms and Datastructures",
       "Asymptotic Analysis",
-      "Parallelism and Concurrency"
+      "Parallelism and Concurrency",
+      "Computational Geometry"
+    ]
+  },
+  {
+    id: 8,
+    skill: "Mathematics",
+    items: [
+      "Numerical Geometry", // https://en.wikipedia.org/wiki/List_of_geometry_topics#Numerical_geometry
+      "Geometric Algorithms", // https://en.wikipedia.org/wiki/List_of_geometry_topics#Geometric_algorithms
+      "Proof Theory",
+      "Set Theory",
+      "Combinatorics",
+      "Calculus",
+      "Differential Equations",
+      "Linear Algebra",
+      "Discrete Mathematics",
+      "Numeric Analysis", // Expand on this? Leave as is?
+
     ]
   }
 ];
