@@ -48,6 +48,12 @@ const skills = [
       "JUnit",
       "Maven",
       "Gradle",
+      "Spring Framework",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Web MVC",
+      "Spring Data",
+      "Spring Batch",
       "Micronaut",
       "Lombak",
       "Immutables",
@@ -56,18 +62,6 @@ const skills = [
   },
   {
     id: 2,
-    skill: "Spring",
-    items: [
-      "Spring Framework",
-      "Spring Boot",
-      "Spring Security",
-      "Spring Web MVC",
-      "Spring Data",
-      "Spring Batch"
-    ]
-  },
-  {
-    id: 3,
     skill: "Databases & Datastores",
     items: [
       "Oracle \+ PL/SQL",
@@ -80,7 +74,7 @@ const skills = [
     ]
   },
   {
-    id: 5,
+    id: 3,
     skill: "Amazon Web Services",
     items: [
       "Lambda",
@@ -111,7 +105,7 @@ const skills = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     skill: "Software Engineering",
     items: [
       "Test-Driven Development (TDD)",
@@ -138,7 +132,7 @@ const skills = [
     ]
   },
   {
-    id: 8,
+    id: 6,
     skill: "Mathematics",
     // Discrete Mathematics
     // -> Theoretical Computer Science
@@ -172,19 +166,19 @@ const skills = [
 
     
     items: [
-      "Numerical Geometry", // 
-      "Geometric Algorithms", // 
+      "Computational Geometry",
+      "Automata Theory",
       "Proof Theory",
       "Set Theory",
       "Combinatorics",
-      "Calculus",
+      "Graph Theory",
+      "Probability",
       "Differential Equations",
+      "Calculus",
       "Linear Algebra",
-      "Discrete Mathematics",
-      "Numeric Analysis", // Expand on this? Leave as is?
       "Statistics",
       "Spatial Statistics",
-      "Machine Learning (Supervised, Unsupervised, Cluster Analysis)"
+      "Machine Learning"
     ]
   }
 ];
