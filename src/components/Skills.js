@@ -140,9 +140,40 @@ const skills = [
   {
     id: 8,
     skill: "Mathematics",
+    // Discrete Mathematics
+    // -> Theoretical Computer Science
+    // ->> Automata Theory, formal language
+    // ->> Computational Geometry
+    // ->>> Geometric Algorithms | https://en.wikipedia.org/wiki/List_of_geometry_topics#Geometric_algorithms
+    // -> Logic
+    // -> Set Theory
+    // -> Combinatorics
+    // -> Graph Theory
+    // -> Probability
+    // -> Algebra
+    // Numeric Analysis
+    // -> Interpolation, extrapolation, and regression
+    // -> Linear Algebra
+    // -> Optimization
+    // -> Calculus
+    // -> Differential Equations
+    // -> Numeric Geometry | https://en.wikipedia.org/wiki/List_of_geometry_topics#Numerical_geometry
+    // Statistics
+    // -> Data
+    // -> Methods
+    // ->> Descriptive
+    // ->> Inferential
+    // ->> Exploratory
+    // -> Spatial Analysis
+    // Machine Learning
+    // -> Learning Algorithms
+    // ->> Supervised
+    // ->> Unsupervised
+
+    
     items: [
-      "Numerical Geometry", // https://en.wikipedia.org/wiki/List_of_geometry_topics#Numerical_geometry
-      "Geometric Algorithms", // https://en.wikipedia.org/wiki/List_of_geometry_topics#Geometric_algorithms
+      "Numerical Geometry", // 
+      "Geometric Algorithms", // 
       "Proof Theory",
       "Set Theory",
       "Combinatorics",
@@ -151,8 +182,9 @@ const skills = [
       "Linear Algebra",
       "Discrete Mathematics",
       "Numeric Analysis", // Expand on this? Leave as is?
-      "Statistics"
-
+      "Statistics",
+      "Spatial Statistics",
+      "Machine Learning (Supervised, Unsupervised, Cluster Analysis)"
     ]
   }
 ];
