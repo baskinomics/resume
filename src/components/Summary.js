@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 18,
-    marginBottom: '10px',
+    marginBottom: '5px',
     fontFamily: 'Open Sans Condensed Bold'
   }
 });

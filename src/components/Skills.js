@@ -5,11 +5,11 @@ const styles = StyleSheet.create({
   skillsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '10px'
+    //marginBottom: '10px'
   },
   header: {
     fontSize: 18,
-    marginBottom: '10px',
+    marginBottom: '5px',
     fontFamily: 'Open Sans Condensed Bold'
   },
   skillEntryContainer: {
@@ -132,8 +132,16 @@ const skills = [
     skill: "Computer Science",
     items: [
       "Algorithms and Datastructures",
-      "Asymptotic Analysis",
-      "Parallelism and Concurrency"
+      "Programming Methodology",
+      "Systems Programming",
+      "Theory of Programming Languages",
+      "Theory of Computation",
+      "Computer Architecture",
+      "Computer Networks",
+      "Paralell Algorithms",
+      "Cloud Computing",
+      "Mobile Computing",
+      "Systems Software",
     ]
   }
 ];
