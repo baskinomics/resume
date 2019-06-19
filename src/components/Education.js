@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 const education = [
   {
     id: 0,
-    degree: "Credit Hours towards \nM.S. in Computer Science",
+    degree: "Credit Hours towards \nMasters in Computer Science",
     dates: {
       begin: "Aug 2012",
       end: "Dec 2013"
