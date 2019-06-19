@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   skillsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    //marginBottom: '10px'
+    marginBottom: '5px'
   },
   header: {
     fontSize: 18,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   skillEntryHeader: {
     marginBottom: '2px',
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: 'Open Sans Condensed Bold'
   }
 });
@@ -48,6 +48,12 @@ const skills = [
       "JUnit",
       "Maven",
       "Gradle",
+      "Spring Framework",
+      "Spring Boot",
+      "Spring Security",
+      "Spring Web MVC",
+      "Spring Data",
+      "Spring Batch",
       "Micronaut",
       "Lombak",
       "Immutables",
@@ -56,18 +62,6 @@ const skills = [
   },
   {
     id: 2,
-    skill: "Spring",
-    items: [
-      "Spring Framework",
-      "Spring Boot",
-      "Spring Security",
-      "Spring Web MVC",
-      "Spring Data",
-      "Spring Batch"
-    ]
-  },
-  {
-    id: 3,
     skill: "Databases & Datastores",
     items: [
       "Oracle \+ PL/SQL",
@@ -80,7 +74,7 @@ const skills = [
     ]
   },
   {
-    id: 5,
+    id: 3,
     skill: "Amazon Web Services",
     items: [
       "Lambda",
@@ -111,7 +105,7 @@ const skills = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     skill: "Software Engineering",
     items: [
       "Test-Driven Development (TDD)",
@@ -142,6 +136,54 @@ const skills = [
       "Cloud Computing",
       "Mobile Computing",
       "Systems Software",
+    ]
+  },
+  {
+    id: 6,
+    skill: "Mathematics",
+    // Discrete Mathematics
+    // -> Theoretical Computer Science
+    // ->> Automata Theory, formal language
+    // ->> Computational Geometry
+    // ->>> Geometric Algorithms | https://en.wikipedia.org/wiki/List_of_geometry_topics#Geometric_algorithms
+    // -> Logic
+    // -> Set Theory
+    // -> Combinatorics
+    // -> Graph Theory
+    // -> Probability
+    // -> Algebra
+    // Numeric Analysis
+    // -> Interpolation, extrapolation, and regression
+    // -> Linear Algebra
+    // -> Optimization
+    // -> Calculus
+    // -> Differential Equations
+    // -> Numeric Geometry | https://en.wikipedia.org/wiki/List_of_geometry_topics#Numerical_geometry
+    // Statistics
+    // -> Data
+    // -> Methods
+    // ->> Descriptive
+    // ->> Inferential
+    // ->> Exploratory
+    // -> Spatial Analysis
+    // Machine Learning
+    // -> Learning Algorithms
+    // ->> Supervised
+    // ->> Unsupervised
+    items: [
+      "Computational Geometry",
+      "Automata Theory",
+      // "Proof Theory", Not sure if this is correct
+      "Set Theory",
+      "Combinatorics",
+      "Graph Theory",
+      "Probability",
+      "Differential Equations",
+      "Calculus",
+      "Linear Algebra",
+      "Statistics",
+      "Spatial Statistics",
+      "Machine Learning",
     ]
   }
 ];
