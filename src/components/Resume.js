@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
     padding: '10px'
   },
   footer: {
-    padding: '5px',
+    //marginTop: '15px',
+    paddingTop: '15px',
     textAlign: 'center',
     alignSelf: 'flex-end'
   }
@@ -56,21 +57,21 @@ const Resume = () => (
     creator="Sean Baskin"
     producer="Sean Baskin"
     >
-    <Page size="LETTER" style={styles.page} ruler={false} wrap={false}>
-      <View style={styles.container}>
+    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
+      <View style={ styles.container }>
         <Header />
-        <View style={styles.contentContainer}>
-          <View style={styles.column}>
+        <View style={ styles.contentContainer }>
+          <View style={ styles.column }>
             <Summary />
             <Experience />
             <Education />
           </View>
-          <View style={styles.column}>
+          <View style={ styles.column }>
             <Skills />
             <Certifications />
           </View>
         </View>
-        <Footer />
+        <Footer style={ styles.footer }/>
       </View>
     </Page>
   </Document>

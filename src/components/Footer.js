@@ -4,7 +4,8 @@ import { version } from '../../package.json';
 
 const styles = StyleSheet.create({
   footerContainer: {
-    width: '100%'
+    width: '100%',
+    paddingTop: '50px',
   },
   footerText: {
     fontFamily: 'Hasklug',
@@ -16,8 +17,8 @@ const styles = StyleSheet.create({
 });
 
 const Footer = () => (
-  <View style={styles.footContainer}>
-    <Text style={styles.footerText}>
+  <View style={ styles.footContainer }>
+    <Text style={ styles.footerText }>
       <Link src="https://github.com/baskinomics/resume">{ "v" + version }</Link>
     </Text>
   </View>

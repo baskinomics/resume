@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   skillsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    //marginBottom: '10px'
+    marginBottom: '10px'
   },
   header: {
     fontSize: 18,
