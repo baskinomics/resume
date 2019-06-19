@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 const skills = [
   {
     id: 0,
-    skill: "JavaScript & Web Technologies",
+    skill: "Web Technologies",
     items: [
       "NodeJS",
       "ES2015",
