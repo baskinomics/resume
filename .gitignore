@@ -4,7 +4,6 @@ node_modules/
 # TODO - Build outputs
 # Determine method for alternate output destination
 dist/
-*.pdf
 
 # Yarn
 yarn-error.log
