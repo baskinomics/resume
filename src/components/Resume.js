@@ -63,16 +63,18 @@ const Resume = () => (
         <View style={ styles.contentContainer }>
           <View style={ styles.column }>
             <Summary />
-            <Experience />
             <Education />
+            <Certifications />
           </View>
           <View style={ styles.column }>
             <Skills />
-            <Certifications />
           </View>
         </View>
         <Footer style={ styles.footer }/>
       </View>
+    </Page>
+    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
+      <Experience />
     </Page>
   </Document>
 );
