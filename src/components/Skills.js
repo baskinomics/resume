@@ -42,12 +42,14 @@ const skills = [
     id: 1,
     skill: "Java",
     items: [
-      "JDK 12",
-      "Java Persistence API (JPA)",
-      "Hibernate",
-      "JUnit",
+      "Java SE 12",
+      "Jakarta EE",
       "Maven",
       "Gradle",
+      "JUnit",
+      "Mockito",
+      "Java Persistence API (JPA)",
+      "Hibernate",
       "Spring Framework",
       "Spring Boot",
       "Spring Security",
@@ -57,7 +59,6 @@ const skills = [
       "Micronaut",
       "Lombak",
       "Immutables",
-      "Quartz"
     ]
   },
   {
@@ -118,7 +119,8 @@ const skills = [
       "Continuous Integration \/ Continuous Deployment \(CI\/CD\)",
       "Configuration Management",
       "Container Orchestration",
-      "Service Discovery"
+      "Service Discovery",
+      "Serverless"
     ]
   },
   {
@@ -173,7 +175,6 @@ const skills = [
     items: [
       "Computational Geometry",
       "Automata Theory",
-      // "Proof Theory", Not sure if this is correct
       "Set Theory",
       "Combinatorics",
       "Graph Theory",
