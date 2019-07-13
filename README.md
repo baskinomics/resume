@@ -1,6 +1,8 @@
 # Resume
 Creates a PDF representing my professional resume using the [ReactPDF](https://github.com/diegomura/react-pdf) package.
 
+_Note_: This is a mirror of [https://gitlab.com/baskinomics/resume](https://gitlab.com/baskinomics/resume).
+
 ## Instructions
 To produce the resume in PDF format execute the following from the project's
 root directory:
