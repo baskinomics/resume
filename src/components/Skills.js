@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
   skillsContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '5px'
+    marginBottom: '5px',
+    //maxWidth: '50%',
   },
   header: {
     fontSize: 18,
@@ -13,13 +14,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans Condensed Bold'
   },
   skillEntryContainer: {
+    display: 'flex',
+    flexDirection: 'column',
     marginBottom: '10px',
-    //minHeight: '50px'
+    maxWidth: '50%',
   },
   skillEntryHeader: {
     marginBottom: '2px',
     fontSize: 12,
-    fontFamily: 'Open Sans Condensed Bold'
+    fontFamily: 'Open Sans Condensed Bold',
   }
 });
 
@@ -190,21 +193,21 @@ const skills = [
 ];
 
 const SkillsEntry = ({ skill, items }) => (
-  <View style={styles.skillEntryContainer}>
-    <Text style={styles.skillEntryHeader}>{skill}</Text>
-    <Text>{items.join(', ')}</Text>
+  <View style={ styles.skillEntryContainer }>
+    <Text style={ styles.skillEntryHeader }>{ skill }</Text>
+    <Text>{ items.join(', ') }</Text>
   </View>
 );
 
 const Skills = () => (
-  <View style={styles.skillsContainer}>
-    <Text style={styles.header}>Skills</Text>
+  <View style={ styles.skillsContainer }>
+    <Text style={ styles.header }>Skills</Text>
     {
       skills.map(e => (
         <SkillsEntry
-          key={e.id}
-          skill={e.skill}
-          items={e.items}
+          key={ e.id }
+          skill={ e.skill }
+          items={ e.items }
         />
       ))
     }

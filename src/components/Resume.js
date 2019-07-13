@@ -11,11 +11,9 @@ import Footer from './Footer.js';
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    // margin: '0px',
     fontFamily: 'Open Sans Condensed',
     fontSize: '10pt',
     backgroundColor: '#FFFFFF',
-    //width: "8.27in"
   },
   // This element is the parent element of the children elements that are
   // flexible boxes. Specifically this is our flex container and the flex
@@ -35,15 +33,20 @@ const styles = StyleSheet.create({
     // todo determine if `flexFlow` attribute is supported in ReactPDF,
     // and if so set to `flexFlow: 'column wrap'`
     display: 'flex',
+    
     // Specifies the direction the main axis run in
     flexDirection: 'column',
+    
     // We want the flex items to wrap in the event of an overflow
     flexWrap: 'wrap',
+    
     // todo required? set attribute to `space-around`?
     // Controls where the flex items sit on the main axis
-    justifyContent: 'space-between',
+    //justifyContent: 'space-between',
+   
     // todo implement
     // alignItems: 
+    
     paddingLeft: '10px',
     paddingRight: '10px',
     width: '100%'
@@ -85,9 +88,6 @@ const Resume = () => (
         </View>
         <Footer style={ styles.footer } />
       </View>
-    </Page>
-    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
-      <Experience />
     </Page>
   </Document>
 );

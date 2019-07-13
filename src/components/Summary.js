@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
   summaryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    width: '50%'
+    width: '50%',
+    border: 'thick double #32a1ce'
     // marginBottom: '10px'
   },
   header: {
