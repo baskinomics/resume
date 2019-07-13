@@ -47,7 +47,6 @@ const CertificationEntry = ({ text }) => (
 
 const Certifications = () => (
   <View style={styles.certEntryContainer}>
-    <Text style={styles.header}>Certifications</Text>
     <View style={styles.listContainer}>
       {
         certifications.map(e => (

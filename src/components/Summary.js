@@ -10,11 +10,6 @@ const styles = StyleSheet.create({
     border: 'thick double #32a1ce'
     // marginBottom: '10px'
   },
-  header: {
-    fontSize: 18,
-    marginBottom: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
-  }
 });
 
 const summaryItems = [
@@ -27,7 +22,6 @@ const summaryItems = [
 // Declare Summary Component
 const Summary = () => (
   <View style={ styles.summaryContainer }>
-    <Text style={ styles.header }>Summary</Text>
     <Text>{ summaryItems.join(' ') }</Text>
   </View>
 );

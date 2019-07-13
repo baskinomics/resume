@@ -115,7 +115,6 @@ const EducationEntry = ({ degree, dates, institution, summary }) => {
 
 const Education = () => (
   <View style = { styles.educationContainer }>
-    <Text style={ styles.header }>Education</Text>
     {
       education.map(({ id, degree, institution, dates, summary }) => (
         <EducationEntry
