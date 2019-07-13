@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   skillEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
+    // marginLeft: '10px',
     marginBottom: '10px',
     maxWidth: '50%',
   },
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
 });
 
 const SkillsEntry = ({ skill, items }) => (
-  <View style={ styles.skillEntryContainer }>
+  <View style={ styles.skillEntryContainer } debug={ true }>
     <Text style={ styles.skillEntryHeader }>{ skill }</Text>
     <Text>{ items.join(', ') }</Text>
   </View>

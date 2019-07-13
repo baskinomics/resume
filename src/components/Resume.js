@@ -1,14 +1,23 @@
+/**
+ * @module components/Resume
+ */
+
 import React from 'react';
 import { Document, Page, View, Text, Link, StyleSheet } from '@react-pdf/renderer';
+
+// Components
 import Header from './Header.js';
 import Summary from './Summary.js';
-import Experience from './Experience.js';
 import Education from './Education.js';
 import Certifications from './Certifications.js';
 import Footer from './Footer.js';
 import SectionHeader from './SectionHeader.js';
-import skills from '../data/Skills.js';
+import ExperienceEntry from './ExperienceEntry.js';
 import SkillsEntry from './SkillsEntry.js';
+
+// Data
+import skills from '../data/Skills.js';
+import experience from '../data/Experience.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -54,7 +63,7 @@ const styles = StyleSheet.create({
     //justifyContent: 'space-between',
    
     // todo implement
-    // alignItems: 
+    alignItems: 'stretch',
     
     paddingLeft: '10px',
     paddingRight: '10px',
@@ -62,6 +71,11 @@ const styles = StyleSheet.create({
     height: '85%',
     //paddingBottom: '10px',
     //height: '95%',
+  },
+
+  // Section Content Components
+  sectionContent: {
+    //margin: '15px'
   },
 
   // todo This style should be removed and the attribute `flex: <value>` 
@@ -80,7 +94,9 @@ const styles = StyleSheet.create({
   }
 });
 
-// Create Document Component
+/**
+ * @returns The full resume JSX.
+ */
 const Resume = () => (
   <Document
     title="Sean Baskin - Resume"
@@ -90,16 +106,16 @@ const Resume = () => (
     creator="Sean Baskin"
     producer="Sean Baskin"
     >
-    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
-      <View style={ styles.container }>
+    <Page size="LETTER" style={ styles.page } ruler={ true } wrap={ false }>
+      <View style={ styles.container } debug={ false }>
         <Header style={ styles.header } />
-        <View style={ styles.contentContainer }>
+        <View style={ styles.contentContainer } debug={ true }>
           <SectionHeader value="Summary" />
-          <Summary />
+          <Summary style={ styles.sectionContent } />
           <SectionHeader value="Education" />
-          <Education />
+          <Education style={ styles.sectionContent } />
           <SectionHeader value="Certifications" />
-          <Certifications />
+          <Certifications style={ styles.sectionContent } />
           <SectionHeader value="Skills" />
           {
             skills.map(e => (
@@ -107,6 +123,18 @@ const Resume = () => (
                 key={ e.id }
                 skill={ e.skill }
                 items={ e.items }
+              />
+            ))
+          }
+          <SectionHeader value="Experience" />
+          {
+            experience.map(e => (
+              <ExperienceEntry
+                key={ e.id }
+                title={ e.title }
+                organization={ e.organization }
+                dates={ e.dates }
+                summary={ e.summary }
               />
             ))
           }

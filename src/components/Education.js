@@ -1,27 +1,31 @@
+/**
+ * @module components/Education
+ */
+
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
-
+/**
+ * todo fix spacing on educationContainer flex items
+ */
 const styles = StyleSheet.create({
-  // This style applies to the parent view element and represents the
-  // flex container
+  // Represents the flex container whose flex items are EducationEntry 
+  // components.
   educationContainer: {
-    width: '50%'
+    width: '50%',
+    justifyContent: 'space-between'
   },
+  // Represents the flex container whose flex items are the degree/dates, 
+  // institution, and list items.
   eduEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '10px'
+    // marginBottom: '10px'
   },
   titleDateContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
-  },
-  header: {
-    fontSize: 18,
-    marginBottom: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
   },
   degree: {
     fontFamily: 'Open Sans Condensed Bold'
@@ -84,28 +88,34 @@ const education = [
   }
 ];
 
-// todo fix formating of { thing }
-
+/**
+ * 
+ * @param {*} param0 
+ */
 const DescriptionItem = ({ descriptionText }) => (
-  <View style={styles.descriptionItemContainer}>
-    <Text style={styles.bullet}>·</Text>
-    <Text>{descriptionText}</Text>
+  <View style={ styles.descriptionItemContainer }>
+    <Text style={ styles.bullet }>·</Text>
+    <Text>{ descriptionText }</Text>
   </View>
 );
 
+/**
+ * 
+ * @param {*} param0 
+ */
 const EducationEntry = ({ degree, dates, institution, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
-    <View style={styles.eduEntryContainer}>
-      <View style={styles.titleDateContainer}>
-        <Text style={styles.degree}>{degree}</Text>
-        <Text>{displayDate}</Text>
+    <View style={ styles.eduEntryContainer } debug={ true }>
+      <View style={ styles.titleDateContainer }>
+        <Text style={ styles.degree }>{ degree }</Text>
+        <Text>{ displayDate }</Text>
       </View>
-      <Text>{institution}</Text>
-      <View style={styles.listContainer}>
+      <Text>{ institution }</Text>
+      <View style={ styles.listContainer }>
         {
           summary.map(e => (
-            <DescriptionItem key={e.id} descriptionText={e.text} />
+            <DescriptionItem key={ e.id } descriptionText={ e.text } />
           ))
         }
       </View>
@@ -113,8 +123,11 @@ const EducationEntry = ({ degree, dates, institution, summary }) => {
   )
 };
 
+/**
+ * 
+ */
 const Education = () => (
-  <View style = { styles.educationContainer }>
+  <View style = { styles.educationContainer } debug={ true }>
     {
       education.map(({ id, degree, institution, dates, summary }) => (
         <EducationEntry
@@ -129,4 +142,7 @@ const Education = () => (
   </View>
 );
 
+/**
+ * 
+ */
 export default Education;

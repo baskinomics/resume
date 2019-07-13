@@ -4,7 +4,8 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
   certEntryContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: '50%',
   },
   header: {
     fontSize: 18,
@@ -46,7 +47,7 @@ const CertificationEntry = ({ text }) => (
 );
 
 const Certifications = () => (
-  <View style={styles.certEntryContainer}>
+  <View style={styles.certEntryContainer} debug={ true }>
     <View style={styles.listContainer}>
       {
         certifications.map(e => (

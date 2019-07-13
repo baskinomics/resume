@@ -1,14 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { Text, StyleSheet } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
   summaryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
     width: '50%',
-    border: 'thick double #32a1ce'
-    // marginBottom: '10px'
   },
 });
 
@@ -21,9 +17,7 @@ const summaryItems = [
 
 // Declare Summary Component
 const Summary = () => (
-  <View style={ styles.summaryContainer }>
-    <Text>{ summaryItems.join(' ') }</Text>
-  </View>
+    <Text style={ styles.summaryContainer } debug={ false }>{ summaryItems.join(' ') }</Text>
 );
 
 export default Summary;
