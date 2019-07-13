@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
   summaryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '10px'
+    width: '50%'
+    // marginBottom: '10px'
   },
   header: {
     fontSize: 18,
@@ -22,11 +23,11 @@ const summaryItems = [
   "Engaged and knowledgeable individual that is goal-oriented, proactive, and effectual.",
 ];
 
-// Create Document Component
+// Declare Summary Component
 const Summary = () => (
-  <View style={styles.summaryContainer}>
-    <Text style={styles.header}>Summary</Text>
-    <Text>{summaryItems.join(' ')}</Text>
+  <View style={ styles.summaryContainer }>
+    <Text style={ styles.header }>Summary</Text>
+    <Text>{ summaryItems.join(' ') }</Text>
   </View>
 );
 

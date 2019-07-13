@@ -3,6 +3,11 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
 
 const styles = StyleSheet.create({
+  // This style applies to the parent view element and represents the
+  // flex container
+  educationContainer: {
+    width: '50%'
+  },
   eduEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -79,6 +84,8 @@ const education = [
   }
 ];
 
+// todo fix formating of { thing }
+
 const DescriptionItem = ({ descriptionText }) => (
   <View style={styles.descriptionItemContainer}>
     <Text style={styles.bullet}>·</Text>
@@ -107,16 +114,16 @@ const EducationEntry = ({ degree, dates, institution, summary }) => {
 };
 
 const Education = () => (
-  <View>
-    <Text style={styles.header}>Education</Text>
+  <View style = { styles.educationContainer }>
+    <Text style={ styles.header }>Education</Text>
     {
       education.map(({ id, degree, institution, dates, summary }) => (
         <EducationEntry
-          key={id}
-          degree={degree}
-          institution={institution}
-          dates={dates}
-          summary={summary}
+          key={ id }
+          degree={ degree }
+          institution={ institution }
+          dates={ dates }
+          summary={ summary }
         />
       ))
     }
