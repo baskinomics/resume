@@ -106,16 +106,16 @@ const Resume = () => (
     creator="Sean Baskin"
     producer="Sean Baskin"
     >
-    <Page size="LETTER" style={ styles.page } ruler={ true } wrap={ false }>
+    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
       <View style={ styles.container } debug={ false }>
         <Header style={ styles.header } />
-        <View style={ styles.contentContainer } debug={ true }>
+        <View style={ styles.contentContainer } debug={ false }>
           <SectionHeader value="Summary" />
-          <Summary style={ styles.sectionContent } />
+          <Summary />
           <SectionHeader value="Education" />
-          <Education style={ styles.sectionContent } />
+          <Education />
           <SectionHeader value="Certifications" />
-          <Certifications style={ styles.sectionContent } />
+          <Certifications />
           <SectionHeader value="Skills" />
           {
             skills.map(e => (

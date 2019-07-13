@@ -5,9 +5,11 @@ const styles = StyleSheet.create({
   skillEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    // marginLeft: '10px',
+    width: '50%',
     marginBottom: '10px',
-    maxWidth: '50%',
+    paddingLeft: '5px',
+    paddingRight: '5px',
+    
   },
   skillEntryHeader: {
     marginBottom: '2px',
@@ -17,7 +19,7 @@ const styles = StyleSheet.create({
 });
 
 const SkillsEntry = ({ skill, items }) => (
-  <View style={ styles.skillEntryContainer } debug={ true }>
+  <View style={ styles.skillEntryContainer } debug={ false }>
     <Text style={ styles.skillEntryHeader }>{ skill }</Text>
     <Text>{ items.join(', ') }</Text>
   </View>

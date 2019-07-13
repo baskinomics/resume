@@ -5,6 +5,8 @@ import { Text, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
   summaryContainer: {
     width: '50%',
+    paddingLeft: '5px',
+    paddingRight: '5px'
   },
 });
 

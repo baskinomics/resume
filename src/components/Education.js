@@ -13,7 +13,10 @@ const styles = StyleSheet.create({
   // components.
   educationContainer: {
     width: '50%',
-    justifyContent: 'space-between'
+    height: '175px',
+    paddingLeft: '5px',
+    paddingRight: '5px',
+    justifyContent: 'space-between',
   },
   // Represents the flex container whose flex items are the degree/dates, 
   // institution, and list items.
@@ -31,9 +34,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans Condensed Bold'
   },
   listContainer: {
-    paddingTop: '5px',
+    // paddingTop: '5px',
     paddingLeft: '5px',
-    paddingRight: '5px'
+    // paddingRight: '5px'
   },
   descriptionItemContainer: {
     display: 'flex',
@@ -92,8 +95,8 @@ const education = [
  * 
  * @param {*} param0 
  */
-const DescriptionItem = ({ descriptionText }) => (
-  <View style={ styles.descriptionItemContainer }>
+const ListItem = ({ descriptionText }) => (
+  <View style={ styles.descriptionItemContainer } debug={ false }>
     <Text style={ styles.bullet }>·</Text>
     <Text>{ descriptionText }</Text>
   </View>
@@ -106,7 +109,7 @@ const DescriptionItem = ({ descriptionText }) => (
 const EducationEntry = ({ degree, dates, institution, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
-    <View style={ styles.eduEntryContainer } debug={ true }>
+    <View style={ styles.eduEntryContainer } debug={ false }>
       <View style={ styles.titleDateContainer }>
         <Text style={ styles.degree }>{ degree }</Text>
         <Text>{ displayDate }</Text>
@@ -115,7 +118,7 @@ const EducationEntry = ({ degree, dates, institution, summary }) => {
       <View style={ styles.listContainer }>
         {
           summary.map(e => (
-            <DescriptionItem key={ e.id } descriptionText={ e.text } />
+            <ListItem key={ e.id } descriptionText={ e.text } />
           ))
         }
       </View>
@@ -127,7 +130,7 @@ const EducationEntry = ({ degree, dates, institution, summary }) => {
  * 
  */
 const Education = () => (
-  <View style = { styles.educationContainer } debug={ true }>
+  <View style = { styles.educationContainer } debug={ false }>
     {
       education.map(({ id, degree, institution, dates, summary }) => (
         <EducationEntry

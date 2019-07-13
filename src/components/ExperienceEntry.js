@@ -5,18 +5,14 @@ const styles = StyleSheet.create({
   expEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '10px',
-    width: '50%'
+    width: '50%',
+    paddingLeft: '5px',
+    paddingRight: '5px',
   },
   titleDateContainer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
-  },
-  header: {
-    fontSize: 18,
-    marginBottom: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
   },
   title: {
     fontFamily: 'Open Sans Condensed Bold'
@@ -39,29 +35,33 @@ const styles = StyleSheet.create({
 });
 
 const DescriptionItem = ({ descriptionText }) => (
-  <View style={styles.descriptionItemContainer}>
-    <Text style={styles.bullet}>·</Text>
+  <View style={ styles.descriptionItemContainer }>
+    <Text style={ styles.bullet }>·</Text>
     <Text>{descriptionText}</Text>
   </View>
 );
 
+/**
+ * todo seperate the entry with links out to its own component.
+ * @param {*} param0 
+ */
 const ExperienceEntry = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
-    <View style={styles.expEntryContainer}>
-      <View style={styles.titleDateContainer}>
-        <Text style={styles.title}>{title}</Text>
-        <Text>{displayDate}</Text>
+    <View style={ styles.expEntryContainer } debug={ false }>
+      <View style={ styles.titleDateContainer }>
+        <Text style={ styles.title }>{ title }</Text>
+        <Text>{ displayDate }</Text>
       </View>
-      <Text>{organization}</Text>
-      <View style={styles.listContainer}>
+      <Text>{ organization }</Text>
+      <View style={ styles.listContainer }>
         {
           summary.map(e => (
-            <DescriptionItem key={e.id} descriptionText={e.text} />
+            <DescriptionItem key={ e.id } descriptionText={ e.text } />
           ))
         }
-        <View style={styles.descriptionItemContainer}>
-          <Text style={styles.bullet}>·</Text>
+        <View style={ styles.descriptionItemContainer }>
+          <Text style={ styles.bullet }>·</Text>
           <View>
             <Text>Authored blog posts&nbsp;
             <Link src="http://bnlconsulting.com/blog/cloud-first/">Cloud-First Microservices: AWS API Gateway and Lambda in Action</Link>
@@ -74,22 +74,5 @@ const ExperienceEntry = ({ title, organization, dates, summary }) => {
     </View>
   );
 };
-
-const Experience = () => (
-  <View>
-    <Text style={styles.header}>Experience</Text>
-    {
-      experience.map(({ id, title, organization, dates, summary }) => (
-        <ExperienceEntry
-          title={title}
-          organization={organization}
-          dates={dates}
-          summary={summary}
-          key={id}
-        />
-      ))
-    }
-  </View>
-);
 
 export default ExperienceEntry;
