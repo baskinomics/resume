@@ -109,7 +109,7 @@ const skills = [
         "Theory of Computation",
         "Computer Architecture",
         "Computer Networks",
-        "Paralell Algorithms",
+        "Parallel Algorithms",
         "Cloud Computing",
         "Mobile Computing",
         "Systems Software",
