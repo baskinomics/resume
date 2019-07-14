@@ -73,6 +73,15 @@ const styles = StyleSheet.create({
     //height: '95%',
   },
 
+  // Style for text indicating work history continues on the following page.
+  continueText: {
+    width: "50%",
+    fontSize: "9pt",
+    fontFamily: "Open Sans Condensed Italic",
+    paddingLeft: "5px",
+    textAlign: "center",
+  },
+
   // todo This style should be removed and the attribute `flex: <value>` 
   // should be added to the appropriate flex items.
   // column: {
@@ -143,12 +152,12 @@ const Resume = () => (
               />
             ))
           }
+          <Text style={ styles.continueText } debug={ false }>Continued on page two...</Text>
         </View>
         <Footer style={ styles.footer } />
       </View>
     </Page>
   </Document>
 );
-// 
 
 export default Resume;
