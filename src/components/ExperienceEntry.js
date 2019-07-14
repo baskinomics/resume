@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '50%',
+    marginBottom: '10px',
     paddingLeft: '5px',
     paddingRight: '5px',
   },
@@ -45,7 +46,31 @@ const DescriptionItem = ({ descriptionText }) => (
  * todo seperate the entry with links out to its own component.
  * @param {*} param0 
  */
-const ExperienceEntry = ({ title, organization, dates, summary }) => {
+export const ExperienceEntry = ({ title, organization, dates, summary }) => {
+  const displayDate = `${dates.begin} - ${dates.end}`;
+  return (
+    <View style={ styles.expEntryContainer } debug={ false }>
+      <View style={ styles.titleDateContainer }>
+        <Text style={ styles.title }>{ title }</Text>
+        <Text>{ displayDate }</Text>
+      </View>
+      <Text>{ organization }</Text>
+      <View style={ styles.listContainer }>
+        {
+          summary.map(e => (
+            <DescriptionItem key={ e.id } descriptionText={ e.text } />
+          ))
+        }
+      </View>
+    </View>
+  );
+};
+
+/**
+ * todo seperate the entry with links out to its own component.
+ * @param {*} param0 
+ */
+export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
     <View style={ styles.expEntryContainer } debug={ false }>

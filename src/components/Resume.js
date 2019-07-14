@@ -12,12 +12,12 @@ import Education from './Education.js';
 import Certifications from './Certifications.js';
 import Footer from './Footer.js';
 import SectionHeader from './SectionHeader.js';
-import ExperienceEntry from './ExperienceEntry.js';
+import { ExperienceEntry, ExperienceEntryBnl } from './ExperienceEntry.js';
 import SkillsEntry from './SkillsEntry.js';
 
 // Data
 import skills from '../data/Skills.js';
-import experience from '../data/Experience.js';
+import * as experience from '../data/Experience.js';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -73,11 +73,6 @@ const styles = StyleSheet.create({
     //height: '95%',
   },
 
-  // Section Content Components
-  sectionContent: {
-    //margin: '15px'
-  },
-
   // todo This style should be removed and the attribute `flex: <value>` 
   // should be added to the appropriate flex items.
   // column: {
@@ -87,8 +82,7 @@ const styles = StyleSheet.create({
   footer: {
     width: '100%',
     height: '5%',
-    //marginTop: '15px',
-    paddingTop: '15px',
+    // paddingTop: '15px',
     textAlign: 'center',
     alignSelf: 'flex-end'
   }
@@ -109,7 +103,7 @@ const Resume = () => (
     <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
       <View style={ styles.container } debug={ false }>
         <Header style={ styles.header } />
-        <View style={ styles.contentContainer } debug={ false }>
+        <View style={ styles.contentContainer } debug={ false } wrap={ false }>
           <SectionHeader value="Summary" />
           <Summary />
           <SectionHeader value="Education" />
@@ -128,7 +122,18 @@ const Resume = () => (
           }
           <SectionHeader value="Experience" />
           {
-            experience.map(e => (
+            experience.experienceBnl.map(e => (
+              <ExperienceEntryBnl
+                key={ e.id }
+                title={ e.title }
+                organization={ e.organization }
+                dates={ e.dates }
+                summary={ e.summary }
+              />
+            ))
+          }
+          {
+            experience.experiencePageOne.map(e => (
               <ExperienceEntry
                 key={ e.id }
                 title={ e.title }
@@ -144,5 +149,6 @@ const Resume = () => (
     </Page>
   </Document>
 );
+// 
 
 export default Resume;

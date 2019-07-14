@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 });
 
 const Footer = () => (
-  <View style={ styles.footContainer }>
+  <View style={ styles.footContainer } fixed={ true }>
     <Text style={ styles.footerText }>
       <Link src="https://github.com/baskinomics/resume">{ "v" + version }</Link>
     </Text>
