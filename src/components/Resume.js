@@ -157,6 +157,26 @@ const Resume = () => (
         <Footer style={ styles.footer } />
       </View>
     </Page>
+    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
+      <View style={ styles.container } debug={ false }>
+        <Header style={ styles.header } />
+        <View style={ styles.contentContainer } debug={ false } wrap={ false }>
+          <SectionHeader value="Experience (cont.)" />
+          {
+            experience.experiencePageTwo.map(e => (
+              <ExperienceEntry
+                key={ e.id }
+                title={ e.title }
+                organization={ e.organization }
+                dates={ e.dates }
+                summary={ e.summary }
+              />
+            ))
+          }
+        </View>
+        <Footer style={ styles.footer } />
+      </View>
+    </Page>
   </Document>
 );
 
