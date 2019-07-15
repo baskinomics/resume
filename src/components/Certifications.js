@@ -6,6 +6,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     width: '50%',
+    marginTop: "5px",
+    marginBottom: "5px",
     paddingLeft: '10px',
     paddingRight: '5px',
   },

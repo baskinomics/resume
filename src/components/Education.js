@@ -14,6 +14,8 @@ const styles = StyleSheet.create({
   educationContainer: {
     width: '50%',
     height: '175px',
+    marginTop: "5px",
+    marginBottom: "5px",
     paddingLeft: '5px',
     paddingRight: '5px',
     justifyContent: 'space-between',

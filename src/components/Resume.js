@@ -78,7 +78,9 @@ const styles = StyleSheet.create({
     width: "50%",
     fontSize: "9pt",
     fontFamily: "Open Sans Condensed Italic",
+    marginTop: "10px",
     paddingLeft: "5px",
+    paddingRight: "5px",
     textAlign: "center",
   },
 
