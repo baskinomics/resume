@@ -1,18 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { Text, StyleSheet } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
   summaryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: '10px'
+    width: '50%',
+    marginTop: "5px",
+    marginBottom: "5px",
+    paddingLeft: '5px',
+    paddingRight: '5px'
   },
-  header: {
-    fontSize: 18,
-    marginBottom: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
-  }
 });
 
 const summaryItems = [
@@ -22,12 +19,9 @@ const summaryItems = [
   "Engaged and knowledgeable individual that is goal-oriented, proactive, and effectual.",
 ];
 
-// Create Document Component
+// Declare Summary Component
 const Summary = () => (
-  <View style={styles.summaryContainer}>
-    <Text style={styles.header}>Summary</Text>
-    <Text>{summaryItems.join(' ')}</Text>
-  </View>
+    <Text style={ styles.summaryContainer } debug={ false }>{ summaryItems.join(' ') }</Text>
 );
 
 export default Summary;

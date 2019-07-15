@@ -4,17 +4,17 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
   certEntryContainer: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: '50%',
+    marginTop: "5px",
+    marginBottom: "5px",
+    paddingLeft: '10px',
+    paddingRight: '5px',
   },
   header: {
     fontSize: 18,
     marginBottom: '5px',
     fontFamily: 'Open Sans Condensed Bold'
-  },
-  listContainer: {
-    paddingTop: '5px',
-    paddingLeft: '5px',
-    paddingRight: '5px'
   },
   certItemContainer: {
     display: 'flex',
@@ -39,22 +39,19 @@ const certifications = [
 ];
 
 const CertificationEntry = ({ text }) => (
-  <View style={styles.certItemContainer}>
-    <Text style={styles.bullet}>·</Text>
+  <View style={ styles.certItemContainer }>
+    <Text style={ styles.bullet }>·</Text>
     <Text>{text}</Text>
   </View>
 );
 
 const Certifications = () => (
-  <View style={styles.certEntryContainer}>
-    <Text style={styles.header}>Certifications</Text>
-    <View style={styles.listContainer}>
-      {
-        certifications.map(e => (
-          <CertificationEntry key={e.id} text={e.text} />
-        ))
-      }
-    </View>
+  <View style={ styles.certEntryContainer } debug={ false }>
+    {
+      certifications.map(e => (
+        <CertificationEntry key={ e.id } text={ e.text } />
+      ))
+    }
   </View>
 );
 

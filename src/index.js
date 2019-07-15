@@ -15,6 +15,11 @@ Font.register({
 });
 
 Font.register({
+  family: "Open Sans Condensed Italic",
+  src: `${__dirname}/fonts/OpenSansCondensed-LightItalic.ttf`
+});
+
+Font.register({
   family: "Hasklug",
   src: `${__dirname}/fonts/hasklug-nerd-font-complete.ttf`
 });
