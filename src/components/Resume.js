@@ -143,17 +143,6 @@ const Resume = () => (
               />
             ))
           }
-          {
-            experience.experiencePageOne.map(e => (
-              <ExperienceEntry
-                key={ e.id }
-                title={ e.title }
-                organization={ e.organization }
-                dates={ e.dates }
-                summary={ e.summary }
-              />
-            ))
-          }
           <Text style={ styles.continueText } debug={ false }>Continued on page two...</Text>
         </View>
         <Footer style={ styles.footer } />
