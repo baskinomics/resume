@@ -2,7 +2,7 @@ const skills = [
     {
       id: 0,
       // todo Rename this
-      skill: "Web Technologies",
+      skill: "JavaScript & Web Technologies",
       items: [
         "ES2015",
         "NodeJS",
@@ -12,7 +12,7 @@ const skills = [
         "Babel",
         "Yarn",
         "Webpack",
-        "CSS Preprocessors",
+        "Web Assembly",
       ]
     },
     {
