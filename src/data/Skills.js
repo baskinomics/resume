@@ -171,8 +171,8 @@ const skills = [
       items: [
         // "Automata Theory",
         "Set Theory",
-        "Combinatorics",
         "Graph Theory",
+        "Combinatorics",
         "Probability",
         "Differential Equations",
         "Calculus",
@@ -188,7 +188,6 @@ const skills = [
         "Spatial Statistics",
         "Geostatistics",
         "Geovisualization",
-
         "Spatial Decision Support Systems (SDSS)",
         "Geographic Information Systems (GIS)",
         "Cartography",
