@@ -83,7 +83,7 @@ export const experiencePageTwo = [
       end: "April 2012"
     },
     summary: [
-      {id: 0, text: "Provided consulting services to SecondSite, LLC and the SimCenter Enterprise for Disaster Mitigation Plume/Evacuation Scenario Modeling as part of the U.S. Ignite Initiative"},
+      {id: 0, text: "Provided consulting services to SecondSite, LLC and the SimCenter Enterprise for Disaster Mitigation Plume/Evacuation Scenario Modeling as part of the U.S. Ignite Initiative."},
     ]
   },
   {
