@@ -143,7 +143,6 @@ const Resume = () => (
               />
             ))
           }
-          <Text style={ styles.continueText } debug={ false }>Continued on page two...</Text>
         </View>
         <Footer style={ styles.footer } />
       </View>
