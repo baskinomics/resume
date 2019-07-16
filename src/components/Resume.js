@@ -19,7 +19,7 @@ import SkillsEntry from './SkillsEntry.js';
 import skills from '../data/Skills.js';
 import * as experience from '../data/Experience.js';
 
-//792.0
+// See: https://github.com/diegomura/react-pdf/blob/master/src/utils/pageSizes.js
 const letterPageHeight = 792.0;
 const contentHeight = 792.0 * 0.85;
 const footerHeight = 792.0 * 0.025;
