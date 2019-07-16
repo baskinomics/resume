@@ -1,16 +1,18 @@
 const skills = [
     {
       id: 0,
+      // todo Rename this
       skill: "Web Technologies",
       items: [
-        "NodeJS",
         "ES2015",
+        "NodeJS",
+        "ExpressJS",
+        "ReactJS",
+        "AngularJS",
         "Babel",
         "Yarn",
         "Webpack",
-        "ReactJS",
         "CSS Preprocessors",
-        "JavaScript Transpilers"
       ]
     },
     {
@@ -27,9 +29,9 @@ const skills = [
         "Hibernate",
         "Spring Framework",
         "Spring Boot",
-        "Spring Security",
         "Spring Web MVC",
         "Spring Data",
+        "Spring Security",
         "Spring Batch",
         "Micronaut",
         "Lombak",
@@ -55,14 +57,14 @@ const skills = [
       items: [
         "Lambda",
         "API Gateway",
-        "Virtual Private Cloud (VPC)",
-        "Elastic Compute Cloud (EC2)",
-        "Simple Storage Service (S3)",
-        "Elastic Block Store (EBS)",
-        "Identity Access Management (IAM)",
-        "Elastic Load Balancer (ELB)",
+        "VPC", // "Virtual Private Cloud (VPC)",
+        "EC2", // "Elastic Compute Cloud (EC2)",
+        "S3", // "Simple Storage Service (S3)",
+        "EBS", // "Elastic Block Store (EBS)",
+        "IAM", // "Identity Access Management (IAM)",
+        "ELB", // "Elastic Load Balancer (ELB)",
         "Route 53",
-        "Relational Database Service (RDS)",
+        "RDS", // "Relational Database Service (RDS)",
         "DynamoDB",
         "AWS CLI"
       ]
@@ -86,16 +88,17 @@ const skills = [
       items: [
         "Test-Driven Development (TDD)",
         "12-Factor Applications",
+        "Serverless",
         "Domain-Driven Design",
         "Enterprise Integration Patterns (EIP)",
         "Inversion of Control (IoC)",
         "Aspect-Oriented Programming (AOP)",
         "Object-Relational Mapping (ORM)",
-        "Continuous Integration \/ Continuous Deployment \(CI\/CD\)",
+        "Continuous Integration (CI)",
+        "Continuous Deployment (CD)",
         "Configuration Management",
         "Container Orchestration",
-        "Service Discovery",
-        "Serverless"
+        "Service Discovery"
       ]
     },
     {
@@ -113,6 +116,8 @@ const skills = [
         "Cloud Computing",
         "Mobile Computing",
         "Systems Software",
+        "Computational Geometry",
+        "Machine Learning",
       ]
     },
     {
@@ -148,8 +153,7 @@ const skills = [
       // ->> Supervised
       // ->> Unsupervised
       items: [
-        "Computational Geometry",
-        "Automata Theory",
+        // "Automata Theory",
         "Set Theory",
         "Combinatorics",
         "Graph Theory",
@@ -158,10 +162,22 @@ const skills = [
         "Calculus",
         "Linear Algebra",
         "Statistics",
-        "Spatial Statistics",
-        "Machine Learning",
       ]
-    }
+    },
+    {
+      id: 8,
+      skill: "Geographic Information Science",
+      items: [
+        "Coordinate Systems and Projections",
+        "Spatial Statistics",
+        "Geostatistics",
+        "Geovisualization",
+
+        "Spatial Decision Support Systems (SDSS)",
+        "Geographic Information Systems (GIS)",
+        "Cartography",
+      ]
+    },
   ];
 
   export default skills;
