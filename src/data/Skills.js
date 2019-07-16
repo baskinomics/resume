@@ -105,6 +105,7 @@ const skills = [
         "Test-Driven Development (TDD)",
         "12-Factor Applications",
         "Serverless",
+        "Unified Modeling Language (UML)",
         "Domain-Driven Design",
         "Enterprise Integration Patterns (EIP)",
         "Inversion of Control (IoC)",
