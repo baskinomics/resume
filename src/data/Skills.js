@@ -44,6 +44,7 @@ const skills = [
       items: [
         "Oracle \+ PL/SQL",
         "PostgreSQL \+ PL/pgSQL",
+        "PostGIS",
         "MySQL",
         "Redis",
         "MongoDB",
@@ -84,6 +85,21 @@ const skills = [
     },
     {
       id: 5,
+      skill: "GIS",
+      items: [
+        "ArcGIS Pro",
+        "ArcSDE",
+        "QGIS",
+        "GDAL",
+        "PDAL",
+        "PCL",
+        "CGAL",
+        "Geotrellis",
+        "MapBox",
+      ]
+    },
+    {
+      id: 6,
       skill: "Software Engineering",
       items: [
         "Test-Driven Development (TDD)",
@@ -121,7 +137,7 @@ const skills = [
       ]
     },
     {
-      id: 6,
+      id: 8,
       skill: "Mathematics",
       // Discrete Mathematics
       // -> Theoretical Computer Science
@@ -165,7 +181,7 @@ const skills = [
       ]
     },
     {
-      id: 8,
+      id: 9,
       skill: "Geographic Information Science",
       items: [
         "Coordinate Systems and Projections",
