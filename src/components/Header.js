@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: `${ headerHeight }px`,
     width: '100%',
-    paddingLeft: '10px',
+    paddingLeft: '15px',
     paddingRight: '10px',
     fontFamily: 'Open Sans Condensed Bold',
     color: 'white',
