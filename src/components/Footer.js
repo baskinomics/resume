@@ -4,8 +4,10 @@ import { version } from '../../package.json';
 
 const styles = StyleSheet.create({
   footerContainer: {
+    alignSelf: "flex-end",
     width: '100%',
-    paddingTop: '50px',
+    height: "20px",
+    // paddingTop: '50px',
   },
   footerText: {
     fontFamily: 'Hasklug',
@@ -17,11 +19,9 @@ const styles = StyleSheet.create({
 });
 
 const Footer = () => (
-  <View style={ styles.footContainer } fixed={ true }>
-    <Text style={ styles.footerText }>
-      <Link src="https://github.com/baskinomics/resume">{ "v" + version }</Link>
-    </Text>
-  </View>
+  <Text style={ styles.footerText }>
+    <Link src="https://github.com/baskinomics/resume">{ "v" + version }</Link>
+  </Text>
 );
 
 export default Footer;

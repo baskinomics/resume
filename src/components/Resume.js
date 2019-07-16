@@ -19,6 +19,11 @@ import SkillsEntry from './SkillsEntry.js';
 import skills from '../data/Skills.js';
 import * as experience from '../data/Experience.js';
 
+//792.0
+const letterPageHeight = 792.0;
+const contentHeight = 792.0 * 0.85;
+const footerHeight = 792.0 * 0.025;
+
 // Create styles
 const styles = StyleSheet.create({
   page: {
@@ -37,12 +42,7 @@ const styles = StyleSheet.create({
     // Controls where the flex items sit on the main axis
     // justifyContent: 'center',
     width: '100%',
-    height: '100%'
-  },
-
-  // Header Styles
-  header: {
-    height: '10%',
+    height: `${ letterPageHeight }px`
   },
 
   // This style effects the container element that contains all non-header
@@ -68,21 +68,19 @@ const styles = StyleSheet.create({
     paddingLeft: '10px',
     paddingRight: '10px',
     width: '100%',
-    height: '85%',
-    //paddingBottom: '10px',
-    //height: '95%',
+    height: `${ contentHeight }px`,
   },
 
-  // Style for text indicating work history continues on the following page.
-  continueText: {
-    width: "50%",
-    fontSize: "9pt",
-    fontFamily: "Open Sans Condensed Italic",
-    marginTop: "10px",
-    paddingLeft: "5px",
-    paddingRight: "5px",
-    textAlign: "center",
-  },
+  // // Style for text indicating work history continues on the following page.
+  // continueText: {
+  //   width: "50%",
+  //   fontSize: "9pt",
+  //   fontFamily: "Open Sans Condensed Italic",
+  //   marginTop: "10px",
+  //   paddingLeft: "5px",
+  //   paddingRight: "5px",
+  //   textAlign: "center",
+  // },
 
   // todo This style should be removed and the attribute `flex: <value>` 
   // should be added to the appropriate flex items.
@@ -90,12 +88,14 @@ const styles = StyleSheet.create({
   //   width: '50%',
   //   padding: '10px'
   // },
+
   footer: {
     width: '100%',
-    height: '5%',
-    // paddingTop: '15px',
-    textAlign: 'center',
-    alignSelf: 'flex-end'
+    height: `${ footerHeight }px`,
+    // // paddingTop: '15px',
+    // textAlign: 'center',
+    alignSelf: 'flex-end',
+    justifyContent: "center",
   }
 });
 
@@ -113,7 +113,7 @@ const Resume = () => (
     >
     <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
       <View style={ styles.container } debug={ false }>
-        <Header style={ styles.header } />
+        <Header />
         <View style={ styles.contentContainer } debug={ false } wrap={ false }>
           <SectionHeader value="Summary" />
           <Summary />
@@ -144,7 +144,9 @@ const Resume = () => (
             ))
           }
         </View>
-        <Footer style={ styles.footer } />
+        <View style={ styles.footer } debug={ true }>
+          <Footer />
+        </View>
       </View>
     </Page>
     <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
@@ -164,7 +166,9 @@ const Resume = () => (
             ))
           }
         </View>
-        <Footer style={ styles.footer } />
+        <View style={ styles.footer } debug={ true }>
+          <Footer />
+        </View>
       </View>
     </Page>
   </Document>

@@ -1,20 +1,25 @@
 import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 
+const headerHeight = 792.0 * 0.125;
+
 // Create styles
 const styles = StyleSheet.create({
+  
+  // todo documentation
   headerContainer: {
     display: 'flex',
     flexDirection: 'row',
-    height: '100px',
+    height: `${ headerHeight }px`,
     width: '100%',
-    paddingLeft: '20px',
-    paddingRight: '20px',
-    marginBottom: '10px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
     fontFamily: 'Open Sans Condensed Bold',
     color: 'white',
     backgroundColor: 'grey'
   },
+
+  // todo documentation
   nameContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -23,23 +28,29 @@ const styles = StyleSheet.create({
     fontFamily: 'Open Sans Condensed Bold',
     justifyContent: 'center'
   },
+
+  // todo documentation
   metaContainer: {
     display: 'flex',
     flexDirection: 'column',
     height: '100%',
     width: '30%',
     paddingLeft: '85px',
-    paddingTop: '10px',
-    paddingBottom: '10px',
-    justifyContent: 'space-between',
+    paddingTop: '5px',
+    paddingBottom: '5px',
+    justifyContent: 'space-around',
     fontSize: '9pt',
     fontFamily: 'Open Sans Condensed Bold'
   },
+
+  // todo documentation
   icon: {
     fontFamily: 'Hasklug',
     fontSize: 12,
     marginRight: '5px',
   },
+
+  // todo documentation
   metaLinks: {
     display: 'flex',
     flexDirection: 'row',
@@ -102,7 +113,7 @@ const MetaLink = ({ link }) => (
 
 // todo documentation
 const Meta = ({ metaLinks }) => (
-  <View style={ styles.metaContainer }>
+  <View style={ styles.metaContainer } debug={ false }>
     {
       // Per https://reactjs.org/docs/lists-and-keys.html#keys
       metaLinks.map(link => (
@@ -114,7 +125,7 @@ const Meta = ({ metaLinks }) => (
 
 // Create Document Component
 const Header = () => (
-  <View style={ styles.headerContainer }>
+  <View style={ styles.headerContainer } debug={ false }>
     <Name />
     <Meta metaLinks={ metaLinks } />
   </View>
