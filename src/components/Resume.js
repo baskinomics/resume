@@ -144,7 +144,7 @@ const Resume = () => (
             ))
           }
         </View>
-        <View style={ styles.footer } debug={ true }>
+        <View style={ styles.footer } debug={ false }>
           <Footer />
         </View>
       </View>
@@ -166,7 +166,7 @@ const Resume = () => (
             ))
           }
         </View>
-        <View style={ styles.footer } debug={ true }>
+        <View style={ styles.footer } debug={ false }>
           <Footer />
         </View>
       </View>
