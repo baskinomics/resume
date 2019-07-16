@@ -138,6 +138,19 @@ const skills = [
     },
     {
       id: 8,
+      skill: "Geographic Information Science",
+      items: [
+        "Coordinate Systems and Projections",
+        "Spatial Statistics",
+        "Geostatistics",
+        "Geovisualization",
+        "Spatial Decision Support Systems (SDSS)",
+        "Geographic Information Systems (GIS)",
+        "Cartography",
+      ]
+    },
+    {
+      id: 9,
       skill: "Mathematics",
       // Discrete Mathematics
       // -> Theoretical Computer Science
@@ -178,19 +191,6 @@ const skills = [
         "Calculus",
         "Linear Algebra",
         "Statistics",
-      ]
-    },
-    {
-      id: 9,
-      skill: "Geographic Information Science",
-      items: [
-        "Coordinate Systems and Projections",
-        "Spatial Statistics",
-        "Geostatistics",
-        "Geovisualization",
-        "Spatial Decision Support Systems (SDSS)",
-        "Geographic Information Systems (GIS)",
-        "Cartography",
       ]
     },
   ];
