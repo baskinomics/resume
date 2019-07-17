@@ -61,7 +61,10 @@ const education = [
       end: "Dec 2013"
     },
     institution: "University of Tennessee at Chattanooga",
-    summary: []
+    summary: [
+      {id: 0, text: "Graduate Teaching Assistant for two (2) semesters."},
+      {id: 1, text: "Graduate Research Assistant for two (2) semesters."}
+    ]
   },
   {
     id: 1,
@@ -71,10 +74,7 @@ const education = [
       end: "May 2012"
     },
     institution: "University of Tennessee at Chattanooga",
-    summary: [
-      {id: 0, text: "Graduate Teaching Assistant for two (2) semesters."},
-      {id: 1, text: "Graduate Research Assistant for two (2) semesters."}
-    ]
+    summary: []
   },
   {
     id: 2,
