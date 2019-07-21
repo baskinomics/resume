@@ -12,7 +12,7 @@ const skills = [
         "Babel",
         "Yarn",
         "Webpack",
-        "Web Assembly",
+        "WebAssembly",
       ]
     },
     {
