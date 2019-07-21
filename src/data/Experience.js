@@ -5,7 +5,7 @@ export const experienceBnl = [
     organization: "BNL Consulting, LLC.",
     dates: {
       begin: "April 2014",
-      end: "Aug 2018"
+      end: "Aug. 2018"
     },
     summary: [
       {id: 0, text: "Designed, developed, or contributed to seven (7) client projects."},
