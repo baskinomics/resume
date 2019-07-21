@@ -57,7 +57,7 @@ const education = [
     id: 0,
     degree: "Credit Hours towards \nMasters in Computer Science",
     dates: {
-      begin: "Aug 2012",
+      begin: "Aug. 2012",
       end: "Dec 2013"
     },
     institution: "University of Tennessee at Chattanooga",
@@ -80,7 +80,7 @@ const education = [
     id: 2,
     degree: "Bachelor of Arts in Geography",
     dates: {
-      begin: "Aug 2007",
+      begin: "Aug. 2007",
       end: "May 2011"
     },
     institution: "University of Tennessee at Knoxville",
