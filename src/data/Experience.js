@@ -54,7 +54,7 @@ export const experiencePageTwo = [
     organization: "University of Tennessee at Chattanooga",
     dates: {
       begin: "May 2013",
-      end: "Oct. 2013"
+      end: "Aug. 2013"
     },
     summary: [
       {id: 0, text: "Contributed to the development of a distributed geospatial web application within the context of the Thrive 2055 initiative."},
@@ -92,7 +92,7 @@ export const experiencePageTwo = [
     organization: "University of Tennessee at Chattanooga",
     dates: {
       begin: "Jan. 2012",
-      end: "May 2012"
+      end: "Aug. 2012"
     },
     summary: [
       {id: 0, text: "Graded papers, assisted in labs, proctored exams, and on occasion stood in for my professor during class lectures."},
