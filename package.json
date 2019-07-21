@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Generate professional resume PDF file using ReactPDF.",
   "main": "index.js",
   "author": "Sean Baskin <seanbaskin@gmail.com>",
