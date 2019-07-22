@@ -6,10 +6,10 @@ const skills = [
       items: [
         "ES2015",
         "NodeJS",
+        "Babel",
         "ExpressJS",
         "ReactJS",
         "AngularJS",
-        "Babel",
         "Yarn",
         "Webpack",
         "WebAssembly",
