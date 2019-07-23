@@ -1,7 +1,7 @@
 const skills = [
     {
       id: 0,
-      skill: "JavaScript & Web Technologies",
+      skill: "JavaScript and Web Technologies",
       items: [
         "ES2015",
         "NodeJS",
@@ -16,7 +16,7 @@ const skills = [
     },
     {
       id: 1,
-      skill: "Java",
+      skill: "Java Ecosystem",
       items: [
         "Java SE 12",
         "Jakarta EE",
