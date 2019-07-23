@@ -1,6 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 
+/**
+ * todo documentation
+ */
 const styles = StyleSheet.create({
   certEntryContainer: {
     display: 'flex',
@@ -27,6 +30,10 @@ const styles = StyleSheet.create({
   }
 });
 
+/**
+ * todo Add icon to this object.
+ * todo documentation
+ */
 const certifications = [
   {
     id: 0,
@@ -38,13 +45,20 @@ const certifications = [
   }
 ];
 
+/**
+ * todo Preppend icon to each entry. 
+ * @param {*} param0 
+ */
 const CertificationEntry = ({ text }) => (
   <View style={ styles.certItemContainer }>
     <Text style={ styles.bullet }>·</Text>
-    <Text>{text}</Text>
+    <Text>{ text }</Text>
   </View>
 );
 
+/**
+ * todo documentation
+ */
 const Certifications = () => (
   <View style={ styles.certEntryContainer } debug={ false }>
     {
@@ -55,4 +69,7 @@ const Certifications = () => (
   </View>
 );
 
+/**
+ * todo documentation
+ */
 export default Certifications;
