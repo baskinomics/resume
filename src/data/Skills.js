@@ -1,7 +1,6 @@
 const skills = [
     {
       id: 0,
-      // todo Rename this
       skill: "JavaScript & Web Technologies",
       items: [
         "ES2015",
@@ -35,7 +34,9 @@ const skills = [
         "Spring Batch",
         "Micronaut",
         "Lombak",
-        "Immutables",
+        "Apache Tomcat",
+        "Jetty",
+        "Web Logic"
       ]
     },
     {
