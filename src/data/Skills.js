@@ -116,7 +116,8 @@ const skills = [
         "Continuous Deployment (CD)",
         "Configuration Management",
         "Container Orchestration",
-        "Service Discovery"
+        "Service Discovery",
+        "Agile Methodologies"
       ]
     },
     {
