@@ -84,6 +84,7 @@ export const experiencePageTwo = [
     },
     summary: [
       {id: 0, text: "Provided consulting services to SecondSite, LLC and the SimCenter Enterprise for Disaster Mitigation Plume/Evacuation Scenario Modeling as part of the U.S. Ignite Initiative."},
+      {id: 1, text: "Developed custom ETL processes and three-dimensional mesh artifacts from high-precision urban LiDAR datasets."}
     ]
   },
   {
