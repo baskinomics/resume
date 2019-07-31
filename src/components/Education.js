@@ -60,7 +60,7 @@ const education = [
       begin: "Aug. 2012",
       end: "Dec 2013"
     },
-    institution: "University of Tennessee at Chattanooga",
+    institution: "University of Tennessee Chattanooga",
     summary: [
       {id: 0, text: "Graduate Teaching Assistant for two (2) semesters."},
       {id: 1, text: "Graduate Research Assistant for two (2) semesters."}
@@ -73,7 +73,7 @@ const education = [
       begin: "July 2011",
       end: "May 2012"
     },
-    institution: "University of Tennessee at Chattanooga",
+    institution: "University of Tennessee Chattanooga",
     summary: []
   },
   {
@@ -83,7 +83,7 @@ const education = [
       begin: "Aug. 2007",
       end: "May 2011"
     },
-    institution: "University of Tennessee at Knoxville",
+    institution: "University of Tennessee Knoxville",
     summary: [
       {id: 0, text: "Award recipient at the Exhibition of Undergraduate Research and Create Achievement (EURéCA)."},
       // {id: 1, text: "Contributed to the open source Census Mapping Tutorial developed by Dr. Bruce Ralston."},

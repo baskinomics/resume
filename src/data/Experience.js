@@ -51,7 +51,7 @@ export const experiencePageTwo = [
   {
     id: 2,
     title: "Graduate Research Assistant",
-    organization: "University of Tennessee at Chattanooga",
+    organization: "University of Tennessee Chattanooga",
     dates: {
       begin: "May 2013",
       end: "Aug. 2013"
@@ -70,7 +70,7 @@ export const experiencePageTwo = [
       end: "Aug. 2012"
     },
     summary: [
-      {id: 0, text: "Contribubted to the development of an augmented reality (AR) mobile application for the Smithsonian National Museum of African American History and Culture."},
+      {id: 0, text: "Contributed to the development of an augmented reality (AR) mobile application for the Smithsonian National Museum of African American History and Culture."},
       {id: 1, text: "Contributed to the development of an augmented reality (AR) mobile application that provided an innovative system for the maintenance of art and artifacts."}
     ]
   },
@@ -90,7 +90,7 @@ export const experiencePageTwo = [
   {
     id: 5,
     title: "Graduate Teaching Assistant",
-    organization: "University of Tennessee at Chattanooga",
+    organization: "University of Tennessee Chattanooga",
     dates: {
       begin: "Jan. 2012",
       end: "Aug. 2012"
@@ -102,7 +102,7 @@ export const experiencePageTwo = [
   {
     id: 6,
     title: "Graduate Research Assistant",
-    organization: "University of Tennessee at Chattanooga",
+    organization: "University of Tennessee Chattanooga",
     dates: {
       begin: "Jan. 2012",
       end: "May 2012"
@@ -116,7 +116,7 @@ export const experiencePageTwo = [
     title: "Web GIS Developer",
     // todo consider wrapping this to two lines
     // organization: "Academic Research and Computing Services",
-    organization: "University of Tennessee at Chattanooga",
+    organization: "University of Tennessee Chattanooga",
     dates: {
       begin: "June 2011",
       end: "Dec. 2012"
@@ -145,7 +145,7 @@ export const experiencePageTwo = [
     title: "Math Tutor",
     // todo implemented component for department/org
     // UTK Math Tutorial Center
-    organization: "University of Tennessee at Knoxville",
+    organization: "University of Tennessee Knoxville",
     dates: {
       begin: "Aug. 2008",
       end: "May 2010"
