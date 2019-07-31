@@ -3,7 +3,7 @@ const skills = [
       id: 0,
       skill: "JavaScript and Web Technologies",
       items: [
-        "ES2015",
+        "ECMAScript",
         "NodeJS",
         "Babel",
         "ExpressJS",
