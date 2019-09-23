@@ -29,9 +29,11 @@ const FOOTER_HEIGHT = LETTER_PAGE_HEIGHT * 0.05;
 
 // Create styles
 const styles = StyleSheet.create({
+
+  // Styles for the <Page> component.
   page: {
-    fontFamily: "Lato",
-    fontSize: '10pt',
+    fontFamily: "Source Sans Pro",
+    fontSize: '9pt',
     backgroundColor: '#FFFFFF',
   },
 
@@ -46,7 +48,7 @@ const styles = StyleSheet.create({
     // Controls where the flex items sit on the main axis
     // justifyContent: 'center',
     width: '100%',
-    height: `${ LETTER_PAGE_HEIGHT }px`
+    height: `${LETTER_PAGE_HEIGHT}px`
   },
 
   // This style effects the container element that contains all non-header
@@ -55,24 +57,24 @@ const styles = StyleSheet.create({
     // todo determine if `flexFlow` attribute is supported in ReactPDF,
     // and if so set to `flexFlow: 'column wrap'`
     display: 'flex',
-    
+
     // Specifies the direction the main axis run in
     flexDirection: 'column',
-    
+
     // We want the flex items to wrap in the event of an overflow
     flexWrap: 'wrap',
-    
+
     // todo required? set attribute to `space-around`?
     // Controls where the flex items sit on the main axis
     //justifyContent: 'space-between',
-   
+
     // todo implement
     alignItems: 'stretch',
-    
+
     paddingLeft: '10px',
     paddingRight: '10px',
     width: '100%',
-    height: `${ CONTENT_HEIGHT }px`,
+    height: `${CONTENT_HEIGHT}px`,
   },
 });
 
@@ -86,12 +88,11 @@ const Resume = () => (
     subject="Resume"
     keywords=""
     creator="Sean Baskin"
-    producer="Sean Baskin"
-    >
-    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
-      <View style={ styles.container } debug={ false }>
+    producer="Sean Baskin">
+    <Page size="LETTER" style={styles.page} ruler={false} wrap={false}>
+      <View style={styles.container} debug={false}>
         <Header />
-        <View style={ styles.contentContainer } debug={ false } wrap={ false }>
+        <View style={styles.contentContainer} debug={false} wrap={false}>
           <SectionHeader value="Summary" />
           <Summary />
           <SectionHeader value="Education" />
@@ -102,9 +103,9 @@ const Resume = () => (
           {
             skills.map(e => (
               <SkillsEntry
-                key={ e.id }
-                skill={ e.skill }
-                items={ e.items }
+                key={e.id}
+                skill={e.skill}
+                items={e.items}
               />
             ))
           }
@@ -112,11 +113,11 @@ const Resume = () => (
           {
             experience.experienceBnl.map(e => (
               <ExperienceEntryBnl
-                key={ e.id }
-                title={ e.title }
-                organization={ e.organization }
-                dates={ e.dates }
-                summary={ e.summary }
+                key={e.id}
+                title={e.title}
+                organization={e.organization}
+                dates={e.dates}
+                summary={e.summary}
               />
             ))
           }
@@ -124,24 +125,24 @@ const Resume = () => (
         <Footer />
       </View>
     </Page>
-    <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
-      <View style={ styles.container } debug={ false }>
+    <Page size="LETTER" style={styles.page} ruler={false} wrap={false}>
+      <View style={styles.container} debug={false}>
         <Header />
-        <View style={ styles.contentContainer } debug={ false } wrap={ false }>
+        <View style={styles.contentContainer} debug={false} wrap={false}>
           <SectionHeader value="Experience (cont.)" />
           {
             experience.experiencePageTwo.map(e => (
               <ExperienceEntry
-                key={ e.id }
-                title={ e.title }
-                organization={ e.organization }
-                dates={ e.dates }
-                summary={ e.summary }
+                key={e.id}
+                title={e.title}
+                organization={e.organization}
+                dates={e.dates}
+                summary={e.summary}
               />
             ))
           }
         </View>
-        <View style={ styles.footer } debug={ false }>
+        <View style={styles.footer} debug={false}>
           <Footer />
         </View>
       </View>
