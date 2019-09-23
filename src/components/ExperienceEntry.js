@@ -2,44 +2,73 @@ import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
+
+  // Represents the flex container whose flex items are the title/dates, 
+  // organization, and list items.
   expEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    width: '50%',
+    width: "50%",
     marginTop: "5px",
     marginBottom: "5px",
     paddingLeft: '5px',
-    paddingRight: '5px',
+    // paddingRight: '5px',
   },
+
+  // todo documentation
   titleDateContainer: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginBottom: "1px",
   },
+
+  // todo documentation
   title: {
-    fontFamily: 'Open Sans Condensed Bold'
+    fontFamily: 'Lato Bold',
   },
+
+  // todo documentation
   listContainer: {
-    paddingTop: '5px',
+    paddingTop: '3px',
     paddingLeft: '5px',
-    paddingRight: '5px'
+    // maxWidth: '95%',
   },
+ 
+  // Represents the flex container whose flex items are the bullet and
+  // item text.
   descriptionItemContainer: {
     display: 'flex',
     flexDirection: 'row',
-    alignItems: 'flex-start'
+    // alignItems: 'flex-start',
+    // maxWidth: '95%',
   },
+
+  // todo documentation
   bullet: {
-    //marginTop: '2px',
-    marginRight: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
+    // marginRight: '5px',
+    fontFamily: 'Merriweather Sans Bold'
+  },
+  descriptionText: {
+    paddingLeft: '5px'
   }
 });
 
+const TitleDate = ({ title, displayDate }) => (
+  <View style={ styles.titleDateContainer }>
+    <Text style={ styles.title }>{ title }</Text>
+    <Text>{ displayDate }</Text>
+  </View>
+);
+
+/**
+ * 
+ * @param {*} param0 
+ */
 const DescriptionItem = ({ descriptionText }) => (
-  <View style={ styles.descriptionItemContainer }>
+  <View style={ styles.descriptionItemContainer } debug={ false }>
     <Text style={ styles.bullet }>·</Text>
-    <Text>{descriptionText}</Text>
+    <Text style={ styles.descriptionText }>{ descriptionText }</Text>
   </View>
 );
 
@@ -51,12 +80,9 @@ export const ExperienceEntry = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
     <View style={ styles.expEntryContainer } debug={ false }>
-      <View style={ styles.titleDateContainer }>
-        <Text style={ styles.title }>{ title }</Text>
-        <Text>{ displayDate }</Text>
-      </View>
+      <TitleDate title={ title } displayDate={ displayDate }/>
       <Text>{ organization }</Text>
-      <View style={ styles.listContainer }>
+      <View style={ styles.listContainer } debug={ false }>
         {
           summary.map(e => (
             <DescriptionItem key={ e.id } descriptionText={ e.text } />
@@ -75,10 +101,7 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
     <View style={ styles.expEntryContainer } debug={ false }>
-      <View style={ styles.titleDateContainer }>
-        <Text style={ styles.title }>{ title }</Text>
-        <Text>{ displayDate }</Text>
-      </View>
+      <TitleDate title={ title } displayDate={ displayDate }/>
       <Text>{ organization }</Text>
       <View style={ styles.listContainer }>
         {
@@ -89,7 +112,7 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
         <View style={ styles.descriptionItemContainer }>
           <Text style={ styles.bullet }>·</Text>
           <View>
-            <Text>Authored blog posts&nbsp;
+            <Text style={ styles.descriptionText }>Authored blog posts&nbsp;
             <Link src="http://bnlconsulting.com/blog/cloud-first/">Cloud-First Microservices: AWS API Gateway and Lambda in Action</Link>
             &nbsp;and&nbsp;
             <Link src="http://bnlconsulting.com/blog/visualizing-clusters-with-arcgis-for-flex/">Visualizing Clusters with ArcGIS for Flex</Link>

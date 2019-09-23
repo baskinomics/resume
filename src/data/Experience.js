@@ -9,7 +9,7 @@ export const experienceBnl = [
     },
     summary: [
       {id: 0, text: "Designed, developed, or contributed to seven (7) client projects."},
-      {id: 1, text: "Designed and implemented microservices to automate internal workflow components and processes for client’s existing commerical SaaS offering resulting in a geometric increase in customer capacity."},
+      {id: 1, text: "Designed and implemented microservices to automate internal workflow components and processes for client’s existing commerical SaaS offering."},
       {id: 2, text: "Technical lead for internal R&D project that containerized our commerical SaaS application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms that was later included in our product offering."},
       {id: 3, text: "Core developer for two (2)  year client project that entailed refactoring existing application from .NET to Java, implementing RESTful web services, improving ETL and analytics processes, expansive search functionality, and data modeling."},
       {id: 4, text: "Contributed to the development of business intelligence / analytics web applications utilizing NodeJS, AngularJS, and d3.js."},
@@ -29,7 +29,7 @@ export const experiencePageTwo = [
       end: "April 2014"
     },
     summary: [
-      {id: 0, text: "Coordinated and consulted with the Mayor's Office and various departments to identify and disseminate government data to the public."},
+      {id: 0, text: "Coordinated with the City of Chattanooga Mayor's Office and various departments to identify and disseminate government data to the public."},
       {id: 1, text: "Evaluated available data portal solutions and managed chosen platform."},
     ]
   },
@@ -44,19 +44,39 @@ export const experiencePageTwo = [
     // todo should we add link? http://www.etowahwatertrail.org/
     summary: [
       {id: 0, text: "Configured, deployed, and designed a WordPress instance for the client."},
-      // {id: 1, text: "Redesigned front-end WordPress template to client's specifications."},
       {id: 1, text: "Produced thematic maps for one-hundred seventy (170) miles of the Etowah River Water Trail."}
     ]
   },
+
+  // When was this? Was it for course work or was in for GRA?
+  // {
+  //   id: 2,
+  //   title: "Graduate Research Assistant",
+  //   organization: "University of Tennessee Chattanooga",
+  //   dates: {
+  //     begin: "Jan. 2012",
+  //     end: "May 2012"
+  //   },
+  //   summary: [
+  //     {id: 0, text: "Conducted self-directed research on mobile indoor navigation systems using WiFi signal strength, Gaussian processes, cloud computing, the Android framework, and the R language."},
+  //   ]
+  // },
+  // Need to refine the dates on this
   {
     id: 2,
     title: "Graduate Research Assistant",
     organization: "University of Tennessee Chattanooga",
     dates: {
-      begin: "May 2013",
+      begin: "Aug. 2012",
       end: "Aug. 2013"
     },
     summary: [
+      // todo Reword first summary item
+      // https://www.azavea.com/blog/2013/05/24/geotrellis-enables-fast-modeling/
+      // https://www.thriveregionalpartnership.org/thrive-2055
+      // https://github.com/baskinomics/Civitas
+      // https://github.com/baskinomics/utc-geotrellis-demo
+
       {id: 0, text: "Contributed to the development of a distributed geospatial web application within the context of the Thrive 2055 initiative."},
       {id: 1, text: "Additionally, developed an Android application for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga."}
     ]
@@ -89,46 +109,34 @@ export const experiencePageTwo = [
   },
   {
     id: 5,
+    title: "Graduate Research Assistant",
+    // todo consider wrapping this to two lines
+    // organization: "Academic Research and Computing Services",
+    organization: "University of Tennessee Chattanooga",
+    dates: {
+      begin: "June 2011",
+      end: "Feb. 2012"
+    },
+    summary: [
+      {id: 0, text: "Assisted in the deployment and management of ArcGIS Server and ArcSDE databases."},
+      {id: 1, text: "Collected, documented, and organized spatial datasets for the Regional Resource Inventory project."},
+      {id: 2, text: "Developed RESTful geoprocessing tasks and implemented ArcGIS API for Flex web application to consume them."}
+    ]
+  },
+  {
+    id: 6,
     title: "Graduate Teaching Assistant",
     organization: "University of Tennessee Chattanooga",
     dates: {
-      begin: "Jan. 2012",
-      end: "Aug. 2012"
+      begin: "Aug. 2011",
+      end: "May 2012"
     },
     summary: [
       {id: 0, text: "Graded papers, assisted in labs, proctored exams, and on occasion stood in for my professor during class lectures."},
     ]
   },
   {
-    id: 6,
-    title: "Graduate Research Assistant",
-    organization: "University of Tennessee Chattanooga",
-    dates: {
-      begin: "Jan. 2012",
-      end: "May 2012"
-    },
-    summary: [
-      {id: 0, text: "Conducted self-directed research on mobile indoor navigation systems using WiFi signal strength, Gaussian processes, cloud computing, the Android framework, and the R language."},
-    ]
-  },
-  {
     id: 7,
-    title: "Web GIS Developer",
-    // todo consider wrapping this to two lines
-    // organization: "Academic Research and Computing Services",
-    organization: "University of Tennessee Chattanooga",
-    dates: {
-      begin: "June 2011",
-      end: "Dec. 2012"
-    },
-    summary: [
-      {id: 0, text: "Assisted in the deployment and management of ArcGIS Server and ArcSDE databases."},
-      {id: 1, text: "Collected, documented, and organized spatial information for a sixteen (16) county region."},
-      {id: 2, text: "Developed RESTful geoprocessing tasks and implemented ArcGIS API for Flex web application to consume them."}
-    ]
-  },
-  {
-    id: 8,
     title: "Intern",
     organization: "Tennessee Valley Authority",
     dates: {
@@ -136,12 +144,12 @@ export const experiencePageTwo = [
       end: "Aug. 2011"
     },
     summary: [
-      {id: 0, text: "Designed and implemented enterprise spatial database of bathymetric point data for TVA’s reservoir system, including data management, documentation and metadata, and the production of TIN and raster models."},
+      {id: 0, text: "Designed and implemented enterprise spatial database of sonar-generated point data for TVA’s Tennessee River system, including data management, documentation and metadata, and the production of bathymetric maps, TINs, and DEMs"},
       {id: 1, text: "Upon request, I fulfilled client tasks pertaining to the data such as cross-section analysis and spatial queries."}
     ]
   },
   {
-    id: 9,
+    id: 8,
     title: "Math Tutor",
     // todo implemented component for department/org
     // UTK Math Tutorial Center
@@ -155,7 +163,7 @@ export const experiencePageTwo = [
     ]
   },
   {
-    id: 10,
+    id: 9,
     title: "Lifeguard",
     organization: "Sportsbarn",
     dates: {
@@ -165,7 +173,7 @@ export const experiencePageTwo = [
     summary: []
   },
   {
-    id: 11,
+    id: 10,
     title: "Lifeguard",
     organization: "YMCA",
     dates: {
@@ -175,7 +183,7 @@ export const experiencePageTwo = [
     summary: []
   },
   {
-    id: 12,
+    id: 11,
     title: "Cashier",
     organization: "Carmike Cinemas",
     dates: {
@@ -185,7 +193,7 @@ export const experiencePageTwo = [
     summary: []
   },
   {
-    id: 13,
+    id: 12,
     title: "Founder and Owner",
     organization: "LoserLabeled.com",
     dates: {

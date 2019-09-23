@@ -1,27 +1,27 @@
 const skills = [
     {
       id: 0,
-      skill: "JavaScript and Web Technologies",
+      skill: "Front-end Development",
       items: [
-        "ECMAScript",
+        "ECMAScript 2016",
+        "JavaScript",
         "NodeJS",
-        "Babel",
-        "ExpressJS",
-        "ReactJS",
         "AngularJS",
+        "ExpressJS",
+        "d3.js",
         "Yarn",
         "Webpack",
-        "WebAssembly",
+        "Android",
+        "Apache Flex",
       ]
     },
     {
       id: 1,
-      skill: "Java Ecosystem",
+      skill: "Back-end Development",
       items: [
         "Java SE 12",
-        "Jakarta EE",
+        "Java EE 8",
         "Maven",
-        "Gradle",
         "JUnit",
         "Mockito",
         "Java Persistence API (JPA)",
@@ -32,24 +32,25 @@ const skills = [
         "Spring Data",
         "Spring Security",
         "Spring Batch",
-        "Micronaut",
-        "Lombak",
+        "Quartz",
         "Apache Tomcat",
-        "Jetty",
-        "Web Logic"
+        "Apache ActiveMQ"
+        // "Jetty",
+        // "Web Logic"
       ]
     },
     {
       id: 2,
-      skill: "Databases & Datastores",
+      skill: "Data Stores",
       items: [
-        "Oracle \+ PL/SQL",
-        "PostgreSQL \+ PL/pgSQL",
-        "PostGIS",
-        "MySQL",
-        "Redis",
+        "Oracle", // \+ PL/SQL",
+        "MS SQL Server", // \+ T-SQL",
+        "PostgreSQL", // \+ PL/pgSQL",
+        //"MySQL",
+        "SQLite",
         "MongoDB",
         "DynamoDB",
+        "Redis",
         "Lucene/Solr"
       ]
     },
@@ -81,57 +82,78 @@ const skills = [
         "Packer",
         "Terraform",
         "Consul",
-        "Nomad"
+        "Nomad",
+        // "Configuration Management",
+        // "Container Orchestration",
+        // "Service Discovery",
       ]
     },
-    {
-      id: 5,
-      skill: "GIS",
-      items: [
-        "ArcGIS Pro",
-        "ArcSDE",
-        "QGIS",
-        "GDAL",
-        "PDAL",
-        "PCL",
-        "CGAL",
-        "Geotrellis",
-        "MapBox",
-      ]
-    },
+    // {
+    //   id: 5,
+    //   skill: "GIS",
+    //   items: [
+    //     "ArcGIS Pro",
+    //     "ArcSDE",
+    //     "QGIS",
+    //     "GDAL",
+    //     "PDAL",
+    //     "PCL",
+    //     "CGAL",
+    //     "Geotrellis",
+    //     "MapBox",
+    //   ]
+    // },
     {
       id: 6,
-      skill: "Software Engineering",
+      skill: "Programming Languages",
       items: [
-        "Test-Driven Development (TDD)",
-        "12-Factor Applications",
-        "Serverless",
-        "Unified Modeling Language (UML)",
-        "Domain-Driven Design",
-        "Enterprise Integration Patterns (EIP)",
-        "Inversion of Control (IoC)",
-        "Aspect-Oriented Programming (AOP)",
-        "Object-Relational Mapping (ORM)",
-        "Continuous Integration (CI)",
-        "Continuous Deployment (CD)",
-        "Configuration Management",
-        "Container Orchestration",
-        "Service Discovery",
-        "Agile Methodologies"
+        "Java",
+        "JavaScript",
+        "Python",
+        "C",
+        "C++",        
+        "Go",
+        "R",
+        "Julia",
+        "SQL",
+        "Bash",
+        "ActionScript",
       ]
     },
     {
       id: 7,
+      skill: "Software Engineering",
+      items: [
+        "Agile Methodologies",
+        "Test-Driven Development (TDD)",
+        "Continuous Integration (CI)",
+        "Continuous Deployment (CD)",
+        // "12-Factor Applications",
+        // "Serverless",
+        // "Unified Modeling Language (UML)",
+        // "Domain-Driven Design",
+        "Enterprise Integration Patterns (EIP)",
+        // "Business Process Modeling (BOM)",
+        // "Inversion of Control (IoC)", todo determine if DI is more appropriate as it relates to Spring
+        // "Aspect-Oriented Programming (AOP)",
+        "Version Control Systems",
+        // "SemVar"
+        // Note: Wikipedia has this nested under Database
+        // "Object-Relational Mapping (ORM)",
+      ]
+    },
+    {
+      id: 8,
       skill: "Computer Science",
       items: [
         "Algorithms and Datastructures",
         "Programming Methodology",
         "Systems Programming",
         "Theory of Programming Languages",
-        "Theory of Computation",
+        // "Theory of Computation",
         "Computer Architecture",
         "Computer Networks",
-        "Parallel Algorithms",
+        // "Parallel Algorithms",
         "Cloud Computing",
         "Mobile Computing",
         "Systems Software",
@@ -140,20 +162,21 @@ const skills = [
       ]
     },
     {
-      id: 8,
+      id: 9,
       skill: "Geographic Information Science",
       items: [
+        "Cartography",
         "Coordinate Systems and Projections",
+        "Spatial Data Models",
+        "Remote Sensing",
         "Spatial Statistics",
         "Geostatistics",
         "Geovisualization",
         "Spatial Decision Support Systems (SDSS)",
-        "Geographic Information Systems (GIS)",
-        "Cartography",
       ]
     },
     {
-      id: 9,
+      id: 10,
       skill: "Mathematics",
       // Discrete Mathematics
       // -> Theoretical Computer Science
@@ -188,6 +211,7 @@ const skills = [
         // "Automata Theory",
         "Set Theory",
         "Graph Theory",
+        "Topology",
         "Combinatorics",
         "Probability",
         "Differential Equations",

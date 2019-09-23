@@ -4,7 +4,8 @@ import { Text, StyleSheet } from '@react-pdf/renderer';
 // Create styles
 const styles = StyleSheet.create({
   summaryContainer: {
-    width: '50%',
+    //fontFamily: 'Source Sans Pro',
+    width: "290px",
     marginTop: "3px",
     marginBottom: "5px",
     paddingLeft: '5px',
@@ -17,6 +18,7 @@ const summaryItems = [
   "Creative yet pragmatic in development and implementation, as well as problem resolution.",
   "Excellent written and oral communication skills and interpersonal dynamics, with proven ability to effectively use those skills to ensure transparency and agreement between technical and non-technical stakeholders.",
   "Engaged and knowledgeable individual that is goal-oriented, proactive, and effectual.",
+  ""
 ];
 
 // Declare Summary Component

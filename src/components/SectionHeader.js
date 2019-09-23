@@ -5,10 +5,10 @@ const styles = StyleSheet.create({
     sectionHeader: {
         width: '50%',
         marginTop: '5px',
-        marginBottom: '5px',
+        // marginBottom: '5px',
         paddingLeft: '5px',
         paddingRight: '5px',
-        fontFamily: 'Open Sans Condensed Bold',
+        // fontFamily: "Merriweather",
         fontSize: 18,
     }
 });

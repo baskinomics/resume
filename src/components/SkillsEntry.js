@@ -9,13 +9,11 @@ const styles = StyleSheet.create({
     marginTop: "5px",
     marginBottom: "5px",
     paddingLeft: '5px',
-    paddingRight: '5px',
-    
+    paddingRight: '5px',    
   },
   skillEntryHeader: {
     marginBottom: '2px',
-    fontSize: 12,
-    fontFamily: 'Open Sans Condensed Bold',
+    fontSize: "12pt",
   }
 });
 

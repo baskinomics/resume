@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 18,
     marginBottom: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
+    //fontFamily: 'Source Sans Pro Bold'
   },
   certItemContainer: {
     display: 'flex',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   bullet: {
     marginRight: '5px',
-    fontFamily: 'Open Sans Condensed Bold'
+    //fontFamily: 'Source Sans Pro Bold'
   }
 });
 

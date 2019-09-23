@@ -3,20 +3,49 @@ import ReactPDF, { Font } from '@react-pdf/renderer';
 import Resume from './components/Resume.js';
 import fs from 'fs';
 
-// Register fonts
 Font.register({
-  family: "Open Sans Condensed",
-  src: `${__dirname}/fonts/OpenSansCondensed-Light.ttf`
+  family: "Lato",
+  src: `${__dirname}/fonts/Lato-Regular.ttf`
 });
 
 Font.register({
-  family: "Open Sans Condensed Bold",
-  src: `${__dirname}/fonts/OpenSansCondensed-Bold.ttf`
+  family: "Lato Bold",
+  src: `${__dirname}/fonts/Lato-Bold.ttf`
 });
 
 Font.register({
-  family: "Open Sans Condensed Italic",
-  src: `${__dirname}/fonts/OpenSansCondensed-LightItalic.ttf`
+  family: "Merriweather",
+  src: `${__dirname}/fonts/Merriweather-Regular.ttf`
+});
+
+Font.register({
+  family: "Merriweather Bold",
+  src: `${__dirname}/fonts/Merriweather-Bold.ttf`
+});
+
+Font.register({
+  family: "Merriweather Italic",
+  src: `${__dirname}/fonts/Merriweather-RegularItalic.ttf`
+});
+
+Font.register({
+  family: "Merriweather Sans",
+  src: `${__dirname}/fonts/MerriweatherSans-Regular.ttf`
+});
+
+Font.register({
+  family: "Merriweather Sans Light",
+  src: `${__dirname}/fonts/MerriweatherSans-Light.ttf`
+});
+
+Font.register({
+  family: "Merriweather Sans Bold",
+  src: `${__dirname}/fonts/MerriweatherSans-Bold.ttf`
+});
+
+Font.register({
+  family: "Merriweather Sans Italic",
+  src: `${__dirname}/fonts/MerriweatherSans-RegularItalic.ttf`
 });
 
 Font.register({
@@ -26,14 +55,12 @@ Font.register({
 
 // Encountering errors with this approach.
 // Font.register({
-//   family: "Open Sans Condensed",
+//   family: "Source Sans Pro",
 //   fonts: [
 //     { src: `${__dirname}/fonts/OpenSansCondensed-Light.ttf` },
 //     { src: `${__dirname}/fonts/OpenSansCondensed-Bold.ttf`, fontStyle: 'bold' }
 //   ]
 // });
-
-
 
 // For now handle build output artfactss.
 // TODO Properly handle this with webpack

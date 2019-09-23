@@ -20,17 +20,21 @@ import skills from '../data/Skills.js';
 import * as experience from '../data/Experience.js';
 
 // See: https://github.com/diegomura/react-pdf/blob/master/src/utils/pageSizes.js
-const letterPageHeight = 792.0;
-const contentHeight = 792.0 * 0.85;
-const footerHeight = 792.0 * 0.025;
+const LETTER_PAGE_HEIGHT = 792.0;
+
+// todo determine how to pass and set these values to respective components
+const HEADER_HEIGHT = LETTER_PAGE_HEIGHT * 0.1;
+const CONTENT_HEIGHT = LETTER_PAGE_HEIGHT * 0.85;
+const FOOTER_HEIGHT = LETTER_PAGE_HEIGHT * 0.05;
 
 // Create styles
 const styles = StyleSheet.create({
   page: {
-    fontFamily: 'Open Sans Condensed',
+    fontFamily: "Lato",
     fontSize: '10pt',
     backgroundColor: '#FFFFFF',
   },
+
   // This element is the parent element of the children elements that are
   // flexible boxes. Specifically this is our flex container and the flex
   // attributes effect the flex items. This element is a container that
@@ -42,7 +46,7 @@ const styles = StyleSheet.create({
     // Controls where the flex items sit on the main axis
     // justifyContent: 'center',
     width: '100%',
-    height: `${ letterPageHeight }px`
+    height: `${ LETTER_PAGE_HEIGHT }px`
   },
 
   // This style effects the container element that contains all non-header
@@ -68,35 +72,8 @@ const styles = StyleSheet.create({
     paddingLeft: '10px',
     paddingRight: '10px',
     width: '100%',
-    height: `${ contentHeight }px`,
+    height: `${ CONTENT_HEIGHT }px`,
   },
-
-  // // Style for text indicating work history continues on the following page.
-  // continueText: {
-  //   width: "50%",
-  //   fontSize: "9pt",
-  //   fontFamily: "Open Sans Condensed Italic",
-  //   marginTop: "10px",
-  //   paddingLeft: "5px",
-  //   paddingRight: "5px",
-  //   textAlign: "center",
-  // },
-
-  // todo This style should be removed and the attribute `flex: <value>` 
-  // should be added to the appropriate flex items.
-  // column: {
-  //   width: '50%',
-  //   padding: '10px'
-  // },
-
-  footer: {
-    width: '100%',
-    height: `${ footerHeight }px`,
-    // // paddingTop: '15px',
-    // textAlign: 'center',
-    alignSelf: 'flex-end',
-    justifyContent: "center",
-  }
 });
 
 /**
@@ -144,14 +121,12 @@ const Resume = () => (
             ))
           }
         </View>
-        <View style={ styles.footer } debug={ false }>
-          <Footer />
-        </View>
+        <Footer />
       </View>
     </Page>
     <Page size="LETTER" style={ styles.page } ruler={ false } wrap={ false }>
       <View style={ styles.container } debug={ false }>
-        <Header style={ styles.header } />
+        <Header />
         <View style={ styles.contentContainer } debug={ false } wrap={ false }>
           <SectionHeader value="Experience (cont.)" />
           {
