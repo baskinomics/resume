@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
         // marginBottom: '5px',
         paddingLeft: '5px',
         paddingRight: '5px',
-        // fontFamily: "Merriweather",
+        // // fontFamily: "Merriweather",
         fontSize: 18,
     }
 });
 
 const SectionHeader = ({ value }) => (
-    <Text style={ styles.sectionHeader } debug={ false }>{ value }</Text>
+    <Text style={styles.sectionHeader} debug={false}>{value}</Text>
 );
 
 export default SectionHeader;

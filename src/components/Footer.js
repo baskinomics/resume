@@ -17,13 +17,13 @@ const styles = StyleSheet.create({
 
   // todo 
   footerText: {
-    fontFamily: 'Hasklug',
+    // fontFamily: 'Hasklug',
     fontSize: '6pt',
     textAlign: 'center',
     // paddingTop: '125px',
     // alignSelf: 'flex-end'
   },
-  
+
   // todo documentation
   metaContainer: {
     display: 'flex',
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
   // todo documentation
   icon: {
-    fontFamily: 'Hasklug',
+    // fontFamily: 'Hasklug',
     // fontSize: "10pt",
     marginRight: '5px',
   },

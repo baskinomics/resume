@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 
   // todo documentation
   degree: {
-    fontFamily: 'Lato Bold',
+    fontFamily: "Source Sans Pro Bold",
     // fontSize: '8pt',
   },
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   // Represents a bullet point
   bullet: {
     marginRight: '5px',
-    fontFamily: 'Merriweather Sans Bold'
+    // fontFamily: 'Merriweather Sans Bold'
   },
 });
 
@@ -84,7 +84,7 @@ const education = [
     institution: "University of Tennessee Chattanooga",
     summary: [
       { id: 0, text: "Graduate Teaching Assistant for two (2) semesters." },
-      { id: 1, text: "Graduate Research Assistant for two (4) semesters." }
+      { id: 1, text: "Graduate Research Assistant for four (4) semesters." }
     ],
     level: "postgraduate"
   },
@@ -141,12 +141,12 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
 
   if (level === "postgraduate") {
     return (
-      <View style={ styles.eduEntryContainer } debug={ false }>
-        <View style={ styles.titleDateContainer }>
-          <Text style={ styles.degree }>{ degree }</Text>
-          <Text>{ displayDate }</Text>
+      <View style={styles.eduEntryContainer} debug={false}>
+        <View style={styles.titleDateContainer}>
+          <Text style={styles.degree}>{degree}</Text>
+          <Text>{displayDate}</Text>
         </View>
-        <Text style={ styles.institution }>{institution}</Text>
+        <Text style={styles.institution}>{institution}</Text>
         <View style={styles.listContainer}>
           {
             summary.map(e => (
@@ -158,7 +158,7 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
     )
   } else {
     return (
-      <View style={styles.eduEntryContainer} debug={ false }>
+      <View style={styles.eduEntryContainer} debug={false}>
         <View style={styles.titleDateContainer}>
           <Text style={styles.degree}>{degree}</Text>
           <Text>{displayDate}</Text>

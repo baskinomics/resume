@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 18,
     marginBottom: '5px',
-    //fontFamily: 'Source Sans Pro Bold'
+    //// fontFamily: 'Source Sans Pro Bold'
   },
   certItemContainer: {
     display: 'flex',
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   bullet: {
     marginRight: '5px',
-    //fontFamily: 'Source Sans Pro Bold'
+    //// fontFamily: 'Source Sans Pro Bold'
   }
 });
 
@@ -50,9 +50,9 @@ const certifications = [
  * @param {*} param0 
  */
 const CertificationEntry = ({ text }) => (
-  <View style={ styles.certItemContainer }>
-    <Text style={ styles.bullet }>·</Text>
-    <Text>{ text }</Text>
+  <View style={styles.certItemContainer}>
+    <Text style={styles.bullet}>·</Text>
+    <Text>{text}</Text>
   </View>
 );
 
@@ -60,10 +60,10 @@ const CertificationEntry = ({ text }) => (
  * todo documentation
  */
 const Certifications = () => (
-  <View style={ styles.certEntryContainer } debug={ false }>
+  <View style={styles.certEntryContainer} debug={false}>
     {
       certifications.map(e => (
-        <CertificationEntry key={ e.id } text={ e.text } />
+        <CertificationEntry key={e.id} text={e.text} />
       ))
     }
   </View>

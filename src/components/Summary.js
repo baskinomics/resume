@@ -4,7 +4,7 @@ import { Text, StyleSheet } from '@react-pdf/renderer';
 // Create styles
 const styles = StyleSheet.create({
   summaryContainer: {
-    //fontFamily: 'Source Sans Pro',
+    //// fontFamily: 'Source Sans Pro',
     width: "290px",
     marginTop: "3px",
     marginBottom: "5px",
@@ -23,7 +23,7 @@ const summaryItems = [
 
 // Declare Summary Component
 const Summary = () => (
-    <Text style={ styles.summaryContainer } debug={ false }>{ summaryItems.join(' ') }</Text>
+  <Text style={styles.summaryContainer} debug={false}>{summaryItems.join(' ')}</Text>
 );
 
 export default Summary;

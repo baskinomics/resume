@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
   // todo documentation
   title: {
-    fontFamily: 'Lato Bold',
+    // fontFamily: 'Lato Bold',
   },
 
   // todo documentation
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     paddingLeft: '5px',
     // maxWidth: '95%',
   },
- 
+
   // Represents the flex container whose flex items are the bullet and
   // item text.
   descriptionItemContainer: {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   // todo documentation
   bullet: {
     // marginRight: '5px',
-    fontFamily: 'Merriweather Sans Bold'
+    // fontFamily: 'Merriweather Sans Bold'
   },
   descriptionText: {
     paddingLeft: '5px'
@@ -55,9 +55,9 @@ const styles = StyleSheet.create({
 });
 
 const TitleDate = ({ title, displayDate }) => (
-  <View style={ styles.titleDateContainer }>
-    <Text style={ styles.title }>{ title }</Text>
-    <Text>{ displayDate }</Text>
+  <View style={styles.titleDateContainer}>
+    <Text style={styles.title}>{title}</Text>
+    <Text>{displayDate}</Text>
   </View>
 );
 
@@ -66,9 +66,9 @@ const TitleDate = ({ title, displayDate }) => (
  * @param {*} param0 
  */
 const DescriptionItem = ({ descriptionText }) => (
-  <View style={ styles.descriptionItemContainer } debug={ false }>
-    <Text style={ styles.bullet }>·</Text>
-    <Text style={ styles.descriptionText }>{ descriptionText }</Text>
+  <View style={styles.descriptionItemContainer} debug={false}>
+    <Text style={styles.bullet}>·</Text>
+    <Text style={styles.descriptionText}>{descriptionText}</Text>
   </View>
 );
 
@@ -79,13 +79,13 @@ const DescriptionItem = ({ descriptionText }) => (
 export const ExperienceEntry = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
-    <View style={ styles.expEntryContainer } debug={ false }>
-      <TitleDate title={ title } displayDate={ displayDate }/>
-      <Text>{ organization }</Text>
-      <View style={ styles.listContainer } debug={ false }>
+    <View style={styles.expEntryContainer} debug={false}>
+      <TitleDate title={title} displayDate={displayDate} />
+      <Text>{organization}</Text>
+      <View style={styles.listContainer} debug={false}>
         {
           summary.map(e => (
-            <DescriptionItem key={ e.id } descriptionText={ e.text } />
+            <DescriptionItem key={e.id} descriptionText={e.text} />
           ))
         }
       </View>
@@ -100,23 +100,23 @@ export const ExperienceEntry = ({ title, organization, dates, summary }) => {
 export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   const displayDate = `${dates.begin} - ${dates.end}`;
   return (
-    <View style={ styles.expEntryContainer } debug={ false }>
-      <TitleDate title={ title } displayDate={ displayDate }/>
-      <Text>{ organization }</Text>
-      <View style={ styles.listContainer }>
+    <View style={styles.expEntryContainer} debug={false}>
+      <TitleDate title={title} displayDate={displayDate} />
+      <Text>{organization}</Text>
+      <View style={styles.listContainer}>
         {
           summary.map(e => (
-            <DescriptionItem key={ e.id } descriptionText={ e.text } />
+            <DescriptionItem key={e.id} descriptionText={e.text} />
           ))
         }
-        <View style={ styles.descriptionItemContainer }>
-          <Text style={ styles.bullet }>·</Text>
+        <View style={styles.descriptionItemContainer}>
+          <Text style={styles.bullet}>·</Text>
           <View>
-            <Text style={ styles.descriptionText }>Authored blog posts&nbsp;
+            <Text style={styles.descriptionText}>Authored blog posts&nbsp;
             <Link src="http://bnlconsulting.com/blog/cloud-first/">Cloud-First Microservices: AWS API Gateway and Lambda in Action</Link>
-            &nbsp;and&nbsp;
+              &nbsp;and&nbsp;
             <Link src="http://bnlconsulting.com/blog/visualizing-clusters-with-arcgis-for-flex/">Visualizing Clusters with ArcGIS for Flex</Link>
-            .</Text>
+              .</Text>
           </View>
         </View>
       </View>
