@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
+import Title from './Title.js'
 
 const styles = StyleSheet.create({
 
@@ -21,11 +22,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: "1px",
-  },
-
-  // todo documentation
-  title: {
-    // fontFamily: 'Lato Bold',
   },
 
   // todo documentation
@@ -56,7 +52,7 @@ const styles = StyleSheet.create({
 
 const TitleDate = ({ title, displayDate }) => (
   <View style={styles.titleDateContainer}>
-    <Text style={styles.title}>{title}</Text>
+    <Title title={title} />
     <Text>{displayDate}</Text>
   </View>
 );
