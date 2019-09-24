@@ -4,10 +4,15 @@ import Resume from './components/Resume.js';
 import fs from 'fs';
 
 Font.register({
+  family: "Source Sans Pro Bold",
+  format: "truetype",
+  src: "https://github.com/google/fonts/blob/8143a3e2d9f7656bc7e551f96d6294d47882d907/ofl/sourcesanspro/SourceSansPro-Bold.ttf?raw=true"
+});
+
+Font.register({
   family: "Source Sans Pro",
   format: "truetype",
   src: "https://github.com/google/fonts/blob/8143a3e2d9f7656bc7e551f96d6294d47882d907/ofl/sourcesanspro/SourceSansPro-Regular.ttf?raw=true"
-  // src: `${__dirname}/fonts/PTSans-Regular.ttf`
 });
 
 Font.register({
