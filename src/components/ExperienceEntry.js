@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
-import Title from './Title.js'
+import ItemWithDates from './ItemWithDates.js'
 
 const styles = StyleSheet.create({
 
@@ -16,13 +16,7 @@ const styles = StyleSheet.create({
     // paddingRight: '5px',
   },
 
-  // todo documentation
-  titleDateContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: "1px",
-  },
+
 
   // todo documentation
   listContainer: {
@@ -52,7 +46,6 @@ const styles = StyleSheet.create({
 
 const TitleDate = ({ title, displayDate }) => (
   <View style={styles.titleDateContainer}>
-    <Title title={title} />
     <Text>{displayDate}</Text>
   </View>
 );
@@ -72,22 +65,18 @@ const DescriptionItem = ({ descriptionText }) => (
  * todo seperate the entry with links out to its own component.
  * @param {*} param0 
  */
-export const ExperienceEntry = ({ title, organization, dates, summary }) => {
-  const displayDate = `${dates.begin} - ${dates.end}`;
-  return (
-    <View style={styles.expEntryContainer} debug={false}>
-      <TitleDate title={title} displayDate={displayDate} />
-      <Text>{organization}</Text>
-      <View style={styles.listContainer} debug={false}>
-        {
-          summary.map(e => (
-            <DescriptionItem key={e.id} descriptionText={e.text} />
-          ))
-        }
-      </View>
+export const ExperienceEntry = ({ title, organization, dates, summary }) => (
+  <View style={styles.expEntryContainer} debug={false}>
+    <ItemWithDates item={title} subitem={organization} dates={dates} />
+    <View style={styles.listContainer} debug={false}>
+      {
+        summary.map(e => (
+          <DescriptionItem key={e.id} descriptionText={e.text} />
+        ))
+      }
     </View>
-  );
-};
+  </View>
+);
 
 /**
  * todo seperate the entry with links out to its own component.

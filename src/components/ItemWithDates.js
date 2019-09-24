@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet } from "@react-pdf/renderer";
+import { View, Text, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
     // Represents the flex container whose flex items are the title/dates, 
@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
     container: {
         display: 'flex',
         flexDirection: 'column',
-        width: "50%",
-        marginTop: "5px",
-        marginBottom: "5px",
-        paddingLeft: '5px',
+        // width: "50%",
+        // marginTop: "5px",
+        // marginBottom: "5px",
+        // paddingLeft: '5px',
         // paddingRight: '5px',
     },
     // todo documentation
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        marginBottom: "1px",
+        // marginBottom: "1px",
     },
     itemText: {
         fontFamily: "Source Sans Pro Bold",
@@ -53,14 +53,17 @@ const SubItem = ({ text }) => (
  * 
  * @param {*} param0 
  */
-const ItemWithDates = ({ item, subitem, displayDate }) => (
-    <View style={styles.container}>
-        <View style={styles.itemWithDateContainer}>
-            <Item text={item} />
-            <DisplayDate displayDate={displayDate} />
+const ItemWithDates = ({ item, subitem, dates }) => {
+    const displayDate = `${dates.begin} - ${dates.end}`;
+    return (
+        <View style={styles.container} debug={true}>
+            <View style={styles.itemWithDateContainer}>
+                <Item text={item} />
+                <DisplayDate displayDate={displayDate} />
+            </View>
+            <SubItem text={subitem} />
         </View>
-        <SubItem text={subitem} />
-    </View>
-);
+    );
+};
 
 export default ItemWithDates;
