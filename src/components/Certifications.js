@@ -1,26 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { ListElement } from './UnorderedList.js'
-
-/**
- * todo documentation
- */
-const styles = StyleSheet.create({
-  certEntryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '50%',
-    marginTop: "5px",
-    marginBottom: "5px",
-    paddingLeft: '10px',
-    paddingRight: '5px',
-  },
-  header: {
-    fontSize: 18,
-    marginBottom: '5px',
-    //// fontFamily: 'Source Sans Pro Bold'
-  },
-});
+import { ListElement, ListContainer } from './UnorderedList.js';
 
 /**
  * todo Add icon to this object.
@@ -41,16 +20,13 @@ const certifications = [
  * todo documentation
  */
 const Certifications = () => (
-  <View style={styles.certEntryContainer} debug={false}>
+  <ListContainer>
     {
       certifications.map(e => (
         <ListElement key={e.id} text={e.text} />
       ))
     }
-  </View>
+  </ListContainer>
 );
 
-/**
- * todo documentation
- */
 export default Certifications;
