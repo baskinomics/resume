@@ -6,12 +6,18 @@ const styles = StyleSheet.create({
         paddingRight: "5px",
         fontFamily: "Source Sans Pro Bold",
     },
-    text: {
-        
-    },
     listElement: {
         display: "flex",
         flexDirection: "row"
+    },
+    listContainer: {
+        display: "flex",
+        flexDirection: "column",
+        // width: "50%",
+        // marginTop: "5px",
+        // marginBottom: "5px",
+        // paddingLeft: "10px",
+        // paddingRight: "5px",
     }
 });
 
@@ -30,5 +36,11 @@ const ListElement = ({ text }) => (
     </View>
 );
 
-export { Bullet, ListElement };
+class ListContainer extends React.Component {
+    render() {
+        return <View>{this.props.children}</View>;
+    }
+}
+
+export { Bullet, ListElement, ListContainer };
 // export default ListElement;
