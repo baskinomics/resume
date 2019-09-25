@@ -2,24 +2,18 @@ import React from "react";
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
-    // Represents the flex container whose flex items are the title/dates, 
-    // organization, and list items.
+    // Represents the flex container whose flex items are the item, subitems, and dates.
     container: {
         display: 'flex',
         flexDirection: 'column',
-        // width: "50%",
-        // marginTop: "5px",
-        // marginBottom: "5px",
-        // paddingLeft: '5px',
-        // paddingRight: '5px',
     },
-    // todo documentation
+    // Represents the flex container whose flex items are the item and the dates.
     itemWithDateContainer: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        // marginBottom: "1px",
     },
+    // The styles for the item.
     itemText: {
         fontFamily: "Source Sans Pro Bold",
     }
@@ -56,7 +50,7 @@ const SubItem = ({ text }) => (
 const ItemWithDates = ({ item, subitem, dates }) => {
     const displayDate = `${dates.begin} - ${dates.end}`;
     return (
-        <View style={styles.container} debug={true}>
+        <View style={styles.container} debug={false}>
             <View style={styles.itemWithDateContainer}>
                 <Item text={item} />
                 <DisplayDate displayDate={displayDate} />
