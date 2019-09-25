@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { ListElement } from './UnorderedList.js'
 
 /**
  * todo documentation
@@ -19,15 +20,6 @@ const styles = StyleSheet.create({
     marginBottom: '5px',
     //// fontFamily: 'Source Sans Pro Bold'
   },
-  certItemContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'flex-start'
-  },
-  bullet: {
-    marginRight: '5px',
-    //// fontFamily: 'Source Sans Pro Bold'
-  }
 });
 
 /**
@@ -46,24 +38,13 @@ const certifications = [
 ];
 
 /**
- * todo Preppend icon to each entry. 
- * @param {*} param0 
- */
-const CertificationEntry = ({ text }) => (
-  <View style={styles.certItemContainer}>
-    <Text style={styles.bullet}>·</Text>
-    <Text>{text}</Text>
-  </View>
-);
-
-/**
  * todo documentation
  */
 const Certifications = () => (
   <View style={styles.certEntryContainer} debug={false}>
     {
       certifications.map(e => (
-        <CertificationEntry key={e.id} text={e.text} />
+        <ListElement key={e.id} text={e.text} />
       ))
     }
   </View>

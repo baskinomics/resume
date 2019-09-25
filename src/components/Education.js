@@ -4,6 +4,9 @@
 
 import React from 'react';
 import { View, Link, Text, StyleSheet } from '@react-pdf/renderer';
+import ItemWithDates from './ItemWithDates.js'
+import { Bullet, ListElement } from './UnorderedList.js'
+
 
 /**
  * todo fix spacing on educationContainer flex items
@@ -28,26 +31,6 @@ const styles = StyleSheet.create({
     marginTop: '5px',
     marginBottom: '5px',
     justifyContent: 'space-between'
-  },
-
-  // Represents the flex container whose flex items are the degree and 
-  // dates.
-  titleDateContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: "1px",
-  },
-
-  // todo documentation
-  degree: {
-    fontFamily: "Source Sans Pro Bold",
-    // fontSize: '8pt',
-  },
-
-  // todo documentation
-  institution: {
-
   },
 
   // Represents the flex container whose flex items are list items.
@@ -118,17 +101,6 @@ const education = [
   }
 ];
 
-/**
- * 
- * @param {*} param0 
- */
-const ListItem = ({ descriptionText }) => (
-  <View style={styles.descriptionItemContainer} debug={false}>
-    <Text style={styles.bullet}>·</Text>
-    <Text>{descriptionText}</Text>
-  </View>
-);
-
 // const UtkEntry = () ==> {
 // };
 
@@ -137,20 +109,14 @@ const ListItem = ({ descriptionText }) => (
  * @param {*} param0 
  */
 const EducationEntry = ({ degree, dates, institution, summary, level }) => {
-  const displayDate = `${dates.begin} - ${dates.end}`;
-
   if (level === "postgraduate") {
     return (
       <View style={styles.eduEntryContainer} debug={false}>
-        <View style={styles.titleDateContainer}>
-          <Text style={styles.degree}>{degree}</Text>
-          <Text>{displayDate}</Text>
-        </View>
-        <Text style={styles.institution}>{institution}</Text>
+        <ItemWithDates item={degree} subitem={institution} dates={dates} />
         <View style={styles.listContainer}>
           {
             summary.map(e => (
-              <ListItem key={e.id} descriptionText={e.text} />
+              <ListElement key={e.id} text={e.text} />
             ))
           }
         </View>
@@ -159,14 +125,10 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
   } else {
     return (
       <View style={styles.eduEntryContainer} debug={false}>
-        <View style={styles.titleDateContainer}>
-          <Text style={styles.degree}>{degree}</Text>
-          <Text>{displayDate}</Text>
-        </View>
-        <Text>{institution}</Text>
+        <ItemWithDates item={degree} subitem={institution} dates={dates} />
         <View style={styles.listContainer}>
           <View style={styles.descriptionItemContainer}>
-            <Text style={styles.bullet}>·</Text>
+            <Bullet />
             <View>
               <Text>
                 <Link src="http://utkgeographyblog.blogspot.com/2011/03/congratulations-to-our-geography.html">Award recipient</Link>
@@ -176,7 +138,7 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
           </View>
           {
             summary.map(e => (
-              <ListItem key={e.id} descriptionText={e.text} />
+              <ListElement key={e.id} text={e.text} />
             ))
           }
         </View>
