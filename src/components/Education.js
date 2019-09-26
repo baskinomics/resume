@@ -5,7 +5,7 @@
 import React from 'react';
 import { View, Link, Text, StyleSheet } from '@react-pdf/renderer';
 import ItemWithDates from './ItemWithDates.js'
-import { Bullet, ListElement } from './UnorderedList.js'
+import { Bullet, ListElement, ListContainer } from './UnorderedList.js'
 
 
 /**
@@ -113,20 +113,20 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
     return (
       <View style={styles.eduEntryContainer} debug={false}>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
-        <View style={styles.listContainer}>
+        <ListContainer>
           {
             summary.map(e => (
               <ListElement key={e.id} text={e.text} />
             ))
           }
-        </View>
+        </ListContainer>
       </View>
     )
   } else {
     return (
       <View style={styles.eduEntryContainer} debug={false}>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
-        <View style={styles.listContainer}>
+        <ListContainer>
           <View style={styles.descriptionItemContainer}>
             <Bullet />
             <View>
@@ -141,7 +141,7 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
               <ListElement key={e.id} text={e.text} />
             ))
           }
-        </View>
+        </ListContainer>
       </View>
     )
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
 import ItemWithDates from './ItemWithDates.js'
-import { Bullet, ListElement } from './UnorderedList.js'
+import { Bullet, ListElement, ListContainer } from './UnorderedList.js'
 
 const styles = StyleSheet.create({
 
@@ -41,13 +41,13 @@ const styles = StyleSheet.create({
 export const ExperienceEntry = ({ title, organization, dates, summary }) => (
   <View style={styles.expEntryContainer} debug={false}>
     <ItemWithDates item={title} subitem={organization} dates={dates} />
-    <View style={styles.listContainer} debug={false}>
+    <ListContainer>
       {
         summary.map(e => (
           <ListElement key={e.id} text={e.text} />
         ))
       }
-    </View>
+    </ListContainer>
   </View>
 );
 
@@ -59,7 +59,7 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   return (
     <View style={styles.expEntryContainer} debug={false}>
       <ItemWithDates item={title} subitem={organization} dates={dates} />
-      <View style={styles.listContainer}>
+      <ListContainer>
         {
           summary.map(e => (
             <ListElement key={e.id} text={e.text} />
@@ -76,7 +76,7 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
             </Text>
           </View>
         </View>
-      </View>
+      </ListContainer>
     </View>
   );
 };
