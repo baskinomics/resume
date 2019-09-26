@@ -35,11 +35,20 @@ const styles = StyleSheet.create({
 });
 
 /**
+ * 
+ */
+class ExpContainer extends React.Component {
+  render() {
+    return <View style={styles.expEntryContainer} debug={false}>{this.props.children}</View>
+  }
+}
+
+/**
  * todo seperate the entry with links out to its own component.
  * @param {*} param0 
  */
 export const ExperienceEntry = ({ title, organization, dates, summary }) => (
-  <View style={styles.expEntryContainer} debug={false}>
+  <ExpContainer>
     <ItemWithDates item={title} subitem={organization} dates={dates} />
     <ListContainer>
       {
@@ -48,7 +57,7 @@ export const ExperienceEntry = ({ title, organization, dates, summary }) => (
         ))
       }
     </ListContainer>
-  </View>
+  </ExpContainer>
 );
 
 /**
@@ -57,7 +66,7 @@ export const ExperienceEntry = ({ title, organization, dates, summary }) => (
  */
 export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   return (
-    <View style={styles.expEntryContainer} debug={false}>
+    <ExpContainer>
       <ItemWithDates item={title} subitem={organization} dates={dates} />
       <ListContainer>
         {
@@ -77,8 +86,9 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
           </View>
         </View>
       </ListContainer>
-    </View>
+    </ExpContainer>
   );
 };
 
+// export { ExperienceEntry, ExperienceEntryBnl };
 export default ExperienceEntry;
