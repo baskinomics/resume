@@ -38,7 +38,7 @@ const ListElement = ({ text }) => (
 
 class ListContainer extends React.Component {
     render() {
-        return <View>{this.props.children}</View>;
+        return <View debug={false}>{this.props.children}</View>;
     }
 }
 

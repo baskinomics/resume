@@ -1,21 +1,10 @@
 import React from 'react';
 import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
-import ItemWithDates from './ItemWithDates.js'
-import { Bullet, ListElement, ListContainer } from './UnorderedList.js'
+import ItemWithDates from './ItemWithDates.js';
+import { Bullet, ListElement, ListContainer } from './UnorderedList.js';
+import EntryContainer from './EntryContainer.js';
 
 const styles = StyleSheet.create({
-
-  // Represents the flex container whose flex items are the title/dates, 
-  // organization, and list items.
-  expEntryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: "50%",
-    marginTop: "5px",
-    marginBottom: "5px",
-    paddingLeft: '5px',
-    // paddingRight: '5px',
-  },
 
   // todo documentation
   listContainer: {
@@ -35,20 +24,11 @@ const styles = StyleSheet.create({
 });
 
 /**
- * 
- */
-class ExpContainer extends React.Component {
-  render() {
-    return <View style={styles.expEntryContainer} debug={false}>{this.props.children}</View>
-  }
-}
-
-/**
  * todo seperate the entry with links out to its own component.
  * @param {*} param0 
  */
-export const ExperienceEntry = ({ title, organization, dates, summary }) => (
-  <ExpContainer>
+const ExperienceEntry = ({ title, organization, dates, summary }) => (
+  <EntryContainer>
     <ItemWithDates item={title} subitem={organization} dates={dates} />
     <ListContainer>
       {
@@ -57,16 +37,16 @@ export const ExperienceEntry = ({ title, organization, dates, summary }) => (
         ))
       }
     </ListContainer>
-  </ExpContainer>
+  </EntryContainer>
 );
 
 /**
  * todo seperate the entry with links out to its own component.
  * @param {*} param0 
  */
-export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
+const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
   return (
-    <ExpContainer>
+    <EntryContainer>
       <ItemWithDates item={title} subitem={organization} dates={dates} />
       <ListContainer>
         {
@@ -86,9 +66,8 @@ export const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
           </View>
         </View>
       </ListContainer>
-    </ExpContainer>
+    </EntryContainer>
   );
 };
 
-// export { ExperienceEntry, ExperienceEntryBnl };
-export default ExperienceEntry;
+export { ExperienceEntry, ExperienceEntryBnl };
