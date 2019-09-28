@@ -4,8 +4,9 @@
 
 import React from 'react';
 import { View, Link, Text, StyleSheet } from '@react-pdf/renderer';
-import ItemWithDates from './ItemWithDates.js'
-import { Bullet, ListElement, ListContainer } from './UnorderedList.js'
+import ItemWithDates from './ItemWithDates.js';
+import { Bullet, ListElement, ListContainer } from './UnorderedList.js';
+import EntryContainer from './EntryContainer.js';
 
 
 /**
@@ -101,9 +102,6 @@ const education = [
   }
 ];
 
-// const UtkEntry = () ==> {
-// };
-
 /**
  * todo Split this into small components
  * @param {*} param0 
@@ -111,7 +109,7 @@ const education = [
 const EducationEntry = ({ degree, dates, institution, summary, level }) => {
   if (level === "postgraduate") {
     return (
-      <View style={styles.eduEntryContainer} debug={false}>
+      <EntryContainer>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
         <ListContainer>
           {
@@ -120,11 +118,11 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
             ))
           }
         </ListContainer>
-      </View>
+      </EntryContainer>
     )
   } else {
     return (
-      <View style={styles.eduEntryContainer} debug={false}>
+      <EntryContainer>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
         <ListContainer>
           <View style={styles.descriptionItemContainer}>
@@ -142,7 +140,7 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
             ))
           }
         </ListContainer>
-      </View>
+      </EntryContainer>
     )
   }
 };
