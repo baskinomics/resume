@@ -1,15 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { COLUMN_WIDTH } from '../Attributes.js';
 
 const styles = StyleSheet.create({
   skillEntryContainer: {
     display: 'flex',
     flexDirection: 'column',
-    width: '50%',
-    marginTop: "5px",
-    marginBottom: "5px",
-    paddingLeft: '5px',
-    paddingRight: '5px',    
+    width: `${COLUMN_WIDTH}px`,
+    // marginTop: "5px",
+    // marginBottom: "5px",
+    // paddingLeft: '5px',
+    // paddingRight: '5px',
   },
   skillEntryHeader: {
     marginBottom: '2px',
@@ -18,9 +19,9 @@ const styles = StyleSheet.create({
 });
 
 const SkillsEntry = ({ skill, items }) => (
-  <View style={ styles.skillEntryContainer } debug={ false }>
-    <Text style={ styles.skillEntryHeader }>{ skill }</Text>
-    <Text>{ items.join(', ') }</Text>
+  <View style={styles.skillEntryContainer} debug={false}>
+    <Text style={styles.skillEntryHeader}>{skill}</Text>
+    <Text>{items.join(', ')}</Text>
   </View>
 );
 

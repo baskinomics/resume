@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { COLUMN_WIDTH } from '../Attributes.js';
 
 const styles = StyleSheet.create({
     bullet: {
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
     listContainer: {
         display: "flex",
         flexDirection: "column",
-        // width: "50%",
+        width: `${COLUMN_WIDTH}px`,
         // marginTop: "5px",
         // marginBottom: "5px",
         // paddingLeft: "10px",

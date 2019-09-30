@@ -1,15 +1,15 @@
 import React from 'react';
 import { Text, StyleSheet } from '@react-pdf/renderer';
+import { COLUMN_WIDTH } from '../Attributes.js';
 
 // Create styles
 const styles = StyleSheet.create({
   summaryContainer: {
-    //// fontFamily: 'Source Sans Pro',
-    width: "290px",
-    marginTop: "3px",
-    marginBottom: "5px",
-    paddingLeft: '5px',
-    paddingRight: '5px'
+    width: `${COLUMN_WIDTH}px`,
+    // marginTop: "3px",
+    // marginBottom: "5px",
+    // paddingLeft: '5px',
+    // paddingRight: '5px'
   },
 });
 
