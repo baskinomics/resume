@@ -1,17 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import { COLUMN_WIDTH } from '../Attributes.js';
+import EntryContainer from './EntryContainer.js';
 
 const styles = StyleSheet.create({
-  skillEntryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    width: `${COLUMN_WIDTH}px`,
-    // marginTop: "5px",
-    // marginBottom: "5px",
-    // paddingLeft: '5px',
-    // paddingRight: '5px',
-  },
+  // todo move this into module w/ header components
   skillEntryHeader: {
     marginBottom: '2px',
     fontSize: "12pt",
@@ -19,10 +12,10 @@ const styles = StyleSheet.create({
 });
 
 const SkillsEntry = ({ skill, items }) => (
-  <View style={styles.skillEntryContainer} debug={false}>
+  <EntryContainer>
     <Text style={styles.skillEntryHeader}>{skill}</Text>
     <Text>{items.join(', ')}</Text>
-  </View>
+  </EntryContainer>
 );
 
 export default SkillsEntry;
