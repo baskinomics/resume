@@ -8,39 +8,7 @@ import ItemWithDates from './ItemWithDates.js';
 import { Bullet, ListElement, ListContainer } from './UnorderedList.js';
 import EntryContainer from './EntryContainer.js';
 
-
-/**
- * todo fix spacing on educationContainer flex items
- */
 const styles = StyleSheet.create({
-
-  // Represents the flex container whose flex items are EducationEntry 
-  // components.
-  educationContainer: {
-    width: "290px",
-    // marginTop: "5px",
-    // marginBottom: "5px",
-    paddingLeft: '5px',
-    paddingRight: '5px',
-  },
-
-  // Represents the flex container whose flex items are the degree/dates, 
-  // institution, and list items.
-  eduEntryContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginTop: '5px',
-    marginBottom: '5px',
-    justifyContent: 'space-between'
-  },
-
-  // Represents the flex container whose flex items are list items.
-  listContainer: {
-    paddingTop: '3px',
-    paddingLeft: '5px',
-    // paddingRight: '5px',
-    maxWidth: '90%',
-  },
 
   // Represents the flex container whose flex items are the bullet
   // list item description
@@ -48,12 +16,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-start'
-  },
-
-  // Represents a bullet point
-  bullet: {
-    marginRight: '5px',
-    // fontFamily: 'Merriweather Sans Bold'
   },
 });
 
@@ -121,6 +83,7 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
       </EntryContainer>
     )
   } else {
+    // todo replace desc item container view
     return (
       <EntryContainer>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
@@ -149,21 +112,16 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
  * 
  */
 const Education = () => (
-  <View style={styles.educationContainer} debug={false}>
-    {
-      education.map(({ id, degree, institution, dates, summary, level }) => (
-        <EducationEntry
-          key={id}
-          degree={degree}
-          institution={institution}
-          dates={dates}
-          summary={summary}
-          level={level}
-        />
-      ))
-    }
-  </View>
-);
+  education.map(({ id, degree, institution, dates, summary, level }) => (
+    <EducationEntry
+      key={id}
+      degree={degree}
+      institution={institution}
+      dates={dates}
+      summary={summary}
+      level={level}
+    />
+  )));
 
 /**
  * 
