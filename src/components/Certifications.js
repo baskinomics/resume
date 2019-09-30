@@ -1,5 +1,6 @@
 import React from 'react';
 import { ListElement, ListContainer } from './UnorderedList.js';
+import EntryContainer from './EntryContainer.js';
 
 /**
  * todo Add icon to this object.
@@ -20,13 +21,15 @@ const certifications = [
  * todo documentation
  */
 const Certifications = () => (
-  <ListContainer>
-    {
-      certifications.map(e => (
-        <ListElement key={e.id} text={e.text} />
-      ))
-    }
-  </ListContainer>
+  <EntryContainer>
+    <ListContainer>
+      {
+        certifications.map(e => (
+          <ListElement key={e.id} text={e.text} />
+        ))
+      }
+    </ListContainer>
+  </EntryContainer>
 );
 
 export default Certifications;
