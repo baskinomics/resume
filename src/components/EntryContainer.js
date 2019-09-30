@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
         width: `${COLUMN_WIDTH}px`,
         marginTop: "5px",
         marginBottom: "5px",
-        // paddingLeft: '5px',
-        // paddingRight: '5px',
+        paddingLeft: "5px",
+        paddingRight: "5px",
     },
 });
 
