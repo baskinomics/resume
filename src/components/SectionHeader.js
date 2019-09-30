@@ -5,10 +5,10 @@ import { COLUMN_WIDTH } from '../Attributes.js';
 const styles = StyleSheet.create({
     sectionHeader: {
         width: `${COLUMN_WIDTH}px`,
-        marginTop: '5px',
-        // marginBottom: '5px',
-        // paddingLeft: '5px',
-        // paddingRight: '5px',
+        marginTop: "5px",
+        marginBottom: "5px",
+        paddingLeft: "5px",
+        paddingRight: "5px",
         fontSize: 18,
     }
 });
