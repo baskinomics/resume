@@ -34,7 +34,7 @@ class ContentContainer extends React.Component {
     render() {
         return <View
             style={styles.contentContainer}
-            debug={true}
+            debug={false}
             wrap={false}>{this.props.children}</View>
     }
 }
