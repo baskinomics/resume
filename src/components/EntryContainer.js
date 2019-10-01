@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
  */
 class EntryContainer extends React.Component {
     render() {
-        return <View style={styles.entryContainer} debug={true}>{this.props.children}</View>
+        return <View style={styles.entryContainer} debug={false}>{this.props.children}</View>
     }
 }
 
