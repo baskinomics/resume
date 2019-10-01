@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, Link, StyleSheet } from '@react-pdf/renderer';
+import { Text, Link, StyleSheet } from '@react-pdf/renderer';
 import ItemWithDates from './ItemWithDates.js';
-import { Bullet, ListElement, ListContainer } from './UnorderedList.js';
+import { ListElement, Element, ListContainer } from './UnorderedList.js';
 import EntryContainer from './EntryContainer.js';
 
 const styles = StyleSheet.create({
@@ -18,8 +18,7 @@ const styles = StyleSheet.create({
   descriptionItemContainer: {
     display: 'flex',
     flexDirection: 'row',
-    // alignItems: 'flex-start',
-    // maxWidth: '95%',
+    maxWidth: "278px",
   },
 });
 
@@ -54,17 +53,14 @@ const ExperienceEntryBnl = ({ title, organization, dates, summary }) => {
             <ListElement key={e.id} text={e.text} />
           ))
         }
-        <View style={styles.descriptionItemContainer}>
-          <Bullet />
-          <View>
-            <Text>
-              Authored blog posts&nbsp;
+        <Element>
+          <Text>
+            Authored blog posts&nbsp;
               <Link src="http://bnlconsulting.com/blog/cloud-first/">Cloud-First Microservices: AWS API Gateway and Lambda in Action</Link>
-              &nbsp;and&nbsp;
+            &nbsp;and&nbsp;
               <Link src="http://bnlconsulting.com/blog/visualizing-clusters-with-arcgis-for-flex/">Visualizing Clusters with ArcGIS for Flex</Link>.
             </Text>
-          </View>
-        </View>
+        </Element>
       </ListContainer>
     </EntryContainer>
   );
