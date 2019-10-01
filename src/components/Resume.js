@@ -95,7 +95,7 @@ const Resume = () => (
           {
             experience
               .experiencePageOne
-              .filter(e => e.title === "Open Data Specialist" || e.title === "Consultant")
+              .filter(e => e.title !== "Software Developer")
               .map(e => (
                 <ExperienceEntry
                   key={e.id}
