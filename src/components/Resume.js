@@ -62,13 +62,13 @@ const Resume = () => (
       <View style={styles.container} debug={false}>
         <Header />
         <ContentContainer>
-          <SectionHeader value="Summary" />
+          <SectionHeader size="1" text="Summary" />
           <Summary />
-          <SectionHeader value="Education" />
+          <SectionHeader size="1" text="Education" />
           <Education />
-          <SectionHeader value="Certifications" />
+          <SectionHeader size="1" text="Certifications" />
           <Certifications />
-          <SectionHeader value="Skills" />
+          <SectionHeader size="1" text="Skills" />
           {
             skills.map(e => (
               <SkillsEntry
@@ -78,7 +78,7 @@ const Resume = () => (
               />
             ))
           }
-          <SectionHeader value="Experience" />
+          <SectionHeader size="1" text="Experience" />
           {
             experience.experienceBnl.map(e => (
               <ExperienceEntryBnl
