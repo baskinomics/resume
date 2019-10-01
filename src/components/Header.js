@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: `${HEADER_HEIGHT}px`,
+    height: `${HEADER_HEIGHT - 10}px`,
     width: '100%',
     paddingTop: '10px',
     paddingBottom: '10px',
