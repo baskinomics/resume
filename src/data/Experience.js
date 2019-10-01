@@ -10,7 +10,7 @@ export const experiencePageOne = [
     summary: [
       { id: 0, text: "Designed, developed, or contributed to seven (7) client projects." },
       { id: 1, text: "Designed and implemented microservices to automate internal workflow components and processes for client’s existing commerical SaaS offering." },
-      { id: 2, text: "Technical lead for internal R&D project that containerized our commerical SaaS application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms that was later included in our product offering." },
+      { id: 2, text: "Technical lead for internal R&D project that containerized our commerical SaaS application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms that was included in our product offering." },
       { id: 3, text: "Core developer for two (2)  year client project that entailed refactoring existing application from .NET to Java, implementing RESTful web services, improving ETL and analytics processes, expansive search functionality, and data modeling." },
       { id: 4, text: "Contributed to the development of business intelligence / analytics web applications utilizing NodeJS, AngularJS, and d3.js." },
       // Work around for parsing and including links - see ExperienceEntry implmentation
