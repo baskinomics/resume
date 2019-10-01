@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
 
   // todo documentation
   icon: {
-    // fontFamily: 'Hasklug',
-    // fontSize: "10pt",
+    fontFamily: 'Hasklug',
+    fontSize: "10pt",
     marginRight: '5px',
   },
 });
