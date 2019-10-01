@@ -17,7 +17,6 @@ import SkillsEntry from './SkillsEntry.js';
 import ContentContainer from './ContentContainer.js';
 import * as attributes from '../Attributes.js';
 
-
 // Data
 import skills from '../data/Skills.js';
 import * as experience from '../data/Experience.js';
@@ -80,15 +79,32 @@ const Resume = () => (
           }
           <SectionHeader size="1" text="Experience" />
           {
-            experience.experienceBnl.map(e => (
-              <ExperienceEntryBnl
-                key={e.id}
-                title={e.title}
-                organization={e.organization}
-                dates={e.dates}
-                summary={e.summary}
-              />
-            ))
+            experience
+              .experiencePageOne
+              .filter(e => e.title === "Software Developer")
+              .map(e => (
+                <ExperienceEntryBnl
+                  key={e.id}
+                  title={e.title}
+                  organization={e.organization}
+                  dates={e.dates}
+                  summary={e.summary}
+                />
+              ))
+          }
+          {
+            experience
+              .experiencePageOne
+              .filter(e => e.title === "Open Data Specialist" || e.title === "Consultant")
+              .map(e => (
+                <ExperienceEntry
+                  key={e.id}
+                  title={e.title}
+                  organization={e.organization}
+                  dates={e.dates}
+                  summary={e.summary}
+                />
+              ))
           }
         </ContentContainer>
         <Footer />
@@ -100,15 +116,18 @@ const Resume = () => (
         <ContentContainer>
           <SectionHeader value="Experience (cont.)" />
           {
-            experience.experiencePageTwo.map(e => (
-              <ExperienceEntry
-                key={e.id}
-                title={e.title}
-                organization={e.organization}
-                dates={e.dates}
-                summary={e.summary}
-              />
-            ))
+            experience
+              .experiencePageTwo
+              .filter(e => e.title != "Open Data Specialist" || e.title !== "Consultant")
+              .map(e => (
+                <ExperienceEntry
+                  key={e.id}
+                  title={e.title}
+                  organization={e.organization}
+                  dates={e.dates}
+                  summary={e.summary}
+                />
+              ))
           }
         </ContentContainer>
         <Footer />
