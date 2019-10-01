@@ -44,6 +44,25 @@ export const experiencePageOne = [
       { id: 1, text: "Produced thematic maps for one-hundred seventy (170) miles of the Etowah River Water Trail." }
     ]
   },
+  {
+    id: 4,
+    title: "Graduate Research Assistant",
+    organization: "University of Tennessee Chattanooga",
+    dates: {
+      begin: "Aug. 2012",
+      end: "Aug. 2013"
+    },
+    summary: [
+      // todo Reword first summary item
+      // https://www.azavea.com/blog/2013/05/24/geotrellis-enables-fast-modeling/
+      // https://www.thriveregionalpartnership.org/thrive-2055
+      // https://github.com/baskinomics/Civitas
+      // https://github.com/baskinomics/utc-geotrellis-demo
+
+      { id: 0, text: "Contributed to the development of a distributed geospatial web application within the context of the Thrive 2055 initiative." },
+      { id: 1, text: "Additionally, developed an Android application for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga." }
+    ]
+  },
 ];
 
 export const experiencePageTwo = [
@@ -62,25 +81,6 @@ export const experiencePageTwo = [
   //   ]
   // },
   // Need to refine the dates on this
-  {
-    id: 0,
-    title: "Graduate Research Assistant",
-    organization: "University of Tennessee Chattanooga",
-    dates: {
-      begin: "Aug. 2012",
-      end: "Aug. 2013"
-    },
-    summary: [
-      // todo Reword first summary item
-      // https://www.azavea.com/blog/2013/05/24/geotrellis-enables-fast-modeling/
-      // https://www.thriveregionalpartnership.org/thrive-2055
-      // https://github.com/baskinomics/Civitas
-      // https://github.com/baskinomics/utc-geotrellis-demo
-
-      { id: 0, text: "Contributed to the development of a distributed geospatial web application within the context of the Thrive 2055 initiative." },
-      { id: 1, text: "Additionally, developed an Android application for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga." }
-    ]
-  },
   {
     id: 1,
     title: "Software Developer",
