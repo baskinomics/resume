@@ -1,17 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet } from '@react-pdf/renderer';
-import { COLUMN_WIDTH } from '../Attributes.js';
-
-// Create styles
-const styles = StyleSheet.create({
-  summaryContainer: {
-    width: `${COLUMN_WIDTH}px`,
-    marginTop: "5px",
-    marginBottom: "5px",
-    paddingLeft: "5px",
-    paddingRight: "5px"
-  },
-});
+import { Text } from '@react-pdf/renderer';
+import EntryContainer from './EntryContainer.js';
 
 const summaryItems = [
   "Experienced polyglot software engineer and consultant with a background in computer science, geographic information science, and mathematics.",
@@ -22,7 +11,9 @@ const summaryItems = [
 
 // Declare Summary Component
 const Summary = () => (
-  <Text style={styles.summaryContainer} debug={true}>{summaryItems.join(' ')}</Text>
+  <EntryContainer>
+    <Text debug={false}>{summaryItems.join(' ')}</Text>
+  </EntryContainer>
 );
 
 export default Summary;
