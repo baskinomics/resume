@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         width: `${COLUMN_WIDTH}px`,
-        marginTop: "5px",
+        marginTop: "2px",
         marginBottom: "5px",
         paddingLeft: "5px",
         paddingRight: "5px",

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         fontSize: "18pt",
     },
     h2: {
-        marginBottom: "2px",
+        // marginBottom: "2px",
         fontSize: "12pt",
     }
 });
