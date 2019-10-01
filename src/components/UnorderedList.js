@@ -7,14 +7,19 @@ const styles = StyleSheet.create({
         paddingRight: "5px",
         fontFamily: "Source Sans Pro Bold",
     },
+    text: {
+        // width: "162px",
+        maxWidth: "278px",
+    },
     listElement: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
+        maxWidth: "278px",
     },
     listContainer: {
         display: "flex",
         flexDirection: "column",
-        width: `${COLUMN_WIDTH}px`,
+        maxWidth: "286px",
         // marginTop: "5px",
         // marginBottom: "5px",
         // paddingLeft: "10px",
@@ -23,7 +28,7 @@ const styles = StyleSheet.create({
 });
 
 const Bullet = () => (
-    <Text style={styles.bullet}>·</Text>
+    <Text style={styles.bullet} debug={false}>·</Text>
 );
 
 /**
@@ -31,17 +36,27 @@ const Bullet = () => (
  * @param {*} param0 
  */
 const ListElement = ({ text }) => (
-    <View style={styles.listElement}>
+    <View style={styles.listElement} debug={false}>
         <Bullet />
-        <Text style={styles.text}>{text}</Text>
+        <Text style={styles.text} debug={false}>{text}</Text>
     </View>
 );
 
-class ListContainer extends React.Component {
+class Element extends React.Component {
     render() {
-        return <View debug={false}>{this.props.children}</View>;
+        return <View style={styles.listElement} debug={false}>
+            <Bullet />
+            {this.props.children}
+        </View>;
     }
 }
 
-export { Bullet, ListElement, ListContainer };
+
+class ListContainer extends React.Component {
+    render() {
+        return <View style={styles.listContainer} debug={false}>{this.props.children}</View>;
+    }
+}
+
+export { Bullet, ListElement, Element, ListContainer };
 // export default ListElement;
