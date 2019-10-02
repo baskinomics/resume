@@ -41,7 +41,7 @@ export const experiencePageOne = [
     // todo should we add link? http://www.etowahwatertrail.org/
     summary: [
       { id: 0, text: "Configured, deployed, and designed a WordPress instance for the client." },
-      { id: 1, text: "Produced thematic maps for one-hundred seventy (170) miles of the Etowah River Water Trail." }
+      { id: 1, text: "Exposed thematic maps for one-hundred seventy (170) miles of the Etowah River Water Trail." }
     ]
   },
   {
