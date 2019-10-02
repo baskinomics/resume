@@ -5,19 +5,8 @@
 import React from 'react';
 import { View, Link, Text, StyleSheet } from '@react-pdf/renderer';
 import ItemWithDates from './ItemWithDates.js';
-import { Bullet, ListElement, ListContainer } from './UnorderedList.js';
+import { Bullet, ListElement, Element, ListContainer } from './UnorderedList.js';
 import EntryContainer from './EntryContainer.js';
-
-const styles = StyleSheet.create({
-
-  // Represents the flex container whose flex items are the bullet
-  // list item description
-  descriptionItemContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'flex-start'
-  },
-});
 
 const education = [
   {
@@ -57,8 +46,8 @@ const education = [
       // Add link: http://utkgeographyblog.blogspot.com/2011/03/congratulations-to-our-geography.html
       //           https://eureca.utk.edu/wp-content/uploads/sites/32/2013/08/2011-43.jpg
       // { id: 0, text: "Award recipient at the Exhibition of Undergraduate Research and Creative Achievement (EURéCA)." },
-      { id: 1, text: "Engaged in directed research under Dr. Bruce Ralston on advanced web mapping techniques including map classification functions, customized user interfaces, and developing data services." },
-      { id: 3, text: "Tutor at the UTK Math Tutorial Center." }
+      { id: 0, text: "Engaged in directed research under Dr. Bruce Ralston on advanced web mapping techniques including map classification functions, customized user interfaces, and developing data services." },
+      { id: 1, text: "Tutor at the UTK Math Tutorial Center." }
     ],
     level: "post-secondary"
   }
@@ -88,19 +77,24 @@ const EducationEntry = ({ degree, dates, institution, summary, level }) => {
       <EntryContainer>
         <ItemWithDates item={degree} subitem={institution} dates={dates} />
         <ListContainer>
-          <View style={styles.descriptionItemContainer}>
-            <Bullet />
-            <View>
-              <Text>
-                <Link src="http://utkgeographyblog.blogspot.com/2011/03/congratulations-to-our-geography.html">Award recipient</Link>
-                &nbsp;at the Exhibition of Undergraduate Research and Creative Achievement (EURéCA).
-                </Text>
-            </View>
-          </View>
+          <Element>
+            <Text>
+              <Link src="http://utkgeographyblog.blogspot.com/2011/03/congratulations-to-our-geography.html">Award recipient</Link>
+              &nbsp;at the <Link src="https://eureca.utk.edu/">Exhibition of Undergraduate Research and Creative Achievement (EURéCA)</Link>.
+            </Text>
+          </Element>
+          <Element>
+            <Text>
+              Engaged in directed research under <Link src="https://gitlab.com/baskinomics/resume/blob/master/data/docs/Letter-of-Reference-Bruce-Ralston.pdf">Dr. Bruce Ralston</Link> on
+              advanced web mapping techniques including map classification functions, customized user interfaces, and developing data services.
+            </Text>
+          </Element>
           {
-            summary.map(e => (
-              <ListElement key={e.id} text={e.text} />
-            ))
+            summary
+              .filter(e => e.id === 1)
+              .map(e => (
+                <ListElement key={e.id} text={e.text} />
+              ))
           }
         </ListContainer>
       </EntryContainer>
