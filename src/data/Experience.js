@@ -1,3 +1,5 @@
+// todo migrate this to json file
+
 export const experiencePageOne = [
   {
     id: 0,
@@ -118,9 +120,9 @@ export const experiencePageTwo = [
       end: "Feb. 2012"
     },
     summary: [
-      { id: 0, text: "Assisted in the deployment and management of ArcGIS Server and ArcSDE databases." },
+      { id: 0, text: "Assisted in the deployment and management of ArcGIS Server instance and ArcSDE databases." },
       { id: 1, text: "Collected, documented, and organized spatial datasets for the Regional Resource Inventory project." },
-      { id: 2, text: "Developed RESTful geoprocessing tasks and implemented ArcGIS API for Flex web application to consume them." }
+      { id: 2, text: "Developed RESTful Python geoprocessing services, and imeplemented an \nArcGIS API for Flex web application to consume them." }
     ]
   },
   {
