@@ -12,10 +12,12 @@ import Education from './Education.js';
 import Certifications from './Certifications.js';
 import Footer from './Footer.js';
 import SectionHeader from './SectionHeader.js';
-import { ExperienceEntry, ExperienceEntryBnl } from './ExperienceEntry.js';
 import SkillsEntry from './SkillsEntry.js';
 import ContentContainer from './ContentContainer.js';
 import * as attributes from '../Attributes.js';
+
+import { Bnl, Cpl, Consultant, Cait, ExperienceEntry, } from './ExperienceEntry.js';
+
 
 // Data
 import skills from '../data/Skills.js';
@@ -78,34 +80,10 @@ const Resume = () => (
             ))
           }
           <SectionHeader size="1" text="Experience" />
-          {
-            experience
-              .experiencePageOne
-              .filter(e => e.title === "Software Developer")
-              .map(e => (
-                <ExperienceEntryBnl
-                  key={e.id}
-                  title={e.title}
-                  organization={e.organization}
-                  dates={e.dates}
-                  summary={e.summary}
-                />
-              ))
-          }
-          {
-            experience
-              .experiencePageOne
-              .filter(e => e.title !== "Software Developer")
-              .map(e => (
-                <ExperienceEntry
-                  key={e.id}
-                  title={e.title}
-                  organization={e.organization}
-                  dates={e.dates}
-                  summary={e.summary}
-                />
-              ))
-          }
+          <Bnl />
+          <Cpl />
+          <Consultant />
+          <Cait />
         </ContentContainer>
         <Footer />
       </View>
