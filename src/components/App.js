@@ -1,6 +1,11 @@
 'use strict';
 
 import React from 'react';
+import styled from 'styled-components';
+
+const Resume = styled.p`
+    font-family: "Source Sans Pro";
+`;
 
 class App extends React.Component {
     constructor(props) {
@@ -9,7 +14,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>This is a React application using Parcel.</div>
+            <Resume>This is my resume</Resume>
         );
     }
 }
