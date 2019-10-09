@@ -151,7 +151,7 @@ const Cait = () => {
         dates={dates} />
       <ListContainer>
         <Element>
-          <Text>Contributed to the development of a <Link src="https://github.com/baskinomics/utc-geotrellis-demo">distributed geospatial web application</Link> within the context of the <Link src="https://www.thriveregionalpartnership.org/thrive-2055">Thrive 2055</Link> initiative.</Text>
+          <Text>Contributed to the development of a <Link src="https://github.com/baskinomics/utc-geotrellis-demo">distributed geospatial web application</Link> within the context of the Thrive 2055 initiative.</Text>
         </Element>
         <Element>
           <Text>Additionally, developed an <Link src="https://github.com/baskinomics/Geo-Fi">Android application</Link> for the collection of WiFi signal strength and location data for the campus of the University of Tennessee at Chattanooga.</Text>
