@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "debug": "babel-node debug src/index.js",
     "build": "webpack --config webpack.config.js",
     "pdf": "babel-node ./src/index.js",
     "image": "convert -verbose -density 300 dist/Sean-Baskin-Resume.pdf -quality 100 -sharpen 0x1.0 ./public/resume.png",
