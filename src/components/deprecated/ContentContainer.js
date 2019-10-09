@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from '@react-pdf/renderer';
-import * as attributes from '../Attributes.js';
+import * as attributes from '../../Attributes.js';
 
 const styles = StyleSheet.create({
     // This style effects the container element that contains all non-header

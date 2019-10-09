@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
-import { COLUMN_WIDTH } from '../Attributes.js';
+import { COLUMN_WIDTH } from '../../Attributes.js';
 
 const styles = StyleSheet.create({
     bullet: {
