@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "debug": "babel-node debug src/index.js",
+    "debug": "parcel index.html",
     "build": "webpack --config webpack.config.js",
     "pdf": "babel-node ./src/index.js",
     "image": "convert -verbose -density 300 dist/Sean-Baskin-Resume.pdf -quality 100 -sharpen 0x1.0 ./public/resume.png",
@@ -19,16 +19,9 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "@react-pdf/renderer": "^1.4.0",
     "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^2.0.1",
-    "css-loader": "^2.1.1",
     "react": "^16.8.4",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0"
   }
 }
