@@ -56,10 +56,10 @@ const Bnl = () => {
           <Text>Designed, developed, or contributed to seven (7) client projects.</Text>
         </Element>
         <Element>
-          <Text>Designed and implemented microservices to automate internal workflow components and processes for client’s existing commerical SaaS offering.</Text>
+          <Text>Architected Spring Boot and AWS Lambda microservices to automate business processes for client’s existing commerical SaaS offering.</Text>
         </Element>
         <Element>
-          <Text>Technical lead for internal R&D project that containerized our commerical SaaS application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms that was included in our product offering.</Text>
+          <Text>Technical lead for R&D project that containerized our commerical SaaS application and subsequent deployment using Infrastructure-as-Code, configuration management, container orchestration, and public/private cloud platforms that was included in our product offering.</Text>
         </Element>
         <Element>
           <Text>Core developer for two (2)  year client project that entailed refactoring existing application from .NET to Java, implementing RESTful web services, improving ETL and analytics processes, expansive search functionality, and data modeling.</Text>
@@ -142,6 +142,11 @@ const Cait = () => {
     begin: "Aug. 2012",
     end: "Aug. 2013"
   };
+
+  // This needs to be incorporated, better than repository alone.
+  // https://www.azavea.com/blog/2013/05/24/geotrellis-enables-fast-modeling/
+
+  // Also include the Center for Academic and Innovative Technologies (CAIT)
 
   return (
     <EntryContainer>
